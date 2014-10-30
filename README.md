@@ -1,4 +1,4 @@
-style-library
+Style Library
 =============
 
-Balihoo Style Library
+Balihoo Style Library.
