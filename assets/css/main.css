@@ -1,4 +1,10 @@
 body {
 	padding-top: 10px;
 	padding-bottom: 10px;
+	position: relative;
+}
+.elements-nav.affix {
+	top: 0px;
+	margin-left: 855px;
+	width: 255px;
 }
