@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Drop-down Menu
-category: element
+title: List Box
 ---
 
-Use a drop-down menu when the user needs to select one of 2-10 choices and there is no default or there is a blank state option at the top of the list. Make sure the field is clearly labeled and that all options within the menu are consistently labeled.
+Use a single-select list box when the user needs to select one option from 10+ choices. Use a multi-select list box when the user needs to select one or more options from 10+ choices.
 
 Preview:
 

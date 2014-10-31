@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Preview
-category: element
+title: Image
 ---
 
-Previews appear when a thumbnail is clicked. Users can click anywhere outside of the preview to close it.
+Images can appear anywhere, but they should be clearly grouped with any relevant fields or labels they are related to.
 
 Preview:
 

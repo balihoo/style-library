@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Action Button
-category: element
+title: Butcon
 ---
 
-Use this type of button for actions that will result in change to data. Icons and labels should be unique within the application (not reused for any other button that doesn’t do the exact same thing). Icons should be taken from [http://fontawesome.io/](http://fontawesome.io/)
+Use a butcon (button-icon) when space is limited, it’s very clear what the button will do, and a label is unnecessary.
 
 Preview:
 

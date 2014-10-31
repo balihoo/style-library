@@ -1,10 +1,11 @@
 ---
 layout: post
-title: Date Picker
-category: element
+title: Navigation Header
 ---
 
-Use a date picker control when the user needs to select any date from greater than ten possible dates. The field should be clearly labeled, and if there are multiple dates to be selected, each individual date control should have a consistent label (e.g., Start Date, End Date).
+Components is a dropdown menu that shows links to Geographies, Participants, and Targets.
+
+Need Help pops up the Contextual Help Dialog.
 
 Preview:
 

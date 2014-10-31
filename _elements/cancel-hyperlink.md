@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Form Drop-down Menu
-category: element
+title: Cancel Hyperlink
 ---
 
-Form drop-downs appear in forms created in the Form Builder. They behave exactly the same as Drop-down Menus, but the styling is slightly different.
+Use this to back out of dialogs or pages. This action will revert any changes made, throw away any selections or data entered into fields, and go back to the previous state.
 
 Preview:
 

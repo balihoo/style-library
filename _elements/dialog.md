@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Navigation Header
-category: element
+title: Dialog
 ---
 
-Components is a dropdown menu that shows links to Geographies, Participants, and Targets.
+Modal dialogs pop up under the following conditions, and a lightbox effect grays out the rest of the screen until the user clicks to dismiss it.
 
-Need Help pops up the Contextual Help Dialog.
+* User needs to confirm a critical action.
+* User needs to make an important decision that will result in an action involving data changes.
 
 Preview:
 

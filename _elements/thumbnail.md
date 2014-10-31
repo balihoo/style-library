@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Check Box
-category: element
+title: Thumbnail
 ---
 
-Use a check box when the user has a binary option (Yes or No). Make sure the check box is labeled clearly and that it defaults to the state most likely to be desired (often unselected, but occasionally selected makes more sense). Use a group of check boxes when the user needs to select any number of options from 1-9 choices. If possible, sub-group if there are more than five. If there are more than 10, use a multi-select list box.
+Thumbnails contain a preview of a selected image. They can be clicked on to get a larger preview.
 
 Preview:
 

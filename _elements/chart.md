@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Butcon
-category: element
+title: Chart
 ---
 
-Use a butcon (button-icon) when space is limited, it’s very clear what the button will do, and a label is unnecessary.
+Charts are used in Reports. The example above is pretty basic; much more elaborate charts are planned for the future.
 
 Preview:
 

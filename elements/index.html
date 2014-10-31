@@ -8,13 +8,13 @@ layout: default
 </div>
 
 <div class="element-list">
-{% for post in site.categories.element %}
-	<div class="panel panel-default">
+{% for element in site.elements %}
+	<div id="{{ element.title | slugify }}"class="panel panel-default">
 		<div class="panel-heading">
-			<h2 class="panel-title">{{ post.title }}</h2>
+			<h2 class="panel-title">{{ element.title }}</h2>
 		</div>
 		<div class="panel-body">
-			{{ post.content }}
+			{{ element.content }}
 		</div>
 	</div>
 {% endfor %}

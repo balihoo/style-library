@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Image
-category: element
+title: Time Picker
 ---
 
-Images can appear anywhere, but they should be clearly grouped with any relevant fields or labels they are related to.
+The time picker control is used when the user needs to select an exact time of day. It is usually grouped with a Time Zone field.
 
 Preview:
 

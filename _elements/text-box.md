@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Chart
-category: element
+title: Text Box
 ---
 
-Charts are used in Reports. The example above is pretty basic; much more elaborate charts are planned for the future.
+Use this resizable text box when the user needs to type longer strings of free text (5+ words), or multiple lines of text. Text boxes are generally wider than text fields, wide enough to accommodate two or three rows of 60 characters. It could vary depending on the expected use of the box, but if you are unsure then 360 x 80 is probably a good default.
 
 Preview:
 

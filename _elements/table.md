@@ -1,13 +1,9 @@
 ---
 layout: post
-title: Dialog
-category: element
+title: Table
 ---
 
-Modal dialogs pop up under the following conditions, and a lightbox effect grays out the rest of the screen until the user clicks to dismiss it.
-
-* User needs to confirm a critical action.
-* User needs to make an important decision that will result in an action involving data changes.
+Tables can have a title, header buttons, and row buttons. Not all columns need to be sortable, but ones that are should show a hand pointer on hover to indicate that they can be clicked, and the primary sorted column gets an arrow indicating whether it’s sorted ascending or descending.
 
 Preview:
 

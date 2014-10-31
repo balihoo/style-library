@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Group Box
-category: element
+title: Radio Buttons
 ---
 
-Use group boxes to organize content on a page so that it’s clear how fields are related to each other and to the action buttons.
+Use a radio button group when the user needs to select one option from 2-5 choices and there is a standard default. Radio buttons should always appear in groups of two or more, and should have the most likely option already selected. Usually the topmost option should be “All” or “None” to ensure that if the user doesn’t select anything, they are left on the most likely desired value. If there are more than five options, use a single-select list box.
 
 Preview:
 

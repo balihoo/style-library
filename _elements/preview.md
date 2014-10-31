@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Cancel Hyperlink
-category: element
+title: Preview
 ---
 
-Use this to back out of dialogs or pages. This action will revert any changes made, throw away any selections or data entered into fields, and go back to the previous state.
+Previews appear when a thumbnail is clicked. Users can click anywhere outside of the preview to close it.
 
 Preview:
 

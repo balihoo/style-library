@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Time Picker
-category: element
+title: Drop-down Menu
 ---
 
-The time picker control is used when the user needs to select an exact time of day. It is usually grouped with a Time Zone field.
+Use a drop-down menu when the user needs to select one of 2-10 choices and there is no default or there is a blank state option at the top of the list. Make sure the field is clearly labeled and that all options within the menu are consistently labeled.
 
 Preview:
 

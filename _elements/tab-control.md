@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Workspace
-category: element
+title: Tab Control
 ---
 
-This is how the main workspace looks on BAC pages. The title of the page or component being worked on appears in white text in the dark gray bar along the top, sometimes with other information (like campaign start and end dates on the campaign creation screen).
+The tab control is used in Reports. It can contain pretty much anything else, like tables and radio buttons and fields and text content.
 
 Preview:
 

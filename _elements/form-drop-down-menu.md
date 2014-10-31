@@ -1,10 +1,9 @@
 ---
 layout: post
-title: List Box
-category: element
+title: Form Drop-down Menu
 ---
 
-Use a single-select list box when the user needs to select one option from 10+ choices. Use a multi-select list box when the user needs to select one or more options from 10+ choices.
+Form drop-downs appear in forms created in the Form Builder. They behave exactly the same as Drop-down Menus, but the styling is slightly different.
 
 Preview:
 

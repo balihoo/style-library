@@ -4,6 +4,9 @@ url: "http://balihoo.github.io/style-library"
 description: >
   Balihoo's style library used on internal projects.
 
+collections:
+- elements
+
 markdown: kramdown
 highlighter: pygments
 permalink: pretty

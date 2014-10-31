@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Tab Control
-category: element
+title: Footer
 ---
 
-The tab control is used in Reports. It can contain pretty much anything else, like tables and radio buttons and fields and text content.
+The Terms of Service link opens TermsOfService.pdf in a new browser tab.
 
 Preview:
 

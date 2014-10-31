@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Table
-category: element
+title: Group Box
 ---
 
-Tables can have a title, header buttons, and row buttons. Not all columns need to be sortable, but ones that are should show a hand pointer on hover to indicate that they can be clicked, and the primary sorted column gets an arrow indicating whether it’s sorted ascending or descending.
+Use group boxes to organize content on a page so that it’s clear how fields are related to each other and to the action buttons.
 
 Preview:
 

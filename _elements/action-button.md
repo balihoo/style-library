@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Radio Buttons
-category: element
+title: Action Button
 ---
 
-Use a radio button group when the user needs to select one option from 2-5 choices and there is a standard default. Radio buttons should always appear in groups of two or more, and should have the most likely option already selected. Usually the topmost option should be “All” or “None” to ensure that if the user doesn’t select anything, they are left on the most likely desired value. If there are more than five options, use a single-select list box.
+Use this type of button for actions that will result in change to data. Icons and labels should be unique within the application (not reused for any other button that doesn’t do the exact same thing). Icons should be taken from [http://fontawesome.io/](http://fontawesome.io/)
 
 Preview:
 

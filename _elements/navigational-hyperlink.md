@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Text Box
-category: element
+title: Navigation Hyperlink
 ---
 
-Use this resizable text box when the user needs to type longer strings of free text (5+ words), or multiple lines of text. Text boxes are generally wider than text fields, wide enough to accommodate two or three rows of 60 characters. It could vary depending on the expected use of the box, but if you are unsure then 360 x 80 is probably a good default.
+These hyperlinks are used in page headers or workspace headers to allow the user to move to a different page. When one of these is clicked, revert any unsaved changes, throw away any selections or data entered into fields, and navigate to the desired page.
 
 Preview:
 
