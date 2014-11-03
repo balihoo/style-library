@@ -3,8 +3,16 @@ body {
 	padding-bottom: 10px;
 	position: relative;
 }
+img {
+	max-width: 100%;
+}
 .elements-nav.affix {
 	top: 0px;
 	margin-left: 855px;
 	width: 255px;
 }
+/*.elements-nav.affix-bottom {  This needs WORK!
+	bottom: -100%;
+	margin-left: 855px;
+	width: 255px;
+}*/
