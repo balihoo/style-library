@@ -1,8 +1,12 @@
 ---
 ---
 
+// Balihoo Overrides
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic|Archivo+Narrow);
+@import "balihoo/variables";
+
 // Core variables and mixins
-@import "bootstrap/variables";
+// @import "bootstrap/variables";
 @import "bootstrap/mixins";
 
 // Reset and dependencies
