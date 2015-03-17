@@ -11,6 +11,8 @@ You can view this locally by installing Jekyll...
 
 Then running the Jekyll server...
 
-`jekyll serve`
+`jekyll serve --baseurl ''`
+
+The --baseurl flag is necessary to for local testing.
 
 The site will be available at 0.0.0.0:4000
