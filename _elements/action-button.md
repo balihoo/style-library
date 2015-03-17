@@ -6,9 +6,9 @@ Use this type of button for actions that will result in change to data. Icons an
 
 Preview:
 
-![Button](/assets/img/elements/btn.png)
+![Button]({{site.baseurl}}/assets/img/elements/btn.png)
 
-![Button - Save](/assets/img/elements/btn-save.png)
+![Button - Save]({{site.baseurl}}/assets/img/elements/btn-save.png)
 
 Code Sample:
 
