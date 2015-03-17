@@ -6,7 +6,7 @@ Thumbnails contain a preview of a selected image. They can be clicked on to get 
 
 Preview:
 
-![Thumbnail](/assets/img/elements/thumbnail.png)
+![Thumbnail]({{site.baseurl}}/assets/img/elements/thumbnail.png)
 
 Code Sample:
 

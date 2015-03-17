@@ -6,7 +6,7 @@ Use group boxes to organize content on a page so that it’s clear how fields ar
 
 Preview:
 
-![Group Box](/assets/img/elements/groupbox.png)
+![Group Box]({{site.baseurl}}/assets/img/elements/groupbox.png)
 
 Code Sample:
 

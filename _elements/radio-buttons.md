@@ -6,7 +6,7 @@ Use a radio button group when the user needs to select one option from 2-5 choic
 
 Preview:
 
-![Radio Buttons](/assets/img/elements/radio-buttons.png)
+![Radio Buttons]({{site.baseurl}}/assets/img/elements/radio-buttons.png)
 
 Code Sample:
 

@@ -6,7 +6,7 @@ Use this to back out of dialogs or pages. This action will revert any changes ma
 
 Preview:
 
-![Cancel Hyperlink](/assets/img/elements/cancel.png)
+![Cancel Hyperlink]({{site.baseurl}}/assets/img/elements/cancel.png)
 
 Code Sample:
 

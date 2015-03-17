@@ -9,7 +9,7 @@ Modal dialogs pop up under the following conditions, and a lightbox effect grays
 
 Preview:
 
-![Dialog](/assets/img/elements/dialog.png)
+![Dialog]({{site.baseurl}}/assets/img/elements/dialog.png)
 
 Code Sample:
 

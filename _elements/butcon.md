@@ -6,9 +6,9 @@ Use a butcon (button-icon) when space is limited, it’s very clear what the but
 
 Preview:
 
-![Butcon](/assets/img/elements/butcon.png)
+![Butcon]({{site.baseurl}}/assets/img/elements/butcon.png)
 
-![Butcon Hover State](/assets/img/elements/butcon-hover.png)
+![Butcon Hover State]({{site.baseurl}}/assets/img/elements/butcon-hover.png)
 
 Code Sample:
 

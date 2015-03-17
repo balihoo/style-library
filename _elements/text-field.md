@@ -6,7 +6,7 @@ Use a text field when the user needs to type a short string of free text (1-5 wo
 
 Preview:
 
-![Text Field](/assets/img/elements/textfield.png)
+![Text Field]({{site.baseurl}}/assets/img/elements/textfield.png)
 
 Code Sample:
 

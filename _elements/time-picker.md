@@ -6,7 +6,7 @@ The time picker control is used when the user needs to select an exact time of d
 
 Preview:
 
-![Time Picker](/assets/img/elements/timepicker.png)
+![Time Picker]({{site.baseurl}}/assets/img/elements/timepicker.png)
 
 Code Sample:
 

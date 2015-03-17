@@ -6,9 +6,9 @@ Use a single-select list box when the user needs to select one option from 10+ c
 
 Preview:
 
-![Single-Select Listbox](/assets/img/elements/listbox-single.png)
+![Single-Select Listbox]({{site.baseurl}}/assets/img/elements/listbox-single.png)
 
-![Multi-Select Listbox](/assets/img/elements/listbox-multi.png)
+![Multi-Select Listbox]({{site.baseurl}}/assets/img/elements/listbox-multi.png)
 
 Code Sample:
 

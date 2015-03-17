@@ -6,7 +6,7 @@ Use a check box when the user has a binary option (Yes or No). Make sure the che
 
 Preview:
 
-![Check Box](/assets/img/elements/checkbox.png)
+![Check Box]({{site.baseurl}}/assets/img/elements/checkbox.png)
 
 Code Sample:
 

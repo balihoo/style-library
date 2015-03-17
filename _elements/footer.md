@@ -6,7 +6,7 @@ The Terms of Service link opens TermsOfService.pdf in a new browser tab.
 
 Preview:
 
-![Footer](/assets/img/elements/footer.png)
+![Footer]({{site.baseurl}}/assets/img/elements/footer.png)
 
 Code Sample:
 

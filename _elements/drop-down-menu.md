@@ -6,9 +6,9 @@ Use a drop-down menu when the user needs to select one of 2-10 choices and there
 
 Preview:
 
-![Drop-Down Menu](/assets/img/elements/dropdown.png)
+![Drop-Down Menu]({{site.baseurl}}/assets/img/elements/dropdown.png)
 
-![Drop-Down Menu - Open](/assets/img/elements/dropdown-open.png)
+![Drop-Down Menu - Open]({{site.baseurl}}/assets/img/elements/dropdown-open.png)
 
 Code Sample:
 

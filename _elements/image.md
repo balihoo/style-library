@@ -6,7 +6,7 @@ Images can appear anywhere, but they should be clearly grouped with any relevant
 
 Preview:
 
-![Image](/assets/img/elements/image.png)
+![Image]({{site.baseurl}}/assets/img/elements/image.png)
 
 Code Sample:
 

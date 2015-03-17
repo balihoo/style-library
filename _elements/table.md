@@ -6,7 +6,7 @@ Tables can have a title, header buttons, and row buttons. Not all columns need t
 
 Preview:
 
-![table](/assets/img/elements/table.png)
+![table]({{site.baseurl}}/assets/img/elements/table.png)
 
 Code Sample:
 

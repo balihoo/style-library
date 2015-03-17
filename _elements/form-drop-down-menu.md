@@ -6,7 +6,7 @@ Form drop-downs appear in forms created in the Form Builder. They behave exactly
 
 Preview:
 
-![Form Drop-Down](/assets/img/elements/form-dropdown.png)
+![Form Drop-Down]({{site.baseurl}}/assets/img/elements/form-dropdown.png)
 
 Code Sample:
 

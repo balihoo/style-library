@@ -6,7 +6,7 @@ This is how the main workspace looks on BAC pages. The title of the page or comp
 
 Preview:
 
-![Workspace](/assets/img/elements/workspace.png)
+![Workspace]({{site.baseurl}}/assets/img/elements/workspace.png)
 
 Code Sample:
 

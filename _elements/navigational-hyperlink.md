@@ -6,7 +6,7 @@ These hyperlinks are used in page headers or workspace headers to allow the user
 
 Preview:
 
-![Navigational Hyperlink](/assets/img/elements/nav-link.png)
+![Navigational Hyperlink]({{site.baseurl}}/assets/img/elements/nav-link.png)
 
 Code Sample:
 

@@ -8,7 +8,7 @@ Need Help pops up the Contextual Help Dialog.
 
 Preview:
 
-![Navigation Header](/assets/img/elements/navheader.png)
+![Navigation Header]({{site.baseurl}}/assets/img/elements/navheader.png)
 
 Code Sample:
 

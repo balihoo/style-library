@@ -6,7 +6,7 @@ Use this resizable text box when the user needs to type longer strings of free t
 
 Preview:
 
-![Text Box](/assets/img/elements/textbox.png)
+![Text Box]({{site.baseurl}}/assets/img/elements/textbox.png)
 
 Code Sample:
 

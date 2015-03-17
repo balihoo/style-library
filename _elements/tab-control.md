@@ -6,7 +6,7 @@ The tab control is used in Reports. It can contain pretty much anything else, li
 
 Preview:
 
-![Tab Control](/assets/img/elements/tabcontrol.png)
+![Tab Control]({{site.baseurl}}/assets/img/elements/tabcontrol.png)
 
 Code Sample:
 

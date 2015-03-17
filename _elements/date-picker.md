@@ -6,7 +6,7 @@ Use a date picker control when the user needs to select any date from greater th
 
 Preview:
 
-![Date Picker](/assets/img/elements/datepicker.png)
+![Date Picker]({{site.baseurl}}/assets/img/elements/datepicker.png)
 
 Code Sample:
 

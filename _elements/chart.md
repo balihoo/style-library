@@ -6,7 +6,7 @@ Charts are used in Reports. The example above is pretty basic; much more elabora
 
 Preview:
 
-![Chart](/assets/img/elements/chart.png)
+![Chart]({{site.baseurl}}/assets/img/elements/chart.png)
 
 Code Sample:
 

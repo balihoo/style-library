@@ -6,7 +6,7 @@ Previews appear when a thumbnail is clicked. Users can click anywhere outside of
 
 Preview:
 
-![Preview](/assets/img/elements/preview.png)
+![Preview]({{site.baseurl}}/assets/img/elements/preview.png)
 
 Code Sample:
 
