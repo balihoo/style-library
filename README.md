@@ -1,6 +1,8 @@
 Balihoo Style Library
 =============
 
+http://balihoo.github.io/style-library
+
 This site is build using [Jekyll](http://jekyllrb.com)
 
 You can view this locally by installing Jekyll...
