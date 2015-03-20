@@ -13,8 +13,8 @@ $brand-info:            #bfb672;
 $brand-warning:         #efc75e;
 $brand-danger:          #e2574c;
 
-$bhoo-light-gray:       #e8e2e3;
-$bhoo-lighter-gray:       #f5f1f2;
+$bhoo-lighter-gray:       #f5f5f5;
+$bhoo-light-gray:       darken($bhoo-lighter-gray, 10%);
 
 //== Scaffolding
 //
