@@ -9,22 +9,26 @@ img {
 .container {
 	position: relative;
 }
-.elements-nav {
+.sidebar-nav {
 	-moz-transition: top 1s ease;
 	-o-transition: top 1s ease;
 	-webkit-transition: top 1s ease;
 	transition: top 1s ease;
 }
-.elements-nav.affix-top {
+.sidebar-nav.affix-top {
 	position: static;
 }
-.elements-nav.affix {
+.sidebar-nav.affix {
 	position: fixed;
 	top: 0px;
-	width: 255px;
+	width: 205px;
 }
-.elements-nav.affix-bottom {
+.preview-nav.affix {
+	top: 20px;
+	width: 126.656px;
+}
+.sidebar-nav.affix-bottom {
 	position: fixed;
 	top: -50%;
-	width: 255px;
+	width: 205px;
 }

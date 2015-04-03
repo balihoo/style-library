@@ -1,31 +1,4 @@
-////////////////////////////////////////////
-/// These styles override bootstrap styles
-/// which are not variable based in the
-/// _variables.scss file
-////////////////////////////////////////////
 
-//== Tables
-//
-//## styles for balihoo tables
-
-.table {
-	thead {
-		tr {
-			background-color: $bhoo-light-gray;
-			th {
-				border-bottom: 2px solid darken($bhoo-light-gray, 5%);
-			}
-		}
-	}
-}
-
-//== Forms
-//
-//## Styles for balihoo forms
-
-.form-horizontal {
-
-	.control-label {
-		text-align: left;
-	}
+.bs-docs-section {
+	margin: 0 0 200px;
 }
