@@ -4,12 +4,18 @@ title: Cancel Hyperlink
 
 Use this to back out of dialogs or pages. This action will revert any changes made, throw away any selections or data entered into fields, and go back to the previous state.
 
-Preview:
+### Preview:
 
-![Cancel Hyperlink]({{site.baseurl}}/assets/img/elements/cancel.png)
+<button type="button" class="btn btn-link">
+  Cancel
+</button>
 
-Code Sample:
+
+### Code Sample:
 
 {% highlight html %}
-<!-- No Code Sample Yet -->
+<!-- Cancel Link Button -->
+<button type="button" class="btn btn-link">
+  Cancel
+</button>
 {% endhighlight %}
