@@ -27,6 +27,16 @@ hr {
 // Panel Modules
 .bh-panel {
 	border-radius: 10px 0 10px 0;
+
+	.panel-heading {
+		background-color: #59595b;
+		color: #ffffff;
+		border-radius: 10px 0 0 0;
+	}
+
+	.panel-title {
+		font-size: 30px;
+	}
 }
 
 // Metric Modules
