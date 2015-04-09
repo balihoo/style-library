@@ -6,10 +6,11 @@ Thumbnails contain a preview of a selected image. They can be clicked on to get 
 
 Preview:
 
-![Thumbnail]({{site.baseurl}}/assets/img/elements/thumbnail.png)
+<img src="holder.js/140x140" alt="thumbnail image style" class="img-thumbnail">
 
 Code Sample:
 
 {% highlight html %}
-<!-- No Code Sample Yet -->
+<!-- Thumbnail -->
+<img src="..." alt="..." class="img-thumbnail">
 {% endhighlight %}

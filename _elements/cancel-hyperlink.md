@@ -7,7 +7,7 @@ Use this to back out of dialogs or pages. This action will revert any changes ma
 ### Preview:
 
 <button type="button" class="btn btn-link">
-  Cancel
+	Cancel
 </button>
 
 
@@ -16,6 +16,6 @@ Use this to back out of dialogs or pages. This action will revert any changes ma
 {% highlight html %}
 <!-- Cancel Link Button -->
 <button type="button" class="btn btn-link">
-  Cancel
+	Cancel
 </button>
 {% endhighlight %}

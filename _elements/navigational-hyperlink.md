@@ -4,12 +4,17 @@ title: Navigation Hyperlink
 
 These hyperlinks are used in page headers or workspace headers to allow the user to move to a different page. When one of these is clicked, revert any unsaved changes, throw away any selections or data entered into fields, and navigate to the desired page.
 
-Preview:
+### Preview:
 
-![Navigational Hyperlink]({{site.baseurl}}/assets/img/elements/nav-link.png)
+<button type="button" class="btn btn-link">
+	&lt; back to tactic list
+</button>
 
-Code Sample:
+### Code Sample:
 
 {% highlight html %}
-<!-- No Code Sample Yet -->
+<!-- Button with a btn-link styles -->
+<button type="button" class="btn btn-link">
+	&lt; back to tactic list
+</button>
 {% endhighlight %}

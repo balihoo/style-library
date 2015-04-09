@@ -58,12 +58,14 @@ Use group boxes to organize content on a page so that it’s clear how fields ar
 <div class="well">
 	Basic well example.
 </div>
+
 <!-- Basic Panel Example -->
 <div class="panel panel-default bh-panel">
 	<div class="panel-body">
 		Basic panel example.
 	</div>
 </div>
+
 <!-- Panel Nested in Well Example -->
 <div class="well">
 	<div class="panel panel-default bh-panel">
@@ -72,6 +74,7 @@ Use group boxes to organize content on a page so that it’s clear how fields ar
 		</div>
 	</div>
 </div>
+
 <!-- Panel with heading Example -->
 <div class="panel panel-default bh-panel">
 	<div class="panel-heading">Panel heading without title</div>
@@ -79,6 +82,7 @@ Use group boxes to organize content on a page so that it’s clear how fields ar
 		Basic panel example.
 	</div>
 </div>
+
 <!-- Panel with title Example -->
 <div class="panel panel-default bh-panel">
 	<div class="panel-heading">
@@ -88,6 +92,7 @@ Use group boxes to organize content on a page so that it’s clear how fields ar
 		Panel content
 	</div>
 </div>
+
 <!-- Panel with title nested in Well Example -->
 <div class="well">
 	<div class="panel panel-default bh-panel">

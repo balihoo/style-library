@@ -9,16 +9,16 @@ Preview:
 <div class="row">
 	<div class="col-xs-12">
 		<button type="button" class="btn btn-default btn-lg">
-		  <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+			<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
 		</button>
 		<button type="button" class="btn btn-default">
-		  <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+			<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
 		</button>
 		<button type="button" class="btn btn-default btn-sm">
-		  <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+			<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
 		</button>
 		<button type="button" class="btn btn-default btn-xs">
-		  <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+			<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
 		</button>
 	</div>
 </div>
@@ -26,22 +26,22 @@ Preview:
 <div class="row">
 	<div class="col-xs-12">
 		<button type="button" class="btn btn-default">
-		  <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+			<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
 		</button>
 		<button type="button" class="btn btn-primary">
-		  <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+			<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
 		</button>
 		<button type="button" class="btn btn-info">
-		  <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+			<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
 		</button>
 		<button type="button" class="btn btn-warning">
-		  <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+			<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
 		</button>
 		<button type="button" class="btn btn-danger">
-		  <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+			<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
 		</button>
 		<button type="button" class="btn btn-link">
-		  <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+			<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
 		</button>
 	</div>
 </div>
@@ -51,6 +51,6 @@ Preview:
 {% highlight html %}
 <!-- Basic Butcon -->
 <button type="button" class="btn btn-default">
-  <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+	<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
 </button>
 {% endhighlight %}
