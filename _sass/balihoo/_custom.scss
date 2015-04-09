@@ -4,6 +4,16 @@ pre {
 	tab-size:      2;
 }
 
+.bh-modal-example {
+	display: block;
+	position: static;
+	opacity: 1;
+
+	.modal-dialog {
+		transform: none !important;
+	}
+}
+
 .bs-docs-section {
 	margin: 0 0 200px;
 }
