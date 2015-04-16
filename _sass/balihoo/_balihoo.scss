@@ -25,18 +25,23 @@ hr {
 ///////////////////////////
 
 // Very Long Dropdowns
-.bh-dropdown-long {
-	max-height: 500px;
-	overflow-y: auto;
-	overflow-x: hidden;
-}
+// .bh-dropdown-long {
+// 	max-height: 500px;
+// 	overflow-y: auto;
+// 	overflow-x: hidden;
+// }
 
 // Navbar Modules
 //
 // Main Balihoo navbar
 .navbar-bh-main {
   background-color: transparent;
-  border-color: #59595b;
+  border-bottom: 2px solid $text-color;
+  border-radius: 0;
+
+  .navbar-header {
+  	padding: 15px 0 30px;
+  }
 
   .navbar-brand {
     color: $navbar-default-brand-color;
@@ -52,14 +57,30 @@ hr {
   }
 
   .navbar-nav {
+  	margin-top: 30px;
+  	font-size: 18px;
+    text-transform: uppercase;
     > li > a {
       color: $navbar-default-link-color;
+      padding: 0 10px 0 8px;
+      border-left: 2px solid $text-color;
 
       &:hover,
       &:focus {
         color: $navbar-default-link-hover-color;
         background-color: $navbar-default-link-hover-bg;
       }
+    }
+    > li:first-of-type > a {
+    	border-left: none;
+    }
+    > li.bh-nav-item-small {
+    	font-size: 14px
+    }
+    > li.bh-nav-help {
+    	a {
+    		border-left: none;
+    	}
     }
     > .active > a {
       &,
@@ -102,7 +123,7 @@ hr {
       &,
       &:hover,
       &:focus {
-        background-color: $navbar-default-link-active-bg;
+        background-color: transparent;
         color: $navbar-default-link-active-color;
       }
     }
@@ -164,6 +185,17 @@ hr {
       }
     }
   }
+}
+.bh-account-nav {
+	> a {
+		font-size: 12px;
+		font-style: italic;
+		color: lighten($text-color, 25%);
+		text-transform: lowercase;
+	}
+	.navbar-bh-main .navbar-nav > & > a {
+		color: lighten($text-color, 25%);
+	}
 }
 
 // Panel Modules

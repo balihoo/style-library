@@ -104,6 +104,10 @@ $dropdown-border:    $bhoo-light-gray;
 $navbar-default-bg:              $bhoo-lighter-gray;
 $navbar-default-link-active-bg:  $bhoo-light-gray;
 $navbar-default-border:          transparent;
+$navbar-default-link-hover-color: $brand-warning;
+$navbar-default-link-active-color: darken($brand-warning, 15%);
+$navbar-default-link-active-bg: transparent;
+
 
 //== Navs
 //
