@@ -25,18 +25,17 @@ hr {
 ///////////////////////////
 
 // Very Long Dropdowns
-// .bh-dropdown-long {
-// 	max-height: 500px;
-// 	overflow-y: auto;
-// 	overflow-x: hidden;
-// }
+.bh-dropdown-long {
+	max-height: 500px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
 
 // Navbar Modules
 //
 // Main Balihoo navbar
 .navbar-bh-main {
   background-color: transparent;
-  border-bottom: 2px solid $text-color;
   border-radius: 0;
 
   .navbar-header {
