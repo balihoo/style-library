@@ -24,13 +24,6 @@ hr {
 // Balihoo Platform Modules
 ///////////////////////////
 
-// Very Long Dropdowns
-.bh-dropdown-long {
-	max-height: 500px;
-	overflow-y: auto;
-	overflow-x: hidden;
-}
-
 // Navbar Modules
 //
 // Main Balihoo navbar
@@ -39,7 +32,7 @@ hr {
   border-radius: 0;
 
   .navbar-header {
-  	padding: 15px 0 30px;
+  	padding: 15px 15px 30px;
   }
 
   .navbar-brand {
@@ -57,29 +50,17 @@ hr {
 
   .navbar-nav {
   	margin-top: 30px;
-  	font-size: 18px;
+  	font-size: 14px;
     text-transform: uppercase;
     > li > a {
       color: $navbar-default-link-color;
-      padding: 0 10px 0 8px;
-      border-left: 2px solid $text-color;
+      padding: 0 10px;
 
       &:hover,
       &:focus {
         color: $navbar-default-link-hover-color;
         background-color: $navbar-default-link-hover-bg;
       }
-    }
-    > li:first-of-type > a {
-    	border-left: none;
-    }
-    > li.bh-nav-item-small {
-    	font-size: 14px
-    }
-    > li.bh-nav-help {
-    	a {
-    		border-left: none;
-    	}
     }
     > .active > a {
       &,
@@ -158,7 +139,6 @@ hr {
     }
   }
 
-
   // Links in navbars
   //
   // Add a class to ensure links outside the navbar nav are colored correctly.
@@ -184,6 +164,47 @@ hr {
       }
     }
   }
+
+  .navbar-footer {
+  	background-color: $text-color;
+  	margin-bottom: 20px;
+
+  	.navbar-footer-heading {
+  		background-color: darken($text-color, 10%);
+  		color: #f4f0f1;
+  		font-size: 18px;
+  		padding: 10px 20px;
+  		text-transform: uppercase;
+  		letter-spacing: 1px;
+  		float: left;
+  	}
+  	.navbar-footer-content {
+  		float: left;
+  		.nav {
+  			li {
+  				float: left;
+  				a {
+  					color: #b5b9bb;
+  					padding: 13px 15px;
+
+  					&:hover {
+  						background-color: lighten($text-color, 5%);
+
+  					}
+  				}
+  			}
+  		}
+  	}
+  	@media (max-width: $grid-float-breakpoint-max) {
+  		.navbar-footer-heading {
+  			float: none;
+  			margin-top: 15px;
+  		}
+  		.navbar-footer-content {
+  			float: none;
+  		}
+  	}
+  }
 }
 .bh-account-nav {
 	> a {
@@ -196,13 +217,28 @@ hr {
 		color: lighten($text-color, 25%);
 	}
 }
+// Very Long Dropdowns
+.bh-dropdown-long {
+	max-height: 500px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+// Footer Module
+.bh-footer {
+	padding: 70px 0 30px;
+	margin-top: 30px;
+	background-image: linear-gradient(#ffffff, #f4f0f1 98%, #b5b9bb 98%); // 98% is 1px, given height is 50px
+	background-size: auto 50px;
+	background-repeat: repeat-x;
+}
 
 // Panel Modules
 .bh-panel {
 	border-radius: 10px 0 10px 0;
 
 	.panel-heading {
-		background-color: #59595b;
+		background-color: $text-color;
 		color: #ffffff;
 		border-radius: 10px 0 0 0;
 	}

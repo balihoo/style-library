@@ -14,7 +14,7 @@ layout: nomasthead
 						<span class="icon-bar"></span>
 					</button>
 					<a class="brand-logo" href="/">
-						<img src="/assets/img/balihoo-logo.png" alt="Balihoo - Local Marketing. Automated.">
+						<img src="{{ "/assets/img/balihoo-logo.png" | prepend: site.baseurl }}" alt="Balihoo - Local Marketing. Automated.">
 					</a>
 				</div><!-- /.navbar-header -->
 
@@ -22,10 +22,10 @@ layout: nomasthead
 				<div class="collapse navbar-collapse" id="bh-ham">
 					<ul class="nav navbar-nav navbar-right">
 						<li class="active"><a href="#" title="Campaigns">Campaigns</a></li>
-						<li class="bh-nav-item-small"><a href="#" title="Creatives">Creatives</a></li>
+						<!-- <li class="bh-nav-item-small"><a href="#" title="Creatives">Creatives</a></li>
 						<li class="bh-nav-item-small"><a href="#" title="Markets">Markets</a></li>
 						<li class="bh-nav-item-small"><a href="#" title="Locations">Locations</a></li>
-						<li class="bh-nav-item-small"><a href="#" title="Targets">Targets</a></li>
+						<li class="bh-nav-item-small"><a href="#" title="Targets">Targets</a></li> -->
 						<li><a href="#" title="Local Websites">Local Websites</a></li>
 						<li class="dropdown bh-account-nav">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">aharl@balihoo.com (demo) <span class="caret"></span></a>
@@ -139,6 +139,21 @@ layout: nomasthead
 					</ul>
 				</div><!-- /#bh-ham -->
 			</div><!-- /.container -->
+			<div class="navbar-footer">
+				<div class="container">
+					<div class="navbar-footer-heading">
+						Campaign Dashboard
+					</div>
+					<div class="navbar-footer-content">
+						<ul class="nav">
+							<li><a href="#">Creatives</a></li>
+							<li><a href="#">Markets</a></li>
+							<li><a href="#">Locations</a></li>
+							<li><a href="#">Targets</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</nav>
 		<!-- END FIXED NAVBAR -->
 
@@ -168,6 +183,7 @@ layout: nomasthead
 
 
 </div>
+	<div class="table-responsive">
 		<table id="campaignTable" class="table table-striped tablesorter">
 			<thead>
 				<tr>
@@ -364,42 +380,19 @@ layout: nomasthead
 
 			</tbody>
 		</table>
+		</div>
 	</div>
 
 
 
-<div class="pull-right" style="padding-right: 10px;">
-	<input id="showArchived"
-	type="checkbox"
+	<div class="pull-right" style="padding-right: 10px;">
+		<input id="showArchived"
+		type="checkbox"
 
-	onclick="controller.showArchivedClickHandler(this)"/>
-	<span>Show archived</span>
-</div>
+		onclick="controller.showArchivedClickHandler(this)"/>
+		<span>Show archived</span>
+	</div>
 
-
-	<script src='/assets/javascript/views/component/ArchivableListController.js' type="text/javascript"></script>
-	<script src='/assets/javascript/views/campaign/CampaignListController.js' type="text/javascript"></script>
-	<script>
-
-	var controller =
-	new CampaignListController(
-	{
-	'$table': $("#campaignTable"),
-	'$showArchivedCheckbox' : $('#showArchived')
-	},
-	jsRoutes.controllers.CampaignController,
-		false,
-	{
-	'archiveLink': 'Archive',
-	'unarchiveLink': 'Unarchive'
-	}
-	);
-
-	$(document).ready(function() {
-	controller.init();
-	});
-
-	</script>
 </div>
 		<!-- END PAGE CONTENT -->
 
@@ -422,26 +415,19 @@ layout: nomasthead
 </div>
 <!-- End help dialog -->
 
-		<!-- START FIXED FOOTER -->
-		<footer>
-			<div class="color-bar">
-				<div class="bar-green"></div>
-				<div class="bar-cyan"></div>
-				<div class="bar-orange"></div>
-				<div class="bar-gray"></div>
+<!-- START FIXED FOOTER -->
+<footer class="bh-footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-6">
+				<a href="http://marketing.balihoo.com/" target="Balihoo Marketing">
+					<img src="{{ "/assets/img/PBB-logo.png" | prepend: site.baseurl }}" alt="Powered by Balihoo">
+				</a>
 			</div>
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-6">
-						<a href="http://marketing.balihoo.com/" target="Balihoo Marketing">
-							<img src="/assets/images/PBB-logo.png" alt="Powered by Balihoo">
-						</a>
-					</div>
-					<div class="col-xs-6">
-						<div class="footer-right"><a href="/assets/TermsOfService.pdf" target="balihooTOS">Terms of Service</a></div>
-					</div>
-				</div>
+			<div class="col-xs-6 text-right">
+				<a href="/assets/TermsOfService.pdf" target="balihooTOS">Terms of Service</a>
 			</div>
-		</footer>
-
-		<!-- END FIXED FOOTER -->
+		</div>
+	</div>
+</footer>
+<!-- END FIXED FOOTER -->
