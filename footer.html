@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+		<div class="container">
+			<h2>Annotated Footer Source | <a href="{{ "/bac-example" | prepend: site.baseurl }}">Live Example</a></h2>
+		</div>
+
+		<hr>
+
+		<!-- START FIXED FOOTER -->
+		<footer class="bh-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6">
+						<a href="http://marketing.balihoo.com/" target="Balihoo Marketing">
+							<img src="{{ "/assets/img/PBB-logo.png" | prepend: site.baseurl }}" alt="Powered by Balihoo">
+						</a>
+					</div>
+					<div class="col-xs-6 text-right">
+						<a href="/assets/TermsOfService.pdf" target="balihooTOS">Terms of Service</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- END FIXED FOOTER -->
+
+		<!-- Start Code -->
+{% highlight html %}
+<!-- The bh-footer class wraps our footer so that we can namespace our styles and theme -->
+<footer class="bh-footer">
+	<div class="container">
+		<div class="row">
+			<!-- We use the grid column classes to colapse the footer to a single column at the xs breakpoint -->
+			<div class="col-xs-12 col-sm-6">
+				<a href="http://marketing.balihoo.com/" target="Balihoo Marketing">
+					<img src="{{ "/assets/img/PBB-logo.png" | prepend: site.baseurl }}" alt="Powered by Balihoo">
+				</a>
+			</div>
+			<div class="col-xs-12 col-sm-6 text-right">
+				<a href="/assets/TermsOfService.pdf" target="balihooTOS">Terms of Service</a>
+			</div>
+		</div>
+	</div>
+</footer>
+{% endhighlight %}
