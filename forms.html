@@ -313,15 +313,15 @@ layout: default
 				<h3 class="panel-title">Fields</h3>
 			</div>
 			<div class="panel-body">
-				<p>Description</p>
+				<p>A field comprises the input (or other relevant tag) along with labels, help text and other content that is related to a specific form control.</p>
 				<h4>Example</h4>
 				<form class="form-horizontal">
 					<!-- A field and all related tags and content are wrapped in a form group element -->
 					<div class="form-group">
 						<!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
-						<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+						<label for="input1" class="col-sm-2 control-label">Field</label>
 						<div class="col-sm-10">
-							<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+							<input type="text" class="form-control" id="input1" placeholder="Placeholder Text">
 							<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
 						</div>
 					</div>
@@ -333,9 +333,11 @@ layout: default
 	<!-- A field and all related tags and content are wrapped in a form group element -->
 	<div class="form-group">
 		<!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
-		<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+		<label for="input1" class="col-sm-2 control-label">Field</label>
 		<div class="col-sm-10">
-			<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+
+			<input type="text" class="form-control" id="input1" placeholder="Placeholder Text">
+			<!-- You may include help text -->
 			<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
 		</div>
 	</div>
@@ -360,15 +362,15 @@ layout: default
 				<h3 class="panel-title">Text</h3>
 			</div>
 			<div class="panel-body">
-				<p>Description</p>
+				<p>Text fields are single line text inputs</p>
 				<h4>Example</h4>
 				<form class="form-horizontal">
 					<!-- A field and all related tags and content are wrapped in a form group element -->
 					<div class="form-group">
 						<!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
-						<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+						<label for="input1" class="col-sm-2 control-label">Text</label>
 						<div class="col-sm-10">
-							<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+							<input type="text" class="form-control" id="input1" placeholder="Placeholder Text">
 							<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
 						</div>
 					</div>
@@ -380,9 +382,11 @@ layout: default
 	<!-- A field and all related tags and content are wrapped in a form group element -->
 	<div class="form-group">
 		<!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
-		<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+		<label for="input1" class="col-sm-2 control-label">Text</label>
 		<div class="col-sm-10">
-			<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+
+			<input type="text" class="form-control" id="input1" placeholder="Placeholder Text">
+			<!-- You may include help text -->
 			<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
 		</div>
 	</div>
@@ -391,6 +395,52 @@ layout: default
 			</div>
 		</div>
 
+
+		<!--
+		 #######
+    #    ###### #    # #####   ##   #####  ######   ##
+    #    #       #  #    #    #  #  #    # #       #  #
+    #    #####    ##     #   #    # #    # #####  #    #
+    #    #        ##     #   ###### #####  #      ######
+    #    #       #  #    #   #    # #   #  #      #    #
+    #    ###### #    #   #   #    # #    # ###### #    #
+
+		 -->
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">Textarea</h3>
+					</div>
+					<div class="panel-body">
+						<p>Textarea fields are multi-line text inputs</p>
+						<h4>Example</h4>
+						<form class="form-horizontal">
+							<!-- A field and all related tags and content are wrapped in a form group element -->
+							<div class="form-group">
+								<!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
+								<label for="textarea1" class="col-sm-2 control-label">Textarea</label>
+								<div class="col-sm-10">
+									<textarea class="form-control" rows="3" id="textarea1" placeholder="Placeholder"></textarea>
+									<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+								</div>
+							</div>
+						</form>
+						<h4>Sample Code</h4>
+<!-- Start Code -->
+{% highlight html %}
+<form class="form-horizontal">
+	<!-- A field and all related tags and content are wrapped in a form group element -->
+	<div class="form-group">
+		<!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
+		<label for="textarea1" class="col-sm-2 control-label">Textarea</label>
+		<div class="col-sm-10">
+			<textarea class="form-control" rows="3" id="textarea1" placeholder="Placeholder"></textarea>
+			<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+		</div>
+	</div>
+</form>
+{% endhighlight %}
+					</div>
+				</div>
 
 
 <!--
