@@ -7,20 +7,25 @@ layout: default
 		</div>
 
 		<hr>
+
 <!--
-			Form Wrapper
-			Groups
-			Fields
-			Text
-			Bool
-			Select
-			Multi Select
-			Image
-			Tree
-			Color
-			Info
-			Time
- -->
+ #######
+ #        ####  #####  #    #
+ #       #    # #    # ##  ##
+ #####   #    # #    # # ## #
+ #       #    # #####  #    #
+ #       #    # #   #  #    #
+ #        ####  #    # #    #
+
+  #####
+ #     #  ####  #    # #####   ##   # #    # ###### #####   ####
+ #       #    # ##   #   #    #  #  # ##   # #      #    # #
+ #       #    # # #  #   #   #    # # # #  # #####  #    #  ####
+ #       #    # #  # #   #   ###### # #  # # #      #####       #
+ #     # #    # #   ##   #   #    # # #   ## #      #   #  #    #
+  #####   ####  #    #   #   #    # # #    # ###### #    #  ####
+
+-->
 		<div class="panel panel-default">
 		  <div class="panel-heading">
 		    <h3 class="panel-title">Form Containers</h3>
@@ -98,7 +103,16 @@ layout: default
 
 
 
+<!--
+  #####
+ #     # #####   ####  #    # #####   ####
+ #       #    # #    # #    # #    # #
+ #  #### #    # #    # #    # #    #  ####
+ #     # #####  #    # #    # #####       #
+ #     # #   #  #    # #    # #      #    #
+  #####  #    #  ####   ####  #       ####
 
+-->
 		<div class="panel panel-default">
 		  <div class="panel-heading">
 		    <h3 class="panel-title">Groups</h3>
@@ -284,7 +298,16 @@ layout: default
 		</div>
 
 
+<!--
+ #######
+ #       # ###### #      #####   ####
+ #       # #      #      #    # #
+ #####   # #####  #      #    #  ####
+ #       # #      #      #    #      #
+ #       # #      #      #    # #    #
+ #       # ###### ###### #####   ####
 
+ -->
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				<h3 class="panel-title">Fields</h3>
@@ -292,7 +315,437 @@ layout: default
 			<div class="panel-body">
 				<p>Description</p>
 				<h4>Example</h4>
-				<!-- The form tag is given a class of 'form-horizontal' for the left aligned layout -->
+				<form class="form-horizontal">
+					<!-- A field and all related tags and content are wrapped in a form group element -->
+					<div class="form-group">
+						<!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
+						<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+						<div class="col-sm-10">
+							<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+							<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+						</div>
+					</div>
+				</form>
+				<h4>Sample Code</h4>
+<!-- Start Code -->
+{% highlight html %}
+<form class="form-horizontal">
+	<!-- A field and all related tags and content are wrapped in a form group element -->
+	<div class="form-group">
+		<!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
+		<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+		<div class="col-sm-10">
+			<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+			<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+		</div>
+	</div>
+</form>
+{% endhighlight %}
+			</div>
+		</div>
+
+
+<!--
+ #######
+    #    ###### #    # #####
+    #    #       #  #    #
+    #    #####    ##     #
+    #    #        ##     #
+    #    #       #  #    #
+    #    ###### #    #   #
+
+ -->
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Text</h3>
+			</div>
+			<div class="panel-body">
+				<p>Description</p>
+				<h4>Example</h4>
+				<form class="form-horizontal">
+					<!-- A field and all related tags and content are wrapped in a form group element -->
+					<div class="form-group">
+						<!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
+						<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+						<div class="col-sm-10">
+							<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+							<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+						</div>
+					</div>
+				</form>
+				<h4>Sample Code</h4>
+<!-- Start Code -->
+{% highlight html %}
+<form class="form-horizontal">
+	<!-- A field and all related tags and content are wrapped in a form group element -->
+	<div class="form-group">
+		<!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
+		<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+		<div class="col-sm-10">
+			<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+			<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+		</div>
+	</div>
+</form>
+{% endhighlight %}
+			</div>
+		</div>
+
+
+
+<!--
+ ######
+ #     #  ####   ####  #
+ #     # #    # #    # #
+ ######  #    # #    # #
+ #     # #    # #    # #
+ #     # #    # #    # #
+ ######   ####   ####  ######
+
+ -->
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Bool</h3>
+			</div>
+			<div class="panel-body">
+				<p>Description</p>
+				<h4>Example</h4>
+				<form class="form-horizontal">
+					<!-- A field and all related tags and content are wrapped in a form group element -->
+					<div class="form-group">
+						<!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
+						<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+						<div class="col-sm-10">
+							<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+							<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+						</div>
+					</div>
+				</form>
+				<h4>Sample Code</h4>
+<!-- Start Code -->
+{% highlight html %}
+<form class="form-horizontal">
+	<!-- A field and all related tags and content are wrapped in a form group element -->
+	<div class="form-group">
+		<!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
+		<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+		<div class="col-sm-10">
+			<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+			<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+		</div>
+	</div>
+</form>
+{% endhighlight %}
+			</div>
+		</div>
+
+
+
+<!--
+  #####
+ #     # ###### #      ######  ####  #####
+ #       #      #      #      #    #   #
+  #####  #####  #      #####  #        #
+       # #      #      #      #        #
+ #     # #      #      #      #    #   #
+  #####  ###### ###### ######  ####    #
+
+ -->
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Select</h3>
+			</div>
+			<div class="panel-body">
+				<p>Description</p>
+				<h4>Example</h4>
+				<form class="form-horizontal">
+					<!-- A field and all related tags and content are wrapped in a form group element -->
+					<div class="form-group">
+						<!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
+						<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+						<div class="col-sm-10">
+							<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+							<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+						</div>
+					</div>
+				</form>
+				<h4>Sample Code</h4>
+<!-- Start Code -->
+{% highlight html %}
+<form class="form-horizontal">
+	<!-- A field and all related tags and content are wrapped in a form group element -->
+	<div class="form-group">
+		<!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
+		<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+		<div class="col-sm-10">
+			<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+			<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+		</div>
+	</div>
+</form>
+{% endhighlight %}
+			</div>
+		</div>
+
+
+
+
+<!--
+ #     #                              #####
+ ##   ## #    # #      ##### #       #     # ###### #      ######  ####  #####
+ # # # # #    # #        #   #       #       #      #      #      #    #   #
+ #  #  # #    # #        #   # #####  #####  #####  #      #####  #        #
+ #     # #    # #        #   #             # #      #      #      #        #
+ #     # #    # #        #   #       #     # #      #      #      #    #   #
+ #     #  ####  ######   #   #        #####  ###### ###### ######  ####    #
+
+ -->
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Multi-Select</h3>
+			</div>
+			<div class="panel-body">
+				<p>Description</p>
+				<h4>Example</h4>
+				<form class="form-horizontal">
+					<!-- A field and all related tags and content are wrapped in a form group element -->
+					<div class="form-group">
+						<!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
+						<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+						<div class="col-sm-10">
+							<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+							<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+						</div>
+					</div>
+				</form>
+				<h4>Sample Code</h4>
+<!-- Start Code -->
+{% highlight html %}
+<form class="form-horizontal">
+	<!-- A field and all related tags and content are wrapped in a form group element -->
+	<div class="form-group">
+		<!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
+		<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+		<div class="col-sm-10">
+			<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+			<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+		</div>
+	</div>
+</form>
+{% endhighlight %}
+			</div>
+		</div>
+
+
+<!--
+ ###
+  #  #    #   ##    ####  ######
+  #  ##  ##  #  #  #    # #
+  #  # ## # #    # #      #####
+  #  #    # ###### #  ### #
+  #  #    # #    # #    # #
+ ### #    # #    #  ####  ######
+
+ -->
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Image</h3>
+			</div>
+			<div class="panel-body">
+				<p>Description</p>
+				<h4>Example</h4>
+				<form class="form-horizontal">
+					<!-- A field and all related tags and content are wrapped in a form group element -->
+					<div class="form-group">
+						<!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
+						<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+						<div class="col-sm-10">
+							<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+							<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+						</div>
+					</div>
+				</form>
+				<h4>Sample Code</h4>
+<!-- Start Code -->
+{% highlight html %}
+<form class="form-horizontal">
+	<!-- A field and all related tags and content are wrapped in a form group element -->
+	<div class="form-group">
+		<!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
+		<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+		<div class="col-sm-10">
+			<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+			<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+		</div>
+	</div>
+</form>
+{% endhighlight %}
+			</div>
+		</div>
+
+
+
+<!--
+ #######
+    #    #####  ###### ######
+    #    #    # #      #
+    #    #    # #####  #####
+    #    #####  #      #
+    #    #   #  #      #
+    #    #    # ###### ######
+
+ -->
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Tree</h3>
+			</div>
+			<div class="panel-body">
+				<p>Description</p>
+				<h4>Example</h4>
+				<form class="form-horizontal">
+					<!-- A field and all related tags and content are wrapped in a form group element -->
+					<div class="form-group">
+						<!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
+						<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+						<div class="col-sm-10">
+							<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+							<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+						</div>
+					</div>
+				</form>
+				<h4>Sample Code</h4>
+<!-- Start Code -->
+{% highlight html %}
+<form class="form-horizontal">
+	<!-- A field and all related tags and content are wrapped in a form group element -->
+	<div class="form-group">
+		<!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
+		<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+		<div class="col-sm-10">
+			<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+			<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+		</div>
+	</div>
+</form>
+{% endhighlight %}
+			</div>
+		</div>
+
+
+
+<!--
+  #####
+ #     #  ####  #       ####  #####
+ #       #    # #      #    # #    #
+ #       #    # #      #    # #    #
+ #       #    # #      #    # #####
+ #     # #    # #      #    # #   #
+  #####   ####  ######  ####  #    #
+
+ -->
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Color</h3>
+			</div>
+			<div class="panel-body">
+				<p>Description</p>
+				<h4>Example</h4>
+				<form class="form-horizontal">
+					<!-- A field and all related tags and content are wrapped in a form group element -->
+					<div class="form-group">
+						<!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
+						<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+						<div class="col-sm-10">
+							<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+							<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+						</div>
+					</div>
+				</form>
+				<h4>Sample Code</h4>
+<!-- Start Code -->
+{% highlight html %}
+<form class="form-horizontal">
+	<!-- A field and all related tags and content are wrapped in a form group element -->
+	<div class="form-group">
+		<!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
+		<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+		<div class="col-sm-10">
+			<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+			<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+		</div>
+	</div>
+</form>
+{% endhighlight %}
+			</div>
+		</div>
+
+
+
+<!--
+ ###
+  #  #    # ######  ####
+  #  ##   # #      #    #
+  #  # #  # #####  #    #
+  #  #  # # #      #    #
+  #  #   ## #      #    #
+ ### #    # #       ####
+
+ -->
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Info</h3>
+			</div>
+			<div class="panel-body">
+				<p>Description</p>
+				<h4>Example</h4>
+				<form class="form-horizontal">
+					<!-- A field and all related tags and content are wrapped in a form group element -->
+					<div class="form-group">
+						<!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
+						<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+						<div class="col-sm-10">
+							<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+							<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+						</div>
+					</div>
+				</form>
+				<h4>Sample Code</h4>
+<!-- Start Code -->
+{% highlight html %}
+<form class="form-horizontal">
+	<!-- A field and all related tags and content are wrapped in a form group element -->
+	<div class="form-group">
+		<!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
+		<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+		<div class="col-sm-10">
+			<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+			<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+		</div>
+	</div>
+</form>
+{% endhighlight %}
+			</div>
+		</div>
+
+
+
+<!--
+ #######
+    #    # #    # ######
+    #    # ##  ## #
+    #    # # ## # #####
+    #    # #    # #
+    #    # #    # #
+    #    # #    # ######
+
+ -->
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Time</h3>
+			</div>
+			<div class="panel-body">
+				<p>Description</p>
+				<h4>Example</h4>
 				<form class="form-horizontal">
 					<!-- A field and all related tags and content are wrapped in a form group element -->
 					<div class="form-group">
