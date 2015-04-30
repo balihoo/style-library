@@ -57,6 +57,9 @@ $icon-font-path: "../fonts/bootstrap/";
 @import "bootstrap/utilities";
 @import "bootstrap/responsive-utilities";
 
+// Additional Vendor CSS
+@import "bootstrap-timepicker";
+
 // Custom CSS
 @import "balihoo/balihoo";
 @import "balihoo/custom";
