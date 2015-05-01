@@ -747,15 +747,25 @@ layout: default
 				<h4>Example</h4>
 				<form class="form-horizontal">
 					<!-- A field and all related tags and content are wrapped in a form group element -->
-					<div class="form-group">
+					<div class="form-group bh-form-color">
 						<!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
-						<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+						<label for="inputEmail3" class="col-sm-2 control-label">Color Picker</label>
 						<div class="col-sm-10">
-							<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+							<input type="text" id="color1" class="form-control">
 							<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
 						</div>
 					</div>
 				</form>
+				<script>
+					$(function() {
+						$("#color1").spectrum({
+							color: "#f00",
+							preferredFormat: "hex",
+							showInput: true,
+							allowEmpty: true
+						});
+					});
+				</script>
 				<h4>Sample Code</h4>
 <!-- Start Code -->
 {% highlight html %}
@@ -833,7 +843,7 @@ layout: default
 				<h3 class="panel-title">Time</h3>
 			</div>
 			<div class="panel-body">
-				<p>Description</p>
+				<p>The time picker uses http://acpmasquerade.github.io/bootstrap3-timepicker2/ which is based on jdewits time picker but ported to bootstrap 3.</p>
 				<h4>Example</h4>
 				<form class="form-horizontal">
 					<!-- A field and all related tags and content are wrapped in a form group element -->
@@ -863,6 +873,11 @@ layout: default
 		<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line .</span>
 	</div>
 </div>
+<script>
+	$(function() {
+		$('#timepicker1').timepicker();
+	});
+</script>
 {% endhighlight %}
 			</div>
 		</div>

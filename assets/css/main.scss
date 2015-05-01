@@ -1,3 +1,6 @@
+---
+---
+
 body {
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -5,6 +8,24 @@ body {
 }
 img {
 	max-width: 100%;
+}
+pre {
+	-moz-tab-size: 2;
+	-o-tab-size:   2;
+	tab-size:      2;
+}
+
+.bh-modal-example {
+	display: block;
+	position: static;
+	opacity: 1;
+
+	.modal-dialog {
+		transform: none !important;
+	}
+}
+.bs-docs-section {
+	margin: 0 0 200px;
 }
 .container {
 	position: relative;
