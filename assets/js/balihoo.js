@@ -1,5 +1,3 @@
-"use strict";
-
 ////////////////////////////
 /// Requirments:
 /// 	jquery
@@ -10,15 +8,11 @@ $(function() { // Document Ready
 
 	///////////////////
 	/// Timepicker Field
-	///
-	///
-	$('.bh-timepicker').timepicker();
+	$('.bh--timepicker').timepicker();
 
 	///////////////////
 	/// Colorpicker Field
-	///
-	///
-	$('.bh-colorpicker').spectrum({
+	$('.bh--colorpicker').spectrum({
 		preferredFormat: "hex",
 		showInput: true,
 		allowEmpty: true
@@ -26,13 +20,12 @@ $(function() { // Document Ready
 
 	///////////////////
 	/// Image Field
-	///
-	///
-	$('.bh-form-image .carousel .item').each(function(){
+	$('.bh--form-image .carousel .item').each(function(){
 		var next = $(this).next();
 		if (!next.length) {
 			next = $(this).siblings(':first');
 		}
+
 		next.children(':first-child').clone().appendTo($(this));
 
 		if (next.next().length>0) {
@@ -42,6 +35,6 @@ $(function() { // Document Ready
 			$(this).siblings(':first').children(':first-child').clone().appendTo($(this));
 		}
 	});
-	$('.bh-form-image .carousel').carousel('pause');
+	$('.bh--form-image .carousel').carousel('pause');
 
 });

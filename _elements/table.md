@@ -93,7 +93,7 @@ Tables can have a title, header buttons, and row buttons. Not all columns need t
 
 ### Preview
 
-<div class="panel panel-default bh-panel">
+<div class="panel panel-default bh--panel">
 	<div class="panel-heading">
 		<h3 class="panel-title">Table in Panel</h3>
 	</div>
@@ -145,7 +145,7 @@ Tables can have a title, header buttons, and row buttons. Not all columns need t
 
 {% highlight html %}
 <!-- Table in a panel -->
-<div class="panel panel-default bh-panel">
+<div class="panel panel-default bh--panel">
 	<div class="panel-heading">
 		<h3 class="panel-title">Table in Panel</h3>
 	</div>

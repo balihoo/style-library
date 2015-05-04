@@ -210,7 +210,7 @@ hr {
   	}
   }
 }
-.bh-account-nav {
+.bh--account-nav {
 	> a {
 		font-size: 12px;
 		font-style: italic;
@@ -222,14 +222,14 @@ hr {
 	}
 }
 // Very Long Dropdowns
-.bh-dropdown-long {
+.bh--dropdown-long {
 	max-height: 500px;
 	overflow-y: auto;
 	overflow-x: hidden;
 }
 
 // Footer Module
-.bh-footer {
+.bh--footer {
 	padding: 70px 0 30px;
 	margin-top: 30px;
 	background-image: linear-gradient(#ffffff, #f4f0f1 98%, #b5b9bb 98%); // 98% is 1px, given height is 50px
@@ -238,7 +238,7 @@ hr {
 }
 
 // Panel Modules
-.bh-panel {
+.bh--panel {
 	border-radius: 10px 0 10px 0;
 
 	.panel-heading {
@@ -253,7 +253,7 @@ hr {
 }
 
 // Metric Modules
-.bh-metric {
+.bh--metric {
   text-align: left;
   font-size: 20px;
   color: #111;
@@ -266,7 +266,7 @@ hr {
     text-indent: 4px;
   }
 
-  .bh-metric-label {
+  .bh--metric-label {
     font-size: 12px;
     color: #888;
     text-transform: uppercase;
@@ -306,37 +306,37 @@ hr {
       width: 20px;
     }
   }
-  &.bh-metric-cost {
+  &.bh--metric-cost {
     &:before {
       content: '\e148';
       background-color: $brand-danger;
     }
   }
-  &.bh-metric-impressions {
+  &.bh--metric-impressions {
     &:before {
       content: '\e105';
       background-color: $brand-primary;
     }
   }
-  &.bh-metric-clicks {
+  &.bh--metric-clicks {
     &:before {
       content: '\e129';
       background-color: $brand-success;
     }
   }
-  &.bh-metric-ctr {
+  &.bh--metric-ctr {
     &:before {
       content: '\e095';
       background-color: $brand-info;
     }
   }
-  &.bh-metric-open {
+  &.bh--metric-open {
     &:before {
       content: '\e105';
       background-color: $brand-info;
     }
   }
-  &.bh-metric-sent {
+  &.bh--metric-sent {
     &:before {
       content: '\e171';
       background-color: $brand-warning;
@@ -348,7 +348,7 @@ hr {
 //////////////////////////
 /// Forms
 ///
-.bh-form-color {
+.bh--form-color {
 	.sp-replacer {
 		border-radius: 4px;
 		border: 1px solid gainsboro;
@@ -414,7 +414,7 @@ hr {
 
 
 // Image Field
-.bh-form-image {
+.bh--form-image {
 
 	// Bootstrap Carousel Modifications
 	.carousel-inner {
@@ -434,6 +434,10 @@ hr {
 	}
 
 	.item {
+
+		img {
+			max-height: 168px;
+		}
 
 		&:not(.prev) {
 			visibility: visible;
@@ -466,6 +470,15 @@ hr {
 			transform: translate3d(0, 0, 0);
 			left: 0;
 		}
+	}
+
+	.carousel-control {
+		width: 5%;
+	}
+
+	// Image control
+	.bh--form-image-control {
+		margin: 10px 0;
 	}
 }
 

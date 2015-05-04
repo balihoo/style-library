@@ -9,7 +9,7 @@ Modal dialogs pop up under the following conditions, and a lightbox effect grays
 
 ### Preview:
 
-<div class="modal fade bh-modal-example">
+<div class="modal fade bh--modal-example">
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<div class="modal-header">

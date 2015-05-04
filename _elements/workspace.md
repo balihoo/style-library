@@ -6,7 +6,7 @@ This is how the main workspace looks on BAC pages. The title of the page or comp
 
 ### Preview:
 
-<div class="panel panel-default bh-panel">
+<div class="panel panel-default bh--panel">
 	<div class="panel-heading clearfix">
 		<h3 class="panel-title pull-left">Workspace Title</h3>
 		<button type="button" class="btn btn-default pull-right">
@@ -64,7 +64,7 @@ This is how the main workspace looks on BAC pages. The title of the page or comp
 
 {% highlight html %}
 <!-- Workspace Module -->
-<div class="panel panel-default bh-panel">
+<div class="panel panel-default bh--panel">
 	<div class="panel-heading clearfix">
 		<h3 class="panel-title pull-left">Workspace Title</h3>
 		<button type="button" class="btn btn-default pull-right">

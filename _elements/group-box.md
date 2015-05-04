@@ -10,28 +10,28 @@ Use group boxes to organize content on a page so that it’s clear how fields ar
 	Basic well example.
 </div>
 
-<div class="panel panel-default bh-panel">
+<div class="panel panel-default bh--panel">
 	<div class="panel-body">
 		Basic panel example.
 	</div>
 </div>
 
 <div class="well">
-	<div class="panel panel-default bh-panel">
+	<div class="panel panel-default bh--panel">
 		<div class="panel-body">
 			Panel nested in well.
 		</div>
 	</div>
 </div>
 
-<div class="panel panel-default bh-panel">
+<div class="panel panel-default bh--panel">
 	<div class="panel-heading">Panel heading without title</div>
 	<div class="panel-body">
 		Basic panel example.
 	</div>
 </div>
 
-<div class="panel panel-default bh-panel">
+<div class="panel panel-default bh--panel">
 	<div class="panel-heading">
 		<h3 class="panel-title">Panel title</h3>
 	</div>
@@ -41,7 +41,7 @@ Use group boxes to organize content on a page so that it’s clear how fields ar
 </div>
 
 <div class="well">
-	<div class="panel panel-default bh-panel">
+	<div class="panel panel-default bh--panel">
 		<div class="panel-heading">
 			<h3 class="panel-title">Panel title</h3>
 		</div>
@@ -60,7 +60,7 @@ Use group boxes to organize content on a page so that it’s clear how fields ar
 </div>
 
 <!-- Basic Panel Example -->
-<div class="panel panel-default bh-panel">
+<div class="panel panel-default bh--panel">
 	<div class="panel-body">
 		Basic panel example.
 	</div>
@@ -68,7 +68,7 @@ Use group boxes to organize content on a page so that it’s clear how fields ar
 
 <!-- Panel Nested in Well Example -->
 <div class="well">
-	<div class="panel panel-default bh-panel">
+	<div class="panel panel-default bh--panel">
 		<div class="panel-body">
 			Panel nested in well.
 		</div>
@@ -76,7 +76,7 @@ Use group boxes to organize content on a page so that it’s clear how fields ar
 </div>
 
 <!-- Panel with heading Example -->
-<div class="panel panel-default bh-panel">
+<div class="panel panel-default bh--panel">
 	<div class="panel-heading">Panel heading without title</div>
 	<div class="panel-body">
 		Basic panel example.
@@ -84,7 +84,7 @@ Use group boxes to organize content on a page so that it’s clear how fields ar
 </div>
 
 <!-- Panel with title Example -->
-<div class="panel panel-default bh-panel">
+<div class="panel panel-default bh--panel">
 	<div class="panel-heading">
 		<h3 class="panel-title">Panel title</h3>
 	</div>
@@ -95,7 +95,7 @@ Use group boxes to organize content on a page so that it’s clear how fields ar
 
 <!-- Panel with title nested in Well Example -->
 <div class="well">
-	<div class="panel panel-default bh-panel">
+	<div class="panel panel-default bh--panel">
 		<div class="panel-heading">
 			<h3 class="panel-title">Panel title</h3>
 		</div>
