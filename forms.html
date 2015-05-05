@@ -809,7 +809,8 @@ layout: default
 							</div><!-- /.carousel -->
 							<div class="bh--form-image-controls">
 								<input type="file" id="image1" class="form-control hidden">
-								<button type="button" class="btn btn-default bh--form-image-control-upload">Upload Image</button>
+								<button type="button" class="btn btn-default">Upload Image</button>
+								<button type="button" class="btn btn-link">Clear</button>
 							</div>
 						</div>
 					</div>
@@ -979,14 +980,50 @@ layout: default
 		</div><!-- /.carousel -->
 		<div class="bh--form-image-controls">
 			<input type="file" id="image1" class="form-control hidden">
-			<button type="button" class="btn btn-default bh--form-image-control-upload">Upload Image</button>
+			<button type="button" class="btn btn-default">Upload Image</button>
+			<button type="button" class="btn btn-link">Clear</button>
+		</div>
+	</div>
+</div>
+{% endhighlight %}
+
+			<form class="form-horizontal bh--form-example">
+				<!-- A field and all related tags and content are wrapped in a form group element -->
+				<div class="form-group bh--form-image">
+					<!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
+					<label for="image1" class="col-sm-2 control-label">Image (No Options)</label>
+					<div class="col-sm-10">
+						<div class="preview">
+							<img src="" alt="No Image Loaded Yet">
+						</div>
+						<div class="controls">
+							<input type="file" id="image1" class="form-control hidden">
+							<button type="button" class="btn btn-default">Upload Image</button>
+							<button type="button" class="btn btn-link">Clear</button>
+						</div>
+					</div>
+				</div>
+			</form>
+<!-- Start Code -->
+{% highlight html %}
+<!-- A field and all related tags and content are wrapped in a form group element -->
+<div class="form-group bh--form-image">
+	<!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
+	<label for="image1" class="col-sm-2 control-label">Image (No Options)</label>
+	<div class="col-sm-10">
+		<div class="preview">
+			<img src="" alt="No Image Loaded Yet">
+		</div>
+		<div class="controls">
+			<input type="file" id="image1" class="form-control hidden">
+			<button type="button" class="btn btn-default">Upload Image</button>
+			<button type="button" class="btn btn-link">Clear</button>
 		</div>
 	</div>
 </div>
 {% endhighlight %}
 			</div>
 		</div>
-
 
 
 <!--

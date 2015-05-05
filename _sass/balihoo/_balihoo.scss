@@ -418,6 +418,16 @@ hr {
 
 	.carousel {
 		margin: 0 0 15px;
+
+		.item {
+
+			img {
+				width: 100%;
+				height: 100px;
+				object-fit: cover;
+				margin: 10px 0;
+			}
+		}
 	}
 
 	.carousel-inner {
@@ -427,17 +437,8 @@ hr {
 		box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 	}
 
-	.item {
-
-		img {
-			width: 100%;
-			height: 100px;
-			object-fit: cover;
-		}
-	}
-
 	.carousel-caption {
-		bottom: -20px;
+		bottom: -15px;
 		font-size: 0.9em;
 		line-height: 1;
 	}
@@ -460,6 +461,27 @@ hr {
 
 		&.left, &.right {
 			background-image: none;
+		}
+	}
+
+
+	.preview {
+		height: 100px;
+		width: 100px;
+		text-align: center;
+		border: 1px solid gainsboro;
+		border-radius: 4px;
+		-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+		box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+		padding: 10px;
+		margin-bottom: 15px;
+
+		img {
+			height: 100%;
+			width: 100%;
+			object-clip: cover;
+			color: #eee;
+			background: #ccc;
 		}
 	}
 
