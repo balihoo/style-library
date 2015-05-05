@@ -64,11 +64,11 @@ layout: default
 				<h4>Sample Code</h4>
 <!-- Start Code -->
 {% highlight html %}
-<!-- The form tag is given a class of 'form-horizontal' for the left aligned layout -->
+<!-- The form tag is given a class of 'form-horizontal' for the left aligned layout. -->
 <form class="form-horizontal">
-	<!-- A field and all related tags and content are wrapped in a form group element -->
+	<!-- A field and all related tags and content are wrapped in a form group element. -->
 	<div class="form-group">
-		<!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
+		<!-- Labels and field are set using bootstrap grid classes such as col-sm-2.  -->
 		<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
 		<div class="col-sm-8">
 			<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
@@ -81,7 +81,7 @@ layout: default
 		</div>
 	</div>
 	<div class="form-group">
-		<!-- Fields with no label use an offset so that they align with the other fields -->
+		<!-- Fields with no label use an offset so that they align with the other fields. -->
 		<div class="col-sm-offset-2 col-sm-8">
 			<div class="checkbox">
 				<label>
@@ -208,7 +208,7 @@ layout: default
 <!-- Start Code -->
 {% highlight html %}
 <form class="form-horizontal">
-	<!-- Groups use the fieldset tag and are wrapped in a 'well' div -->
+	<!-- Groups use the fieldset tag and are wrapped in a bootstrap well element. -->
 	<div class="well">
 		<fieldset>
 			<!-- Group titles use the legend tag -->
@@ -227,6 +227,7 @@ layout: default
 			</div>
 		</fieldset>
 	</div>
+	<!-- A second group. -->
 	<div class="well">
 		<fieldset>
 			<legend>Another Group</legend>
@@ -271,6 +272,7 @@ layout: default
 			</div>
 		</fieldset>
 	</div>
+	<!-- This field is not in a group. -->
 	<div class="form-group">
 		<label for="howyoufindme" class="col-sm-2 control-label">How did you discover us? I am not a part of a group :-(</label>
 		<div class="col-sm-8">
@@ -328,14 +330,12 @@ layout: default
 				<h4>Sample Code</h4>
 <!-- Start Code -->
 {% highlight html %}
-<!-- A field and all related tags and content are wrapped in a form group element -->
 <div class="form-group">
-	<!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
 	<label for="input1" class="col-sm-2 control-label">Text</label>
 	<div class="col-sm-8">
-
-		<input type="text" class="form-control" id="input1" placeholder="Placeholder Text">
-		<!-- You may include help text -->
+		<!-- Text fields use a basic html text input with a from-control class. -->
+		<input type="text" class="form-control" id="input1" placeholder="Placeholder Text"><!-- Placeholder text should be dynamic if supplied -->
+		<!-- You may include help text. -->
 		<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
 	</div>
 </div><!-- /.form-group -->
@@ -375,12 +375,12 @@ layout: default
 						<h4>Sample Code</h4>
 <!-- Start Code -->
 {% highlight html %}
-<!-- A field and all related tags and content are wrapped in a form group element -->
 <div class="form-group">
-	<!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
 	<label for="textarea1" class="col-sm-2 control-label">Textarea</label>
 	<div class="col-sm-8">
-		<textarea class="form-control" rows="3" id="textarea1" placeholder="Placeholder"></textarea>
+		<!-- Text fields use a basic html textarea with a from-control class. -->
+		<textarea class="form-control" rows="3" id="textarea1" placeholder="Placeholder"></textarea><!-- Placeholder text should be dynamic if supplied. -->
+		<!-- You may include help text. -->
 		<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
 	</div>
 </div>
@@ -407,9 +407,9 @@ layout: default
 				<p>Description</p>
 				<hr>
 				<form class="form-horizontal bh--form-example">
-					<!-- A field and all related tags and content are wrapped in a form group element -->
+					<!-- A field and all related tags and content are wrapped in a form group element. -->
 					<div class="form-group">
-						<!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
+						<!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens. -->
 						<div class="col-sm-8 col-sm-offset-2">
 							<div class="checkbox">
 							<label>
@@ -423,15 +423,17 @@ layout: default
 				<h4>Sample Code</h4>
 <!-- Start Code -->
 {% highlight html %}
-<!-- A field and all related tags and content are wrapped in a form group element -->
 <div class="form-group">
-	<!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens. Checkboxes need an offset since the label is displayed to the right of the checkbox rather than to the left of the field  -->
+	<!-- Checkboxes need an offset since the label is displayed to the right of the checkbox rather than to the left of the field. -->
 	<div class="col-sm-8 col-sm-offset-2">
+		<!-- The bool field is wrapped in a div with the class checkbox. -->
 		<div class="checkbox">
-		<label>
-			<input type="checkbox" id="blankCheckbox" value="option1" aria-label="..."> Bool
-		</label>
+			<label>
+				<!-- The input is included inside the label tag. -->
+				<input type="checkbox" id="blankCheckbox" value="option1"> Bool
+			</label>
 		</div>
+		<!-- You may include help text. -->
 		<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
 	</div>
 </div>
@@ -460,9 +462,9 @@ layout: default
 				<hr>
 				<p>If a default option is provided then the single select field will display as radios.</p>
 				<form class="form-horizontal bh--form-example">
-					<!-- A field and all related tags and content are wrapped in a form group element -->
+					<!-- A field and all related tags and content are wrapped in a form group element. -->
 					<div class="form-group">
-						<!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
+						<!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens. -->
 						<div class="col-sm-8 col-sm-offset-2">
 							<label class="radio">
 								<input type="radio" name="radioOptions" id="radio1" value="option1"> option 1
@@ -473,17 +475,19 @@ layout: default
 							<label class="radio">
 								<input type="radio" name="radioOptions" id="radio3" value="option3"> option 3
 							</label>
+							<!-- You may include help text. -->
+							<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
 						</div>
 					</div>
 				</form>
 				<h4>Sample Code 1</h4>
 <!-- Start Code -->
 {% highlight html %}
-<!-- A field and all related tags and content are wrapped in a form group element -->
 <div class="form-group">
-	<!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
+	<!-- Radios are offset since there is no label visible to the left of the field. -->
 	<div class="col-sm-8 col-sm-offset-2">
 		<label class="radio">
+			<!-- The input tag is included inside the label tag. -->
 			<input type="radio" name="radioOptions" id="radio1" value="option1"> option 1
 		</label>
 		<label class="radio">
@@ -492,15 +496,17 @@ layout: default
 		<label class="radio">
 			<input type="radio" name="radioOptions" id="radio3" value="option3"> option 3
 		</label>
+		<!-- You may include help text. -->
+		<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
 	</div>
 </div>
 {% endhighlight %}
 <hr>
 <p>If no default option is provided then the single select field will display as a form dropdown.</p>
 <form class="form-horizontal bh--form-example">
-	<!-- A field and all related tags and content are wrapped in a form group element -->
+	<!-- A field and all related tags and content are wrapped in a form group element. -->
 	<div class="form-group">
-		<!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
+		<!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens.  -->
 		<label for="select1" class="col-sm-2">Single Select Dropdown</label>
 		<div id="select1" class="col-sm-8">
 			<select class="form-control">
@@ -510,17 +516,18 @@ layout: default
 				<option>Option 4</option>
 				<option>Option 5</option>
 			</select>
+			<!-- You may include help text. -->
+			<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
 		</div>
 	</div>
 </form>
 <h4>Sample Code 2</h4>
 <!-- Start Code -->
 {% highlight html %}
-<!-- A field and all related tags and content are wrapped in a form group element -->
 <div class="form-group">
-	<!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
 	<label for="select1" class="col-sm-2">Single Select Dropdown</label>
 	<div id="select1" class="col-sm-8">
+		<!-- A form dropdown is marked up using a select tag. Options are provided as a part of the select tag markup. -->
 		<select class="form-control">
 			<option>Option 1</option>
 			<option>Option 2</option>
@@ -528,6 +535,8 @@ layout: default
 			<option>Option 4</option>
 			<option>Option 5</option>
 		</select>
+		<!-- You may include help text. -->
+		<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
 	</div>
 </div>
 {% endhighlight %}
@@ -569,24 +578,29 @@ layout: default
 					<label class="checkbox">
 						<input type="checkbox" name="checkboxOptions" id="checkbox3" value="option3" checked="checked"> option 3
 					</label>
+					<!-- You may include help text. -->
+					<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
 				</div>
 			</div>
 		</form>
 		<h4>Sample Code 1</h4>
 <!-- Start Code -->
 {% highlight html %}
-<!-- A field and all related tags and content are wrapped in a form group element -->
-<!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
-<div class="col-sm-8 col-sm-offset-2">
-	<label class="checkbox">
-		<input type="checkbox" name="checkboxOptions" id="checkbox1" value="option1"> option 1
-	</label>
-	<label class="checkbox">
-		<input type="checkbox" name="checkboxOptions" id="checkbox2" value="option2" checked="checked"> option 2
-	</label>
-	<label class="checkbox">
-		<input type="checkbox" name="checkboxOptions" id="checkbox3" value="option3" checked="checked"> option 3
-	</label>
+<div class="form-group">
+	<div class="col-sm-8 col-sm-offset-2">
+		<!-- One checkbox element for each option -->
+		<label class="checkbox">
+			<input type="checkbox" name="checkboxOptions" id="checkbox1" value="option1"> option 1
+		</label>
+		<label class="checkbox">
+			<input type="checkbox" name="checkboxOptions" id="checkbox2" value="option2" checked="checked"> option 2
+		</label>
+		<label class="checkbox">
+			<input type="checkbox" name="checkboxOptions" id="checkbox3" value="option3" checked="checked"> option 3
+		</label>
+		<!-- You may include help text. -->
+		<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+	</div>
 </div>
 {% endhighlight %}
 <hr>
@@ -604,24 +618,28 @@ layout: default
 				<option>Option 4</option>
 				<option>Option 5</option>
 			</select>
+			<!-- You may include help text. -->
+			<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
 		</div>
 	</div>
 </form>
 <h4>Sample Code 2</h4>
 <!-- Start Code -->
 {% highlight html %}
-<!-- A field and all related tags and content are wrapped in a form group element -->
 <div class="form-group">
-	<!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
 	<label for="select1" class="col-sm-2">MultiSelect Dropdown</label>
 	<div id="select1" class="col-sm-8">
+		<!-- The select element should include the multiple attribute -->
 		<select multiple class="form-control">
 			<option>Option 1</option>
+			<!-- Selected options are give the selected attribute -->
 			<option selected>Option 2</option>
 			<option selected>Option 3</option>
 			<option>Option 4</option>
 			<option>Option 5</option>
 		</select>
+		<!-- You may include help text. -->
+		<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
 	</div>
 </div>
 {% endhighlight %}
@@ -673,7 +691,7 @@ layout: default
 											</a>
 										</div>
 										<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-											<a href="#">
+											<a href="#" class="selected">
 												<img src="http://lorempixel.com/200/200/" class="img-responsive">
 												<div class="carousel-caption">
 													two.png<br>
@@ -812,6 +830,8 @@ layout: default
 								<button type="button" class="btn btn-default">Upload Image</button>
 								<button type="button" class="btn btn-link">Clear</button>
 							</div>
+							<!-- You may include help text. -->
+							<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
 						</div>
 					</div>
 				</form>
@@ -823,8 +843,10 @@ layout: default
 	<!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
 	<label for="image1" class="col-sm-2 control-label">Image (Multiple Options Provided)</label>
 	<div class="col-sm-10">
+		<!-- Make sure to use both the carousel and slide classes. The ID should be unique. -->
 		<div class="carousel slide" id="myCarousel">
 
+			<!-- The carousel indicators list should be built dynamically based on how many pages of images there are. -->
 			<ol class="carousel-indicators">
 				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 				<li data-target="#myCarousel" data-slide-to="1"></li>
@@ -833,6 +855,7 @@ layout: default
 
 			<div class="carousel-inner">
 
+				<!-- The carousel item is a container which includes multiple images. -->
 				<div class="item active">
 					<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2 col-sm-offset-1">
 						<a href="#">
@@ -844,7 +867,8 @@ layout: default
 						</a>
 					</div>
 					<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-						<a href="#">
+						<!-- The class selected indicates which image is the current selection in the form. -->
+						<a href="#" class="selected">
 							<img src="http://lorempixel.com/200/200/" class="img-responsive">
 							<div class="carousel-caption">
 								two.png<br>
@@ -880,7 +904,7 @@ layout: default
 						</a>
 					</div>
 				</div>
-
+				<!-- Another page of images. -->
 				<div class="item">
 					<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2 col-sm-offset-1">
 						<a href="#">
@@ -928,7 +952,7 @@ layout: default
 						</a>
 					</div>
 				</div>
-
+				<!-- Another page of images. -->
 				<div class="item">
 					<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2 col-sm-offset-1">
 						<a href="#">
@@ -969,7 +993,7 @@ layout: default
 				</div>
 			</div>
 			<!-- Controls -->
-			<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+			<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><!-- Make sure the href matches the ID of the carousel you wish to advance. -->
 				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
 				<span class="sr-only">Previous</span>
 			</a>
@@ -978,11 +1002,15 @@ layout: default
 				<span class="sr-only">Next</span>
 			</a>
 		</div><!-- /.carousel -->
+		<!-- Form fields and inputs. -->
 		<div class="bh--form-image-controls">
+			<!-- Necessary but hidden fields should be given the hidden class. -->
 			<input type="file" id="image1" class="form-control hidden">
 			<button type="button" class="btn btn-default">Upload Image</button>
 			<button type="button" class="btn btn-link">Clear</button>
 		</div>
+		<!-- You may include help text. -->
+		<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
 	</div>
 </div>
 {% endhighlight %}
@@ -1001,6 +1029,8 @@ layout: default
 							<button type="button" class="btn btn-default">Upload Image</button>
 							<button type="button" class="btn btn-link">Clear</button>
 						</div>
+						<!-- You may include help text. -->
+						<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
 					</div>
 				</div>
 			</form>
@@ -1019,6 +1049,8 @@ layout: default
 			<button type="button" class="btn btn-default">Upload Image</button>
 			<button type="button" class="btn btn-link">Clear</button>
 		</div>
+		<!-- You may include help text. -->
+		<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
 	</div>
 </div>
 {% endhighlight %}
@@ -1085,12 +1117,11 @@ layout: default
 				<h4>Sample Code</h4>
 <!-- Start Code -->
 {% highlight html %}
-<!-- A field and all related tags and content are wrapped in a form group element -->
 <div class="form-group bh--form-color">
-	<!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
 	<label for="color1" class="col-sm-2 control-label">Color Picker</label>
 	<div class="col-sm-8">
-		<input type="text" id="color1" class="form-control bh--colorpicker"> <!-- bh--colorpicker class is required for the js to initialize -->
+		<!-- The colorpicker uses a text field. bh--colorpicker class is required for the js to initialize -->
+		<input type="text" id="color1" class="form-control bh--colorpicker">
 		<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
 	</div>
 </div>
@@ -1129,10 +1160,9 @@ layout: default
 				<h4>Sample Code</h4>
 <!-- Start Code -->
 {% highlight html %}
-<!-- A field and all related tags and content are wrapped in a form group element -->
 <div class="form-group">
-	<!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
 	<div class="col-sm-8 col-sm-offset-2">
+		<!-- Info fields are provided as a simple paragraph tag. -->
 		<p>Some arbitrary text in an info field. Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
 	</div>
 </div>
@@ -1173,12 +1203,11 @@ layout: default
 				<h4>Sample Code</h4>
 <!-- Start Code -->
 {% highlight html %}
-<!-- A field and all related tags and content are wrapped in a form group element -->
 <div class="form-group">
-	<!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
 	<label for="timepicker1" class="col-sm-2 control-label">Timepicker</label>
 	<div class="col-sm-8">
-		<input id="timepicker1" type="text" class="form-control bh--timepicker"> <!-- need the bh--timepicker class for script to initialize -->
+		<!-- The timepicker is a simple text field. It needs the bh--timepicker class for script to initialize -->
+		<input id="timepicker1" type="text" class="form-control bh--timepicker">
 		<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line .</span>
 	</div>
 </div>

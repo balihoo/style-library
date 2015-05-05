@@ -21,5 +21,11 @@ $(function() { // Document Ready
 	///////////////////
 	/// Image Field
 	$('.bh--form-image .carousel').carousel('pause');
+	$('.bh--form-image .item a').click(function(e) {
+		e.preventDefault();
+
+		$('.bh--form-image .item a').removeClass('selected');
+		$(this).addClass('selected');
+	});
 
 });
