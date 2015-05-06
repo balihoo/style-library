@@ -1,0 +1,16 @@
+{
+  "name": "style-library",
+  "version": "1.0.0",
+  "description": "Balihoo Style Library",
+  "dependencies": {},
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/balihoo/style-library.git"
+  },
+  "author": "Andy Harl",
+  "bugs": {
+    "url": "https://github.com/balihoo/style-library/issues"
+  },
+  "homepage": "https://github.com/balihoo/style-library"
+}
