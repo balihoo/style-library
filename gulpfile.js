@@ -32,7 +32,6 @@ gulp.task('default', function() {
 	console.log(
 			'\n'
 			+ 'Whoa there buddy. This script doesn\'t do anything by default. See available commands below.'
-			+ '\n'
 			+ '\033[1;33mAVAILABLE COMMANDS:\033[0m\n'
 			+ '\033[0;32msass:\033[0m Build sass files for distribution. Outputs to \'./build\'.\n'
 			+ '\033[0;32mclean:\033[0m Clean up localy built files.'
