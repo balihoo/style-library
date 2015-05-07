@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "description": "Balihoo Style Library",
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "del": "^1.1.1",
+    "gulp": "^3.8.11",
+    "gulp-rename": "^1.2.2",
+    "gulp-ruby-sass": "^1.0.5"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/balihoo/style-library.git"
