@@ -7,7 +7,7 @@ layout: default
 	<p>This is a collection of all the different design elements currently used in the BAC interface. Not necessarily all the ways they are implemented, just the design controls and elements. The goal is to make this into a library that includes code so developers will be able to just grab elements from here as needed with some guidance on how best to implement, so they don’t have to make it up each time.</p>
 </div>
 
-<div class="elements-list col-md-9">
+<div class="elements-list col-md-12">
 {% for element in site.elements %}
 	<div id="{{ element.title | slugify }}"class="panel panel-default">
 		<div class="panel-heading">
@@ -18,14 +18,4 @@ layout: default
 		</div>
 	</div>
 {% endfor %}
-</div>
-
-<div class="col-md-3">
-	<div class="sidebar-nav elements-nav" data-spy="affix" data-offset-top="442" data-offset-bottom="3000">
-		<ul class="nav nav-pills nav-stacked" role="tablist">
-		{% for element in site.elements %}
-			<li role="presentation"><a href="#{{ element.title | slugify }}">{{ element.title }}</a></li>
-		{% endfor %}
-		</ul>
-	</div>
 </div>
