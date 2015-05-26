@@ -2,33 +2,33 @@
 layout: default
 ---
 
-		<div class="page-header">
-			<h2>Forms</h2>
-		</div>
+    <div class="page-header">
+      <h2>Forms</h2>
+    </div>
 
-		<div class="row">
-			<div class="well col-sm-12">
-				<h3>Requirements</h3>
-				<ul>
-					<li>Balihoo Bootstrap</li>
-					<li>Bootstrap JS
-					<p>If you are including individual bootstrap js modules, you will need the following...</p>
-						<ul>
-							<li>Transition</li>
-							<li>Collapse</li>
-							<li>Dropdown</li>
-							<li>Modal</li>
-							<li>Carousel</li>
-						</ul>
-					</li>
-					<li>Spectrum Color Picker (<a href="https://github.com/bgrins/spectrum">https://github.com/bgrins/spectrum</a>)</li>
-					<li>Time Picker (<a href="https://github.com/acpmasquerade/bootstrap3-timepicker2">https://github.com/acpmasquerade/bootstrap3-timepicker2</a>)</li>
-				</ul>
-			</div>
-		</div>
+    <div class="row">
+      <div class="well col-sm-12">
+        <h3>Requirements</h3>
+        <ul>
+          <li>Balihoo Bootstrap</li>
+          <li>Bootstrap JS
+          <p>If you are including individual bootstrap js modules, you will need the following...</p>
+            <ul>
+              <li>Transition</li>
+              <li>Collapse</li>
+              <li>Dropdown</li>
+              <li>Modal</li>
+              <li>Carousel</li>
+            </ul>
+          </li>
+          <li>Spectrum Color Picker (<a href="https://github.com/bgrins/spectrum">https://github.com/bgrins/spectrum</a>)</li>
+          <li>Time Picker (<a href="https://github.com/acpmasquerade/bootstrap3-timepicker2">https://github.com/acpmasquerade/bootstrap3-timepicker2</a>)</li>
+        </ul>
+      </div>
+    </div>
 
 
-		<hr>
+    <hr>
 
 <!--
  #######
@@ -48,79 +48,79 @@ layout: default
   #####   ####  #    #   #   #    # # #    # ###### #    #  ####
 
 -->
-		<div class="panel panel-default">
-		  <div class="panel-heading">
-			<h3 class="panel-title">Form Containers</h3>
-		  </div>
-		  <div class="panel-body">
-				<p>Balihoo forms should be laid out with labels left aligned and fields left aligned in their own column. This creates pleasing vertical flow and allows labels to be easily scanned.</p>
-				<hr>
-				<form class="form-horizontal bh--form-example">
-					<div class="form-group">
-						<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-						<div class="col-sm-8">
-							<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-						</div>
-					</div>
-					<div class="form-group">
-						<label for="inputPassword3" class="col-sm-2 control-label">Password</label>
-						<div class="col-sm-8">
-							<input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-						</div>
-					</div>
-					<div class="form-group">
-						<div class="col-sm-offset-2 col-sm-8">
-							<div class="checkbox">
-								<label>
-									<input type="checkbox"> Remember me
-								</label>
-							</div>
-						</div>
-					</div>
-					<div class="form-group">
-						<div class="col-sm-offset-2 col-sm-8">
-							<button type="submit" class="btn btn-default">Sign in</button>
-						</div>
-					</div>
-				</form>
-				<h4>Sample Code</h4>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+      <h3 class="panel-title">Form Containers</h3>
+      </div>
+      <div class="panel-body">
+        <p>Balihoo forms should be laid out with labels left aligned and fields left aligned in their own column. This creates pleasing vertical flow and allows labels to be easily scanned.</p>
+        <hr>
+        <form class="form-horizontal bh--form-example">
+          <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+            <div class="col-sm-8">
+              <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+            <div class="col-sm-8">
+              <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-8">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox"> Remember me
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-8">
+              <button type="submit" class="btn btn-default">Sign in</button>
+            </div>
+          </div>
+        </form>
+        <h4>Sample Code</h4>
 <!-- Start Code -->
 {% highlight html %}
 <!-- The form tag is given a class of 'form-horizontal' for the left aligned layout. -->
 <form class="form-horizontal">
-	<!-- A field and all related tags and content are wrapped in a form group element. -->
-	<div class="form-group">
-		<!-- Labels and field are set using bootstrap grid classes such as col-sm-2.  -->
-		<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-		<div class="col-sm-8">
-			<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-		</div>
-	</div>
-	<div class="form-group">
-		<label for="inputPassword3" class="col-sm-2 control-label">Password</label>
-		<div class="col-sm-8">
-			<input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-		</div>
-	</div>
-	<div class="form-group">
-		<!-- Fields with no label use an offset so that they align with the other fields. -->
-		<div class="col-sm-offset-2 col-sm-8">
-			<div class="checkbox">
-				<label>
-					<input type="checkbox"> Remember me
-				</label>
-			</div>
-		</div>
-	</div>
-	<div class="form-group">
-		<div class="col-sm-offset-2 col-sm-8">
-			<button type="submit" class="btn btn-default">Sign in</button>
-		</div>
-	</div>
+  <!-- A field and all related tags and content are wrapped in a form group element. -->
+  <div class="form-group">
+    <!-- Labels and field are set using bootstrap grid classes such as col-sm-2.  -->
+    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+    <div class="col-sm-8">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+    <div class="col-sm-8">
+      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <!-- Fields with no label use an offset so that they align with the other fields. -->
+    <div class="col-sm-offset-2 col-sm-8">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> Remember me
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-8">
+      <button type="submit" class="btn btn-default">Sign in</button>
+    </div>
+  </div>
 </form>
 {% endhighlight %}
-		  </div>
-		</div>
+      </div>
+    </div>
 
 
 
@@ -134,280 +134,280 @@ layout: default
   #####  #    #  ####   ####  #       ####
 
 -->
-		<div class="panel panel-default">
-		  <div class="panel-heading">
-			<h3 class="panel-title">Groups</h3>
-		  </div>
-		  <div class="panel-body">
-				<p>A group, in this case, refers to a form builder group which encapulates several form builder fields. (As opposed to a 'form-group' which is a css class used in bootstrap to group content related to a single field)</p>
-				<hr>
-				<form class="form-horizontal bh--form-example">
-					<div class="well">
-						<fieldset>
-							<legend>User Login</legend>
-							<div class="form-group">
-							<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-							<div class="col-sm-8">
-							  <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-							</div>
-						  </div>
-						  <div class="form-group">
-							<label for="inputPassword3" class="col-sm-2 control-label">Password</label>
-							<div class="col-sm-8">
-							  <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-							</div>
-						  </div>
-						</fieldset>
-					</div>
-					<div class="well">
-						<fieldset>
-							<legend>Another Group</legend>
-							<div class="form-group">
-								<div class="col-sm-8 col-sm-offset-2">
-									<div class="checkbox">
-									  <label>
-										<input type="checkbox" value="">
-										Option one is this and that&mdash;be sure to include why it's great
-									  </label>
-									</div>
-									<div class="checkbox disabled">
-									  <label>
-										<input type="checkbox" value="" disabled>
-										Option two is disabled
-									  </label>
-									</div>
-								</div>
-							</div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+      <h3 class="panel-title">Groups</h3>
+      </div>
+      <div class="panel-body">
+        <p>A group, in this case, refers to a form builder group which encapulates several form builder fields. (As opposed to a 'form-group' which is a css class used in bootstrap to group content related to a single field)</p>
+        <hr>
+        <form class="form-horizontal bh--form-example">
+          <div class="well">
+            <fieldset>
+              <legend>User Login</legend>
+              <div class="form-group">
+              <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+              <div class="col-sm-8">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+              </div>
+              </div>
+              <div class="form-group">
+              <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+              <div class="col-sm-8">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+              </div>
+              </div>
+            </fieldset>
+          </div>
+          <div class="well">
+            <fieldset>
+              <legend>Another Group</legend>
+              <div class="form-group">
+                <div class="col-sm-8 col-sm-offset-2">
+                  <div class="checkbox">
+                    <label>
+                    <input type="checkbox" value="">
+                    Option one is this and that&mdash;be sure to include why it's great
+                    </label>
+                  </div>
+                  <div class="checkbox disabled">
+                    <label>
+                    <input type="checkbox" value="" disabled>
+                    Option two is disabled
+                    </label>
+                  </div>
+                </div>
+              </div>
 
-							<div class="form-group">
-								<div class="col-sm-8 col-sm-offset-2">
-									<div class="radio">
-									  <label>
-										<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-										Option one is this and that&mdash;be sure to include why it's great
-									  </label>
-									</div>
-									<div class="radio">
-									  <label>
-										<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-										Option two can be something else and selecting it will deselect option one
-									  </label>
-									</div>
-									<div class="radio disabled">
-									  <label>
-										<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
-										Option three is disabled
-									  </label>
-									</div>
-								</div>
-							</div>
-						</fieldset>
-					</div>
-					<div class="form-group">
-						<label for="howyoufindme" class="col-sm-2 control-label">How did you discover us? I am not a part of a group :-(</label>
-						<div class="col-sm-8">
-							<textarea id="howyoufindme" class="form-control" rows="3"></textarea>
-						</div>
-					</div>
-				  <div class="form-group">
-					<div class="col-sm-offset-2 col-sm-8">
-					  <div class="checkbox">
-						<label>
-						  <input type="checkbox"> Remember me
-						</label>
-					  </div>
-					</div>
-				  </div>
-				  <div class="form-group">
-					<div class="col-sm-offset-2 col-sm-8">
-					  <button type="submit" class="btn btn-default">Sign in</button>
-					</div>
-				  </div>
-				</form>
+              <div class="form-group">
+                <div class="col-sm-8 col-sm-offset-2">
+                  <div class="radio">
+                    <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                    Option one is this and that&mdash;be sure to include why it's great
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                    Option two can be something else and selecting it will deselect option one
+                    </label>
+                  </div>
+                  <div class="radio disabled">
+                    <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+                    Option three is disabled
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <div class="form-group">
+            <label for="howyoufindme" class="col-sm-2 control-label">How did you discover us? I am not a part of a group :-(</label>
+            <div class="col-sm-8">
+              <textarea id="howyoufindme" class="form-control" rows="3"></textarea>
+            </div>
+          </div>
+          <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-8">
+            <div class="checkbox">
+            <label>
+              <input type="checkbox"> Remember me
+            </label>
+            </div>
+          </div>
+          </div>
+          <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-8">
+            <button type="submit" class="btn btn-default">Sign in</button>
+          </div>
+          </div>
+        </form>
 
-				<h4>Sample Code</h4>
+        <h4>Sample Code</h4>
 <!-- Start Code -->
 {% highlight html %}
 <form class="form-horizontal">
-	<!-- Groups use the fieldset tag and are wrapped in a bootstrap well element. -->
-	<div class="well">
-		<fieldset>
-			<!-- Group titles use the legend tag -->
-			<legend>User Login</legend>
-			<div class="form-group">
-				<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-				<div class="col-sm-8">
-					<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-				</div>
-			</div>
-			<div class="form-group">
-				<label for="inputPassword3" class="col-sm-2 control-label">Password</label>
-				<div class="col-sm-8">
-					<input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-				</div>
-			</div>
-		</fieldset>
-	</div>
-	<!-- A second group. -->
-	<div class="well">
-		<fieldset>
-			<legend>Another Group</legend>
-			<div class="form-group">
-				<div class="col-sm-8 col-sm-offset-2">
-					<div class="checkbox">
-						<label>
-							<input type="checkbox" value="">
-							Option one is this and that&mdash;be sure to include why it's great
-						</label>
-					</div>
-					<div class="checkbox disabled">
-						<label>
-							<input type="checkbox" value="" disabled>
-							Option two is disabled
-						</label>
-					</div>
-				</div>
-			</div>
+  <!-- Groups use the fieldset tag and are wrapped in a bootstrap well element. -->
+  <div class="well">
+    <fieldset>
+      <!-- Group titles use the legend tag -->
+      <legend>User Login</legend>
+      <div class="form-group">
+        <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+        <div class="col-sm-8">
+          <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+        <div class="col-sm-8">
+          <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+        </div>
+      </div>
+    </fieldset>
+  </div>
+  <!-- A second group. -->
+  <div class="well">
+    <fieldset>
+      <legend>Another Group</legend>
+      <div class="form-group">
+        <div class="col-sm-8 col-sm-offset-2">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Option one is this and that&mdash;be sure to include why it's great
+            </label>
+          </div>
+          <div class="checkbox disabled">
+            <label>
+              <input type="checkbox" value="" disabled>
+              Option two is disabled
+            </label>
+          </div>
+        </div>
+      </div>
 
-			<div class="form-group">
-				<div class="col-sm-8 col-sm-offset-2">
-					<div class="radio">
-						<label>
-							<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-							Option one is this and that&mdash;be sure to include why it's great
-						</label>
-					</div>
-					<div class="radio">
-						<label>
-							<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-							Option two can be something else and selecting it will deselect option one
-						</label>
-					</div>
-					<div class="radio disabled">
-						<label>
-							<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
-							Option three is disabled
-						</label>
-					</div>
-				</div>
-			</div>
-		</fieldset>
-	</div>
-	<!-- This field is not in a group. -->
-	<div class="form-group">
-		<label for="howyoufindme" class="col-sm-2 control-label">How did you discover us? I am not a part of a group :-(</label>
-		<div class="col-sm-8">
-			<textarea id="howyoufindme" class="form-control" rows="3"></textarea>
-		</div>
-	</div>
-	<div class="form-group">
-		<div class="col-sm-offset-2 col-sm-8">
-			<div class="checkbox">
-				<label>
-					<input type="checkbox"> Remember me
-				</label>
-			</div>
-		</div>
-	</div>
-	<div class="form-group">
-		<div class="col-sm-offset-2 col-sm-8">
-			<button type="submit" class="btn btn-default">Sign in</button>
-		</div>
-	</div>
+      <div class="form-group">
+        <div class="col-sm-8 col-sm-offset-2">
+          <div class="radio">
+            <label>
+              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+              Option one is this and that&mdash;be sure to include why it's great
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+              Option two can be something else and selecting it will deselect option one
+            </label>
+          </div>
+          <div class="radio disabled">
+            <label>
+              <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+              Option three is disabled
+            </label>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+  <!-- This field is not in a group. -->
+  <div class="form-group">
+    <label for="howyoufindme" class="col-sm-2 control-label">How did you discover us? I am not a part of a group :-(</label>
+    <div class="col-sm-8">
+      <textarea id="howyoufindme" class="form-control" rows="3"></textarea>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-8">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> Remember me
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-8">
+      <button type="submit" class="btn btn-default">Sign in</button>
+    </div>
+  </div>
 </form>
 {% endhighlight %}
-			</div>
-		</div>
+      </div>
+    </div>
 
 
 <!--
  #######
-	#    ###### #    # #####
-	#    #       #  #    #
-	#    #####    ##     #
-	#    #        ##     #
-	#    #       #  #    #
-	#    ###### #    #   #
+  #    ###### #    # #####
+  #    #       #  #    #
+  #    #####    ##     #
+  #    #        ##     #
+  #    #       #  #    #
+  #    ###### #    #   #
 
  -->
-		<div class="panel panel-default">
-			<div class="panel-heading">
-				<h3 class="panel-title">Text</h3>
-			</div>
-			<div class="panel-body">
-				<p>Text fields are single line text inputs</p>
-				<hr>
-				<form class="form-horizontal bh--form-example">
-					<!-- A field and all related tags and content are wrapped in a form group element -->
-					<div class="form-group">
-						<!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
-						<label for="input1" class="col-sm-2 control-label">Text</label>
-						<div class="col-sm-8">
-							<input type="text" class="form-control" id="input1" placeholder="Placeholder Text">
-							<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
-						</div>
-					</div>
-				</form>
-				<h4>Sample Code</h4>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Text</h3>
+      </div>
+      <div class="panel-body">
+        <p>Text fields are single line text inputs</p>
+        <hr>
+        <form class="form-horizontal bh--form-example">
+          <!-- A field and all related tags and content are wrapped in a form group element -->
+          <div class="form-group">
+            <!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
+            <label for="input1" class="col-sm-2 control-label">Text</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control" id="input1" placeholder="Placeholder Text">
+              <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+            </div>
+          </div>
+        </form>
+        <h4>Sample Code</h4>
 <!-- Start Code -->
 {% highlight html %}
 <div class="form-group">
-	<label for="input1" class="col-sm-2 control-label">Text</label>
-	<div class="col-sm-8">
-		<!-- Text fields use a basic html text input with a from-control class. -->
-		<input type="text" class="form-control" id="input1" placeholder="Placeholder Text"><!-- Placeholder text should be dynamic if supplied -->
-		<!-- You may include help text. -->
-		<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
-	</div>
+  <label for="input1" class="col-sm-2 control-label">Text</label>
+  <div class="col-sm-8">
+    <!-- Text fields use a basic html text input with a from-control class. -->
+    <input type="text" class="form-control" id="input1" placeholder="Placeholder Text"><!-- Placeholder text should be dynamic if supplied -->
+    <!-- You may include help text. -->
+    <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+  </div>
 </div><!-- /.form-group -->
 {% endhighlight %}
-			</div>
-		</div>
+      </div>
+    </div>
 
 
-		<!--
+    <!--
  #######
-	#    ###### #    # #####   ##   #####  ######   ##
-	#    #       #  #    #    #  #  #    # #       #  #
-	#    #####    ##     #   #    # #    # #####  #    #
-	#    #        ##     #   ###### #####  #      ######
-	#    #       #  #    #   #    # #   #  #      #    #
-	#    ###### #    #   #   #    # #    # ###### #    #
+  #    ###### #    # #####   ##   #####  ######   ##
+  #    #       #  #    #    #  #  #    # #       #  #
+  #    #####    ##     #   #    # #    # #####  #    #
+  #    #        ##     #   ###### #####  #      ######
+  #    #       #  #    #   #    # #   #  #      #    #
+  #    ###### #    #   #   #    # #    # ###### #    #
 
-		 -->
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h3 class="panel-title">Textarea</h3>
-					</div>
-					<div class="panel-body">
-						<p>Textarea fields are multi-line text inputs</p>
-						<hr>
-						<form class="form-horizontal bh--form-example">
-							<!-- A field and all related tags and content are wrapped in a form group element -->
-							<div class="form-group">
-								<!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
-								<label for="textarea1" class="col-sm-2 control-label">Textarea</label>
-								<div class="col-sm-8">
-									<textarea class="form-control" rows="3" id="textarea1" placeholder="Placeholder"></textarea>
-									<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
-								</div>
-							</div>
-						</form>
-						<h4>Sample Code</h4>
+     -->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Textarea</h3>
+          </div>
+          <div class="panel-body">
+            <p>Textarea fields are multi-line text inputs</p>
+            <hr>
+            <form class="form-horizontal bh--form-example">
+              <!-- A field and all related tags and content are wrapped in a form group element -->
+              <div class="form-group">
+                <!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
+                <label for="textarea1" class="col-sm-2 control-label">Textarea</label>
+                <div class="col-sm-8">
+                  <textarea class="form-control" rows="3" id="textarea1" placeholder="Placeholder"></textarea>
+                  <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+                </div>
+              </div>
+            </form>
+            <h4>Sample Code</h4>
 <!-- Start Code -->
 {% highlight html %}
 <div class="form-group">
-	<label for="textarea1" class="col-sm-2 control-label">Textarea</label>
-	<div class="col-sm-8">
-		<!-- Text fields use a basic html textarea with a from-control class. -->
-		<textarea class="form-control" rows="3" id="textarea1" placeholder="Placeholder"></textarea><!-- Placeholder text should be dynamic if supplied. -->
-		<!-- You may include help text. -->
-		<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
-	</div>
+  <label for="textarea1" class="col-sm-2 control-label">Textarea</label>
+  <div class="col-sm-8">
+    <!-- Text fields use a basic html textarea with a from-control class. -->
+    <textarea class="form-control" rows="3" id="textarea1" placeholder="Placeholder"></textarea><!-- Placeholder text should be dynamic if supplied. -->
+    <!-- You may include help text. -->
+    <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+  </div>
 </div>
 {% endhighlight %}
-					</div>
-				</div>
+          </div>
+        </div>
 
 
 <!--
@@ -420,47 +420,47 @@ layout: default
  ######   ####   ####  ######
 
  -->
-		<div class="panel panel-default">
-			<div class="panel-heading">
-				<h3 class="panel-title">Bool</h3>
-			</div>
-			<div class="panel-body">
-				<p>Description</p>
-				<hr>
-				<form class="form-horizontal bh--form-example">
-					<!-- A field and all related tags and content are wrapped in a form group element. -->
-					<div class="form-group">
-						<!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens. -->
-						<div class="col-sm-8 col-sm-offset-2">
-							<div class="checkbox">
-							<label>
-								<input type="checkbox" id="blankCheckbox" value="option1" aria-label="..."> Bool
-							</label>
-							</div>
-							<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
-						</div>
-					</div>
-				</form>
-				<h4>Sample Code</h4>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Bool</h3>
+      </div>
+      <div class="panel-body">
+        <p>Description</p>
+        <hr>
+        <form class="form-horizontal bh--form-example">
+          <!-- A field and all related tags and content are wrapped in a form group element. -->
+          <div class="form-group">
+            <!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens. -->
+            <div class="col-sm-8 col-sm-offset-2">
+              <div class="checkbox">
+              <label>
+                <input type="checkbox" id="blankCheckbox" value="option1" aria-label="..."> Bool
+              </label>
+              </div>
+              <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+            </div>
+          </div>
+        </form>
+        <h4>Sample Code</h4>
 <!-- Start Code -->
 {% highlight html %}
 <div class="form-group">
-	<!-- Checkboxes need an offset since the label is displayed to the right of the checkbox rather than to the left of the field. -->
-	<div class="col-sm-8 col-sm-offset-2">
-		<!-- The bool field is wrapped in a div with the class checkbox. -->
-		<div class="checkbox">
-			<label>
-				<!-- The input is included inside the label tag. -->
-				<input type="checkbox" id="blankCheckbox" value="option1"> Bool
-			</label>
-		</div>
-		<!-- You may include help text. -->
-		<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
-	</div>
+  <!-- Checkboxes need an offset since the label is displayed to the right of the checkbox rather than to the left of the field. -->
+  <div class="col-sm-8 col-sm-offset-2">
+    <!-- The bool field is wrapped in a div with the class checkbox. -->
+    <div class="checkbox">
+      <label>
+        <!-- The input is included inside the label tag. -->
+        <input type="checkbox" id="blankCheckbox" value="option1"> Bool
+      </label>
+    </div>
+    <!-- You may include help text. -->
+    <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+  </div>
 </div>
 {% endhighlight %}
-			</div>
-		</div>
+      </div>
+    </div>
 
 
 
@@ -469,112 +469,112 @@ layout: default
  #     # ###### #      ######  ####  #####
  #       #      #      #      #    #   #
   #####  #####  #      #####  #        #
-	   # #      #      #      #        #
+     # #      #      #      #        #
  #     # #      #      #      #    #   #
   #####  ###### ###### ######  ####    #
 
  -->
-		<div class="panel panel-default">
-			<div class="panel-heading">
-				<h3 class="panel-title">Select</h3>
-			</div>
-			<div class="panel-body">
-				<p>Select elements will display differently based on how they are configured.</p>
-				<hr>
-				<p>If a default option is provided then the single select field will display as radios.</p>
-				<form class="form-horizontal bh--form-example">
-					<!-- A field and all related tags and content are wrapped in a form group element. -->
-					<div class="form-group">
-						<!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens. -->
-						<div class="col-sm-8 col-sm-offset-2">
-							<div class="radio">
-								<label>
-									<input type="radio" name="radioOptions" id="radio1" value="option1"> option 1
-								</label>
-							</div>
-							<div class="radio">
-								<label>
-									<input type="radio" name="radioOptions" id="radio2" value="option2" checked="checked"> option 2
-								</label>
-							</div>
-							<div class="radio">
-								<label>
-									<input type="radio" name="radioOptions" id="radio3" value="option3"> option 3
-								</label>
-							</div>
-							<!-- You may include help text. -->
-							<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
-						</div>
-					</div>
-				</form>
-				<h4>Sample Code 1</h4>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Select</h3>
+      </div>
+      <div class="panel-body">
+        <p>Select elements will display differently based on how they are configured.</p>
+        <hr>
+        <p>If a default option is provided then the single select field will display as radios.</p>
+        <form class="form-horizontal bh--form-example">
+          <!-- A field and all related tags and content are wrapped in a form group element. -->
+          <div class="form-group">
+            <!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens. -->
+            <div class="col-sm-8 col-sm-offset-2">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="radioOptions" id="radio1" value="option1"> option 1
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="radioOptions" id="radio2" value="option2" checked="checked"> option 2
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="radioOptions" id="radio3" value="option3"> option 3
+                </label>
+              </div>
+              <!-- You may include help text. -->
+              <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+            </div>
+          </div>
+        </form>
+        <h4>Sample Code 1</h4>
 <!-- Start Code -->
 {% highlight html %}
 <div class="form-group">
-	<!-- Radios are offset since there is no label visible to the left of the field. -->
-	<div class="col-sm-8 col-sm-offset-2">
-		<div class="radio">
-			<label>
-				<!-- The input tag is included inside the label tag. -->
-				<input type="radio" name="radioOptions" id="radio1" value="option1"> option 1
-			</label>
-		</div>
-		<div class="radio">
-			<label>
-				<input type="radio" name="radioOptions" id="radio2" value="option2" checked="checked"> option 2
-			</label>
-		</div>
-		<div class="radio">
-			<label>
-				<input type="radio" name="radioOptions" id="radio3" value="option3"> option 3
-			</label>
-		</div>
-		<!-- You may include help text. -->
-		<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
-	</div>
+  <!-- Radios are offset since there is no label visible to the left of the field. -->
+  <div class="col-sm-8 col-sm-offset-2">
+    <div class="radio">
+      <label>
+        <!-- The input tag is included inside the label tag. -->
+        <input type="radio" name="radioOptions" id="radio1" value="option1"> option 1
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="radioOptions" id="radio2" value="option2" checked="checked"> option 2
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="radioOptions" id="radio3" value="option3"> option 3
+      </label>
+    </div>
+    <!-- You may include help text. -->
+    <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+  </div>
 </div>
 {% endhighlight %}
 <hr>
 <p>If no default option is provided then the single select field will display as a form dropdown.</p>
 <form class="form-horizontal bh--form-example">
-	<!-- A field and all related tags and content are wrapped in a form group element. -->
-	<div class="form-group">
-		<!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens.  -->
-		<label for="select1" class="col-sm-2">Single Select Dropdown</label>
-		<div id="select1" class="col-sm-8">
-			<select class="form-control">
-				<option>Option 1</option>
-				<option>Option 2</option>
-				<option>Option 3</option>
-				<option>Option 4</option>
-				<option>Option 5</option>
-			</select>
-			<!-- You may include help text. -->
-			<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
-		</div>
-	</div>
+  <!-- A field and all related tags and content are wrapped in a form group element. -->
+  <div class="form-group">
+    <!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens.  -->
+    <label for="select1" class="col-sm-2">Single Select Dropdown</label>
+    <div id="select1" class="col-sm-8">
+      <select class="form-control">
+        <option>Option 1</option>
+        <option>Option 2</option>
+        <option>Option 3</option>
+        <option>Option 4</option>
+        <option>Option 5</option>
+      </select>
+      <!-- You may include help text. -->
+      <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+    </div>
+  </div>
 </form>
 <h4>Sample Code 2</h4>
 <!-- Start Code -->
 {% highlight html %}
 <div class="form-group">
-	<label for="select1" class="col-sm-2">Single Select Dropdown</label>
-	<div id="select1" class="col-sm-8">
-		<!-- A form dropdown is marked up using a select tag. Options are provided as a part of the select tag markup. -->
-		<select class="form-control">
-			<option>Option 1</option>
-			<option>Option 2</option>
-			<option>Option 3</option>
-			<option>Option 4</option>
-			<option>Option 5</option>
-		</select>
-		<!-- You may include help text. -->
-		<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
-	</div>
+  <label for="select1" class="col-sm-2">Single Select Dropdown</label>
+  <div id="select1" class="col-sm-8">
+    <!-- A form dropdown is marked up using a select tag. Options are provided as a part of the select tag markup. -->
+    <select class="form-control">
+      <option>Option 1</option>
+      <option>Option 2</option>
+      <option>Option 3</option>
+      <option>Option 4</option>
+      <option>Option 5</option>
+    </select>
+    <!-- You may include help text. -->
+    <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+  </div>
 </div>
 {% endhighlight %}
-			</div>
-		</div>
+      </div>
+    </div>
 
 
 
@@ -590,105 +590,105 @@ layout: default
 
  -->
 <div class="panel panel-default">
-	<div class="panel-heading">
-		<h3 class="panel-title">Multi-Select</h3>
-	</div>
-	<div class="panel-body">
-		<p>Multi-Select elements will display differently based on how they are configured.</p>
-		<hr>
-		<p>If there are 10 or fewer items then the multi-select field will display as checkboxes (regradless of whether a default value is provided or not).</p>
-		<form class="form-horizontal bh--form-example">
-			<!-- A field and all related tags and content are wrapped in a form group element -->
-			<div class="form-group">
-				<!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
-				<div class="col-sm-8 col-sm-offset-2">
-					<div class="checkbox">
-						<label>
-							<input type="checkbox" name="checkboxOptions" id="checkbox1" value="option1"> option 1
-						</label>
-					</div>
-					<div class="checkbox">
-						<label>
-							<input type="checkbox" name="checkboxOptions" id="checkbox2" value="option2" checked="checked"> option 2
-						</label>
-					</div>
-					<div class="checkbox">
-						<label>
-							<input type="checkbox" name="checkboxOptions" id="checkbox3" value="option3" checked="checked"> option 3
-						</label>
-					</div>
-					<!-- You may include help text. -->
-					<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
-				</div>
-			</div>
-		</form>
-		<h4>Sample Code 1</h4>
+  <div class="panel-heading">
+    <h3 class="panel-title">Multi-Select</h3>
+  </div>
+  <div class="panel-body">
+    <p>Multi-Select elements will display differently based on how they are configured.</p>
+    <hr>
+    <p>If there are 10 or fewer items then the multi-select field will display as checkboxes (regradless of whether a default value is provided or not).</p>
+    <form class="form-horizontal bh--form-example">
+      <!-- A field and all related tags and content are wrapped in a form group element -->
+      <div class="form-group">
+        <!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
+        <div class="col-sm-8 col-sm-offset-2">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="checkboxOptions" id="checkbox1" value="option1"> option 1
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="checkboxOptions" id="checkbox2" value="option2" checked="checked"> option 2
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="checkboxOptions" id="checkbox3" value="option3" checked="checked"> option 3
+            </label>
+          </div>
+          <!-- You may include help text. -->
+          <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+        </div>
+      </div>
+    </form>
+    <h4>Sample Code 1</h4>
 <!-- Start Code -->
 {% highlight html %}
 <div class="form-group">
-	<div class="col-sm-8 col-sm-offset-2">
-		<!-- One checkbox element for each option -->
-		<div class="checkbox">
-			<label>
-				<input type="checkbox" name="checkboxOptions" id="checkbox1" value="option1"> option 1
-			</label>
-		</div>
-		<div class="checkbox">
-			<label>
-				<input type="checkbox" name="checkboxOptions" id="checkbox2" value="option2" checked="checked"> option 2
-			</label>
-		</div>
-		<div class="checkbox">
-			<label>
-				<input type="checkbox" name="checkboxOptions" id="checkbox3" value="option3" checked="checked"> option 3
-			</label>
-		</div>
-		<!-- You may include help text. -->
-		<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
-	</div>
+  <div class="col-sm-8 col-sm-offset-2">
+    <!-- One checkbox element for each option -->
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" name="checkboxOptions" id="checkbox1" value="option1"> option 1
+      </label>
+    </div>
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" name="checkboxOptions" id="checkbox2" value="option2" checked="checked"> option 2
+      </label>
+    </div>
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" name="checkboxOptions" id="checkbox3" value="option3" checked="checked"> option 3
+      </label>
+    </div>
+    <!-- You may include help text. -->
+    <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+  </div>
 </div>
 {% endhighlight %}
 <hr>
 <p>If more than 10 options are provided then a multi-select will display as a listbox.</p>
 <form class="form-horizontal bh--form-example">
-	<!-- A field and all related tags and content are wrapped in a form group element -->
-	<div class="form-group">
-		<!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
-		<label for="select1" class="col-sm-2">MultiSelect Dropdown</label>
-		<div id="select1" class="col-sm-8">
-			<select multiple class="form-control">
-				<option>Option 1</option>
-				<option selected>Option 2</option>
-				<option selected>Option 3</option>
-				<option>Option 4</option>
-				<option>Option 5</option>
-			</select>
-			<!-- You may include help text. -->
-			<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
-		</div>
-	</div>
+  <!-- A field and all related tags and content are wrapped in a form group element -->
+  <div class="form-group">
+    <!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
+    <label for="select1" class="col-sm-2">MultiSelect Dropdown</label>
+    <div id="select1" class="col-sm-8">
+      <select multiple class="form-control">
+        <option>Option 1</option>
+        <option selected>Option 2</option>
+        <option selected>Option 3</option>
+        <option>Option 4</option>
+        <option>Option 5</option>
+      </select>
+      <!-- You may include help text. -->
+      <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+    </div>
+  </div>
 </form>
 <h4>Sample Code 2</h4>
 <!-- Start Code -->
 {% highlight html %}
 <div class="form-group">
-	<label for="select1" class="col-sm-2">MultiSelect Dropdown</label>
-	<div id="select1" class="col-sm-8">
-		<!-- The select element should include the multiple attribute -->
-		<select multiple class="form-control">
-			<option>Option 1</option>
-			<!-- Selected options are give the selected attribute -->
-			<option selected>Option 2</option>
-			<option selected>Option 3</option>
-			<option>Option 4</option>
-			<option>Option 5</option>
-		</select>
-		<!-- You may include help text. -->
-		<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
-	</div>
+  <label for="select1" class="col-sm-2">MultiSelect Dropdown</label>
+  <div id="select1" class="col-sm-8">
+    <!-- The select element should include the multiple attribute -->
+    <select multiple class="form-control">
+      <option>Option 1</option>
+      <!-- Selected options are give the selected attribute -->
+      <option selected>Option 2</option>
+      <option selected>Option 3</option>
+      <option>Option 4</option>
+      <option>Option 5</option>
+    </select>
+    <!-- You may include help text. -->
+    <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+  </div>
 </div>
 {% endhighlight %}
-	</div>
+  </div>
 </div>
 
 
@@ -702,432 +702,432 @@ layout: default
  ### #    # #    #  ####  ######
 
  -->
-		<div class="panel panel-default">
-			<div class="panel-heading">
-				<h3 class="panel-title">Image</h3>
-			</div>
-			<div class="panel-body">
-				<p>Description coming soon.</p>
-				<hr>
-				<form class="form-horizontal bh--form-example">
-					<!-- A field and all related tags and content are wrapped in a form group element -->
-					<div class="form-group bh--form-image">
-						<!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
-						<label for="image1" class="col-sm-2 control-label">Image (Multiple Options Provided)</label>
-						<div class="col-sm-10">
-							<div class="carousel slide" id="myCarousel">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Image</h3>
+      </div>
+      <div class="panel-body">
+        <p>Description coming soon.</p>
+        <hr>
+        <form class="form-horizontal bh--form-example">
+          <!-- A field and all related tags and content are wrapped in a form group element -->
+          <div class="form-group bh--form-image">
+            <!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
+            <label for="image1" class="col-sm-2 control-label">Image (Multiple Options Provided)</label>
+            <div class="col-sm-10">
+              <div class="carousel slide" id="myCarousel">
 
-								<ol class="carousel-indicators">
-									<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-									<li data-target="#myCarousel" data-slide-to="1"></li>
-									<li data-target="#myCarousel" data-slide-to="2"></li>
-								</ol>
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
 
-								<div class="carousel-inner">
+                <div class="carousel-inner">
 
-									<div class="item active">
-										<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2 col-sm-offset-1">
-											<a href="#">
-												<img src="http://lorempixel.com/200/200/sports" class="img-responsive">
-												<div class="carousel-caption">
-													one.jpg<br>
-													<small>200x200</small>
-												</div>
-											</a>
-										</div>
-										<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-											<a href="#" class="selected">
-												<img src="http://lorempixel.com/200/200/" class="img-responsive">
-												<div class="carousel-caption">
-													two.png<br>
-													<small>200x100</small>
-												</div>
-											</a>
-										</div>
-										<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-											<a href="#">
-												<img src="http://lorempixel.com/200/200/sports" class="img-responsive">
-												<div class="carousel-caption">
-													3.jpg<br>
-													<small>500x800</small>
-												</div>
-											</a>
-										</div>
-										<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-											<a href="#">
-												<img src="http://lorempixel.com/200/200/" class="img-responsive">
-												<div class="carousel-caption">
-													two.png<br>
-													<small>200x100</small>
-												</div>
-											</a>
-										</div>
-										<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-											<a href="#">
-												<img src="http://lorempixel.com/200/200/sports" class="img-responsive">
-												<div class="carousel-caption">
-													3.jpg<br>
-													<small>500x800</small>
-												</div>
-											</a>
-										</div>
-									</div>
+                  <div class="item active">
+                    <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2 col-sm-offset-1">
+                      <a href="#">
+                        <img src="http://lorempixel.com/200/200/sports" class="img-responsive">
+                        <div class="carousel-caption">
+                          one.jpg<br>
+                          <small>200x200</small>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
+                      <a href="#" class="selected">
+                        <img src="http://lorempixel.com/200/200/" class="img-responsive">
+                        <div class="carousel-caption">
+                          two.png<br>
+                          <small>200x100</small>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
+                      <a href="#">
+                        <img src="http://lorempixel.com/200/200/sports" class="img-responsive">
+                        <div class="carousel-caption">
+                          3.jpg<br>
+                          <small>500x800</small>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
+                      <a href="#">
+                        <img src="http://lorempixel.com/200/200/" class="img-responsive">
+                        <div class="carousel-caption">
+                          two.png<br>
+                          <small>200x100</small>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
+                      <a href="#">
+                        <img src="http://lorempixel.com/200/200/sports" class="img-responsive">
+                        <div class="carousel-caption">
+                          3.jpg<br>
+                          <small>500x800</small>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
 
-									<div class="item">
-										<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2 col-sm-offset-1">
-											<a href="#">
-												<img src="http://lorempixel.com/200/200/" class="img-responsive">
-												<div class="carousel-caption">
-													four.jpg<br>
-													<small>300x150</small>
-												</div>
-											</a>
-										</div>
-										<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-											<a href="#">
-												<img src="http://lorempixel.com/200/200/sports" class="img-responsive">
-												<div class="carousel-caption">
-													5.gif<br>
-													<small>900x900</small>
-												</div>
-											</a>
-										</div>
-										<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-											<a href="#">
-												<img src="http://lorempixel.com/200/200/" class="img-responsive">
-												<div class="carousel-caption">
-													6.png<br>
-													<small>100x100</small>
-												</div>
-											</a>
-										</div>
-										<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-											<a href="#">
-												<img src="http://lorempixel.com/200/200/sports" class="img-responsive">
-												<div class="carousel-caption">
-													5.gif<br>
-													<small>900x900</small>
-												</div>
-											</a>
-										</div>
-										<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-											<a href="#">
-												<img src="http://lorempixel.com/200/200/" class="img-responsive">
-												<div class="carousel-caption">
-													6.png<br>
-													<small>100x100</small>
-												</div>
-											</a>
-										</div>
-									</div>
+                  <div class="item">
+                    <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2 col-sm-offset-1">
+                      <a href="#">
+                        <img src="http://lorempixel.com/200/200/" class="img-responsive">
+                        <div class="carousel-caption">
+                          four.jpg<br>
+                          <small>300x150</small>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
+                      <a href="#">
+                        <img src="http://lorempixel.com/200/200/sports" class="img-responsive">
+                        <div class="carousel-caption">
+                          5.gif<br>
+                          <small>900x900</small>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
+                      <a href="#">
+                        <img src="http://lorempixel.com/200/200/" class="img-responsive">
+                        <div class="carousel-caption">
+                          6.png<br>
+                          <small>100x100</small>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
+                      <a href="#">
+                        <img src="http://lorempixel.com/200/200/sports" class="img-responsive">
+                        <div class="carousel-caption">
+                          5.gif<br>
+                          <small>900x900</small>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
+                      <a href="#">
+                        <img src="http://lorempixel.com/200/200/" class="img-responsive">
+                        <div class="carousel-caption">
+                          6.png<br>
+                          <small>100x100</small>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
 
-									<div class="item">
-										<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2 col-sm-offset-1">
-											<a href="#">
-												<img src="http://lorempixel.com/200/200/sports" class="img-responsive">
-												<div class="carousel-caption">
-													seven.jpg<br>
-													<small>250x50</small>
-												</div>
-											</a>
-										</div>
-										<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-											<a href="#">
-												<img src="http://lorempixel.com/200/200/" class="img-responsive">
-												<div class="carousel-caption">
-													eight.jpg<br>
-													<small>50x400</small>
-												</div>
-											</a>
-										</div>
-										<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-											<a href="#">
-												<img src="http://lorempixel.com/200/200/" class="img-responsive">
-												<div class="carousel-caption">
-													eight.jpg<br>
-													<small>50x400</small>
-												</div>
-											</a>
-										</div>
-										<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-											<a href="#">
-												<img src="http://lorempixel.com/200/200/" class="img-responsive">
-												<div class="carousel-caption">
-													eight.jpg<br>
-													<small>50x400</small>
-												</div>
-											</a>
-										</div>
-									</div>
-								</div>
-								<!-- Controls -->
-								<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-									<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-									<span class="sr-only">Previous</span>
-								</a>
-								<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-									<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-									<span class="sr-only">Next</span>
-								</a>
-							</div><!-- /.carousel -->
-							<div class="bh--form-image-controls">
-								<input type="file" id="image1" class="form-control hidden">
-								<button type="button" class="btn btn-default">Upload Image</button>
-								<button type="button" class="btn btn-link">Clear</button>
-							</div>
-							<!-- You may include help text. -->
-							<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
-						</div>
-					</div>
-				</form>
-				<h4>Sample Code</h4>
+                  <div class="item">
+                    <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2 col-sm-offset-1">
+                      <a href="#">
+                        <img src="http://lorempixel.com/200/200/sports" class="img-responsive">
+                        <div class="carousel-caption">
+                          seven.jpg<br>
+                          <small>250x50</small>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
+                      <a href="#">
+                        <img src="http://lorempixel.com/200/200/" class="img-responsive">
+                        <div class="carousel-caption">
+                          eight.jpg<br>
+                          <small>50x400</small>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
+                      <a href="#">
+                        <img src="http://lorempixel.com/200/200/" class="img-responsive">
+                        <div class="carousel-caption">
+                          eight.jpg<br>
+                          <small>50x400</small>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
+                      <a href="#">
+                        <img src="http://lorempixel.com/200/200/" class="img-responsive">
+                        <div class="carousel-caption">
+                          eight.jpg<br>
+                          <small>50x400</small>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Controls -->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div><!-- /.carousel -->
+              <div class="bh--form-image-controls">
+                <input type="file" id="image1" class="form-control hidden">
+                <button type="button" class="btn btn-default">Upload Image</button>
+                <button type="button" class="btn btn-link">Clear</button>
+              </div>
+              <!-- You may include help text. -->
+              <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+            </div>
+          </div>
+        </form>
+        <h4>Sample Code</h4>
 <!-- Start Code -->
 {% highlight html %}
 <!-- A field and all related tags and content are wrapped in a form group element -->
 <div class="form-group bh--form-image">
-	<!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
-	<label for="image1" class="col-sm-2 control-label">Image (Multiple Options Provided)</label>
-	<div class="col-sm-10">
-		<!-- Make sure to use both the carousel and slide classes. The ID should be unique. -->
-		<div class="carousel slide" id="myCarousel">
+  <!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
+  <label for="image1" class="col-sm-2 control-label">Image (Multiple Options Provided)</label>
+  <div class="col-sm-10">
+    <!-- Make sure to use both the carousel and slide classes. The ID should be unique. -->
+    <div class="carousel slide" id="myCarousel">
 
-			<!-- The carousel indicators list should be built dynamically based on how many pages of images there are. -->
-			<ol class="carousel-indicators">
-				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-				<li data-target="#myCarousel" data-slide-to="1"></li>
-				<li data-target="#myCarousel" data-slide-to="2"></li>
-			</ol>
+      <!-- The carousel indicators list should be built dynamically based on how many pages of images there are. -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
 
-			<div class="carousel-inner">
+      <div class="carousel-inner">
 
-				<!-- The carousel item is a container which includes multiple images. -->
-				<div class="item active">
-					<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2 col-sm-offset-1">
-						<a href="#">
-							<img src="http://lorempixel.com/200/200/sports" class="img-responsive">
-							<div class="carousel-caption">
-								one.jpg<br>
-								<small>200x200</small>
-							</div>
-						</a>
-					</div>
-					<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-						<!-- The class selected indicates which image is the current selection in the form. -->
-						<a href="#" class="selected">
-							<img src="http://lorempixel.com/200/200/" class="img-responsive">
-							<div class="carousel-caption">
-								two.png<br>
-								<small>200x100</small>
-							</div>
-						</a>
-					</div>
-					<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-						<a href="#">
-							<img src="http://lorempixel.com/200/200/sports" class="img-responsive">
-							<div class="carousel-caption">
-								3.jpg<br>
-								<small>500x800</small>
-							</div>
-						</a>
-					</div>
-					<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-						<a href="#">
-							<img src="http://lorempixel.com/200/200/" class="img-responsive">
-							<div class="carousel-caption">
-								two.png<br>
-								<small>200x100</small>
-							</div>
-						</a>
-					</div>
-					<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-						<a href="#">
-							<img src="http://lorempixel.com/200/200/sports" class="img-responsive">
-							<div class="carousel-caption">
-								3.jpg<br>
-								<small>500x800</small>
-							</div>
-						</a>
-					</div>
-				</div>
-				<!-- Another page of images. -->
-				<div class="item">
-					<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2 col-sm-offset-1">
-						<a href="#">
-							<img src="http://lorempixel.com/200/200/" class="img-responsive">
-							<div class="carousel-caption">
-								four.jpg<br>
-								<small>300x150</small>
-							</div>
-						</a>
-					</div>
-					<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-						<a href="#">
-							<img src="http://lorempixel.com/200/200/sports" class="img-responsive">
-							<div class="carousel-caption">
-								5.gif<br>
-								<small>900x900</small>
-							</div>
-						</a>
-					</div>
-					<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-						<a href="#">
-							<img src="http://lorempixel.com/200/200/" class="img-responsive">
-							<div class="carousel-caption">
-								6.png<br>
-								<small>100x100</small>
-							</div>
-						</a>
-					</div>
-					<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-						<a href="#">
-							<img src="http://lorempixel.com/200/200/sports" class="img-responsive">
-							<div class="carousel-caption">
-								5.gif<br>
-								<small>900x900</small>
-							</div>
-						</a>
-					</div>
-					<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-						<a href="#">
-							<img src="http://lorempixel.com/200/200/" class="img-responsive">
-							<div class="carousel-caption">
-								6.png<br>
-								<small>100x100</small>
-							</div>
-						</a>
-					</div>
-				</div>
-				<!-- Another page of images. -->
-				<div class="item">
-					<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2 col-sm-offset-1">
-						<a href="#">
-							<img src="http://lorempixel.com/200/200/sports" class="img-responsive">
-							<div class="carousel-caption">
-								seven.jpg<br>
-								<small>250x50</small>
-							</div>
-						</a>
-					</div>
-					<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-						<a href="#">
-							<img src="http://lorempixel.com/200/200/" class="img-responsive">
-							<div class="carousel-caption">
-								eight.jpg<br>
-								<small>50x400</small>
-							</div>
-						</a>
-					</div>
-					<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-						<a href="#">
-							<img src="http://lorempixel.com/200/200/" class="img-responsive">
-							<div class="carousel-caption">
-								eight.jpg<br>
-								<small>50x400</small>
-							</div>
-						</a>
-					</div>
-					<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-						<a href="#">
-							<img src="http://lorempixel.com/200/200/" class="img-responsive">
-							<div class="carousel-caption">
-								eight.jpg<br>
-								<small>50x400</small>
-							</div>
-						</a>
-					</div>
-				</div>
-			</div>
-			<!-- Controls -->
-			<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><!-- Make sure the href matches the ID of the carousel you wish to advance. -->
-				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-				<span class="sr-only">Previous</span>
-			</a>
-			<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-				<span class="sr-only">Next</span>
-			</a>
-		</div><!-- /.carousel -->
-		<!-- Form fields and inputs. -->
-		<div class="bh--form-image-controls">
-			<!-- Necessary but hidden fields should be given the hidden class. -->
-			<input type="file" id="image1" class="form-control hidden">
-			<button type="button" class="btn btn-default">Upload Image</button>
-			<button type="button" class="btn btn-link">Clear</button>
-		</div>
-		<!-- You may include help text. -->
-		<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
-	</div>
+        <!-- The carousel item is a container which includes multiple images. -->
+        <div class="item active">
+          <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2 col-sm-offset-1">
+            <a href="#">
+              <img src="http://lorempixel.com/200/200/sports" class="img-responsive">
+              <div class="carousel-caption">
+                one.jpg<br>
+                <small>200x200</small>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
+            <!-- The class selected indicates which image is the current selection in the form. -->
+            <a href="#" class="selected">
+              <img src="http://lorempixel.com/200/200/" class="img-responsive">
+              <div class="carousel-caption">
+                two.png<br>
+                <small>200x100</small>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
+            <a href="#">
+              <img src="http://lorempixel.com/200/200/sports" class="img-responsive">
+              <div class="carousel-caption">
+                3.jpg<br>
+                <small>500x800</small>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
+            <a href="#">
+              <img src="http://lorempixel.com/200/200/" class="img-responsive">
+              <div class="carousel-caption">
+                two.png<br>
+                <small>200x100</small>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
+            <a href="#">
+              <img src="http://lorempixel.com/200/200/sports" class="img-responsive">
+              <div class="carousel-caption">
+                3.jpg<br>
+                <small>500x800</small>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- Another page of images. -->
+        <div class="item">
+          <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2 col-sm-offset-1">
+            <a href="#">
+              <img src="http://lorempixel.com/200/200/" class="img-responsive">
+              <div class="carousel-caption">
+                four.jpg<br>
+                <small>300x150</small>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
+            <a href="#">
+              <img src="http://lorempixel.com/200/200/sports" class="img-responsive">
+              <div class="carousel-caption">
+                5.gif<br>
+                <small>900x900</small>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
+            <a href="#">
+              <img src="http://lorempixel.com/200/200/" class="img-responsive">
+              <div class="carousel-caption">
+                6.png<br>
+                <small>100x100</small>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
+            <a href="#">
+              <img src="http://lorempixel.com/200/200/sports" class="img-responsive">
+              <div class="carousel-caption">
+                5.gif<br>
+                <small>900x900</small>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
+            <a href="#">
+              <img src="http://lorempixel.com/200/200/" class="img-responsive">
+              <div class="carousel-caption">
+                6.png<br>
+                <small>100x100</small>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- Another page of images. -->
+        <div class="item">
+          <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2 col-sm-offset-1">
+            <a href="#">
+              <img src="http://lorempixel.com/200/200/sports" class="img-responsive">
+              <div class="carousel-caption">
+                seven.jpg<br>
+                <small>250x50</small>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
+            <a href="#">
+              <img src="http://lorempixel.com/200/200/" class="img-responsive">
+              <div class="carousel-caption">
+                eight.jpg<br>
+                <small>50x400</small>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
+            <a href="#">
+              <img src="http://lorempixel.com/200/200/" class="img-responsive">
+              <div class="carousel-caption">
+                eight.jpg<br>
+                <small>50x400</small>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
+            <a href="#">
+              <img src="http://lorempixel.com/200/200/" class="img-responsive">
+              <div class="carousel-caption">
+                eight.jpg<br>
+                <small>50x400</small>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><!-- Make sure the href matches the ID of the carousel you wish to advance. -->
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.carousel -->
+    <!-- Form fields and inputs. -->
+    <div class="bh--form-image-controls">
+      <!-- Necessary but hidden fields should be given the hidden class. -->
+      <input type="file" id="image1" class="form-control hidden">
+      <button type="button" class="btn btn-default">Upload Image</button>
+      <button type="button" class="btn btn-link">Clear</button>
+    </div>
+    <!-- You may include help text. -->
+    <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+  </div>
 </div>
 {% endhighlight %}
 
-			<form class="form-horizontal bh--form-example">
-				<!-- A field and all related tags and content are wrapped in a form group element -->
-				<div class="form-group bh--form-image">
-					<!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
-					<label for="image1" class="col-sm-2 control-label">Image (No Options)</label>
-					<div class="col-sm-10">
-						<div class="preview">
-							<img src="" alt="No Image Loaded Yet">
-						</div>
-						<div class="controls">
-							<input type="file" id="image1" class="form-control hidden">
-							<button type="button" class="btn btn-default">Upload Image</button>
-							<button type="button" class="btn btn-link">Clear</button>
-						</div>
-						<!-- You may include help text. -->
-						<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
-					</div>
-				</div>
-			</form>
+      <form class="form-horizontal bh--form-example">
+        <!-- A field and all related tags and content are wrapped in a form group element -->
+        <div class="form-group bh--form-image">
+          <!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
+          <label for="image1" class="col-sm-2 control-label">Image (No Options)</label>
+          <div class="col-sm-10">
+            <div class="preview">
+              <img src="" alt="No Image Loaded Yet">
+            </div>
+            <div class="controls">
+              <input type="file" id="image1" class="form-control hidden">
+              <button type="button" class="btn btn-default">Upload Image</button>
+              <button type="button" class="btn btn-link">Clear</button>
+            </div>
+            <!-- You may include help text. -->
+            <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+          </div>
+        </div>
+      </form>
 <!-- Start Code -->
 {% highlight html %}
 <!-- A field and all related tags and content are wrapped in a form group element -->
 <div class="form-group bh--form-image">
-	<!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
-	<label for="image1" class="col-sm-2 control-label">Image (No Options)</label>
-	<div class="col-sm-10">
-		<div class="preview">
-			<img src="" alt="No Image Loaded Yet">
-		</div>
-		<div class="controls">
-			<input type="file" id="image1" class="form-control hidden">
-			<button type="button" class="btn btn-default">Upload Image</button>
-			<button type="button" class="btn btn-link">Clear</button>
-		</div>
-		<!-- You may include help text. -->
-		<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
-	</div>
+  <!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
+  <label for="image1" class="col-sm-2 control-label">Image (No Options)</label>
+  <div class="col-sm-10">
+    <div class="preview">
+      <img src="" alt="No Image Loaded Yet">
+    </div>
+    <div class="controls">
+      <input type="file" id="image1" class="form-control hidden">
+      <button type="button" class="btn btn-default">Upload Image</button>
+      <button type="button" class="btn btn-link">Clear</button>
+    </div>
+    <!-- You may include help text. -->
+    <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+  </div>
 </div>
 {% endhighlight %}
-			</div>
-		</div>
+      </div>
+    </div>
 
 
 <!--
  #######
-	#    #####  ###### ######
-	#    #    # #      #
-	#    #    # #####  #####
-	#    #####  #      #
-	#    #   #  #      #
-	#    #    # ###### ######
+  #    #####  ###### ######
+  #    #    # #      #
+  #    #    # #####  #####
+  #    #####  #      #
+  #    #   #  #      #
+  #    #    # ###### ######
 
  -->
-		<div class="panel panel-default">
-			<div class="panel-heading">
-				<h3 class="panel-title">Tree</h3>
-			</div>
-			<div class="panel-body">
-				<p>Description coming soon</p>
-				<hr>
-				<p>Expect to see documentation on this in the future.</p>
-				<h4>Sample Code</h4>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Tree</h3>
+      </div>
+      <div class="panel-body">
+        <p>Description coming soon</p>
+        <hr>
+        <p>Expect to see documentation on this in the future.</p>
+        <h4>Sample Code</h4>
 <!-- Start Code -->
 {% highlight html %}
 <!-- A work in progress -->
 {% endhighlight %}
-			</div>
-		</div>
+      </div>
+    </div>
 
 
 
@@ -1141,38 +1141,38 @@ layout: default
   #####   ####  ######  ####  #    #
 
  -->
-		<div class="panel panel-default">
-			<div class="panel-heading">
-				<h3 class="panel-title">Color</h3>
-			</div>
-			<div class="panel-body">
-				<p>Description coming soon</p>
-				<hr>
-				<form class="form-horizontal bh--form-example">
-					<!-- A field and all related tags and content are wrapped in a form group element -->
-					<div class="form-group bh--form-color">
-						<!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
-						<label for="color1" class="col-sm-2 control-label">Color Picker</label>
-						<div class="col-sm-8">
-							<input type="text" id="color1" class="form-control bh--colorpicker">
-							<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
-						</div>
-					</div>
-				</form>
-				<h4>Sample Code</h4>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Color</h3>
+      </div>
+      <div class="panel-body">
+        <p>Description coming soon</p>
+        <hr>
+        <form class="form-horizontal bh--form-example">
+          <!-- A field and all related tags and content are wrapped in a form group element -->
+          <div class="form-group bh--form-color">
+            <!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
+            <label for="color1" class="col-sm-2 control-label">Color Picker</label>
+            <div class="col-sm-8">
+              <input type="text" id="color1" class="form-control bh--colorpicker">
+              <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+            </div>
+          </div>
+        </form>
+        <h4>Sample Code</h4>
 <!-- Start Code -->
 {% highlight html %}
 <div class="form-group bh--form-color">
-	<label for="color1" class="col-sm-2 control-label">Color Picker</label>
-	<div class="col-sm-8">
-		<!-- The colorpicker uses a text field. bh--colorpicker class is required for the js to initialize -->
-		<input type="text" id="color1" class="form-control bh--colorpicker">
-		<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
-	</div>
+  <label for="color1" class="col-sm-2 control-label">Color Picker</label>
+  <div class="col-sm-8">
+    <!-- The colorpicker uses a text field. bh--colorpicker class is required for the js to initialize -->
+    <input type="text" id="color1" class="form-control bh--colorpicker">
+    <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+  </div>
 </div>
 {% endhighlight %}
-			</div>
-		</div>
+      </div>
+    </div>
 
 
 
@@ -1186,76 +1186,76 @@ layout: default
  ### #    # #       ####
 
  -->
-		<div class="panel panel-default">
-			<div class="panel-heading">
-				<h3 class="panel-title">Info</h3>
-			</div>
-			<div class="panel-body">
-				<p>A basic field for providing instructional and supplemental text in a form.</p>
-				<hr>
-				<form class="form-horizontal bh--form-example">
-					<!-- A field and all related tags and content are wrapped in a form group element -->
-					<div class="form-group">
-						<!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
-						<div class="col-sm-8 col-sm-offset-2">
-							<p>Some arbitrary text in an info field. Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
-						</div>
-					</div>
-				</form>
-				<h4>Sample Code</h4>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Info</h3>
+      </div>
+      <div class="panel-body">
+        <p>A basic field for providing instructional and supplemental text in a form.</p>
+        <hr>
+        <form class="form-horizontal bh--form-example">
+          <!-- A field and all related tags and content are wrapped in a form group element -->
+          <div class="form-group">
+            <!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
+            <div class="col-sm-8 col-sm-offset-2">
+              <p>Some arbitrary text in an info field. Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
+            </div>
+          </div>
+        </form>
+        <h4>Sample Code</h4>
 <!-- Start Code -->
 {% highlight html %}
 <div class="form-group">
-	<div class="col-sm-8 col-sm-offset-2">
-		<!-- Info fields are provided as a simple paragraph tag. -->
-		<p>Some arbitrary text in an info field. Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
-	</div>
+  <div class="col-sm-8 col-sm-offset-2">
+    <!-- Info fields are provided as a simple paragraph tag. -->
+    <p>Some arbitrary text in an info field. Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
+  </div>
 </div>
 {% endhighlight %}
-			</div>
-		</div>
+      </div>
+    </div>
 
 
 
 <!--
  #######
-	#    # #    # ######
-	#    # ##  ## #
-	#    # # ## # #####
-	#    # #    # #
-	#    # #    # #
-	#    # #    # ######
+  #    # #    # ######
+  #    # ##  ## #
+  #    # # ## # #####
+  #    # #    # #
+  #    # #    # #
+  #    # #    # ######
 
  -->
-		<div class="panel panel-default">
-			<div class="panel-heading">
-				<h3 class="panel-title">Time</h3>
-			</div>
-			<div class="panel-body">
-				<p>The time picker uses http://acpmasquerade.github.io/bootstrap3-timepicker2/ which is based on jdewits time picker but ported to bootstrap 3.</p>
-				<hr>
-				<form class="form-horizontal bh--form-example">
-					<!-- A field and all related tags and content are wrapped in a form group element -->
-					<div class="form-group">
-						<!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
-						<label for="timepicker1" class="col-sm-2 control-label">Timepicker</label>
-						<div class="col-sm-8">
-							<input id="timepicker1" type="text" class="form-control bh--timepicker"> <!-- need the bh--timepicker class for script to initialize -->
-							<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line .</span>
-						</div>
-					</div>
-				</form>
-				<h4>Sample Code</h4>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Time</h3>
+      </div>
+      <div class="panel-body">
+        <p>The time picker uses http://acpmasquerade.github.io/bootstrap3-timepicker2/ which is based on jdewits time picker but ported to bootstrap 3.</p>
+        <hr>
+        <form class="form-horizontal bh--form-example">
+          <!-- A field and all related tags and content are wrapped in a form group element -->
+          <div class="form-group">
+            <!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
+            <label for="timepicker1" class="col-sm-2 control-label">Timepicker</label>
+            <div class="col-sm-8">
+              <input id="timepicker1" type="text" class="form-control bh--timepicker"> <!-- need the bh--timepicker class for script to initialize -->
+              <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line .</span>
+            </div>
+          </div>
+        </form>
+        <h4>Sample Code</h4>
 <!-- Start Code -->
 {% highlight html %}
 <div class="form-group">
-	<label for="timepicker1" class="col-sm-2 control-label">Timepicker</label>
-	<div class="col-sm-8">
-		<!-- The timepicker is a simple text field. It needs the bh--timepicker class for script to initialize -->
-		<input id="timepicker1" type="text" class="form-control bh--timepicker">
-		<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line .</span>
-	</div>
+  <label for="timepicker1" class="col-sm-2 control-label">Timepicker</label>
+  <div class="col-sm-8">
+    <!-- The timepicker is a simple text field. It needs the bh--timepicker class for script to initialize -->
+    <input id="timepicker1" type="text" class="form-control bh--timepicker">
+    <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line .</span>
+  </div>
 </div>
 {% endhighlight %}
-			</div>
-		</div>
+      </div>
+    </div>
