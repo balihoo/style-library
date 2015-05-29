@@ -1,5 +1,6 @@
 ---
 title: Groups
+order: 2
 ---
 
 A group, in this case, refers to a form builder group which encapulates several form builder fields. (As opposed to a 'form-group' which is a css class used in bootstrap to group content related to a single field)
@@ -92,7 +93,8 @@ A group, in this case, refers to a form builder group which encapulates several 
 
 ### Sample Code
 
-{% highlight html %}
+{% highlight html linenos %}
+
 <form class="form-horizontal">
   <!-- Groups use the fieldset tag and are wrapped in a bootstrap well element. -->
   <div class="well">
@@ -113,6 +115,7 @@ A group, in this case, refers to a form builder group which encapulates several 
       </div>
     </fieldset>
   </div>
+
   <!-- A second group. -->
   <div class="well">
     <fieldset>
@@ -180,5 +183,60 @@ A group, in this case, refers to a form builder group which encapulates several 
     </div>
   </div>
 </form>
+
 {% endhighlight %}
 
+**********
+
+
+### Inline Groups
+
+Groups may have the a display inline attribute in form builder. When this is the case there is some work that will need to be done calculating the number of columns that are present in the field group and then setting the column class appropriately. Each label, input, and other field (such as info fields) will need to be treated as a column.
+
+When calculating the number of columns, keep in mind that Bootstrap uses a twelve column grid so values that do not evening go into twelve will need to have their column width rounded down. (e.g. If you have 5 fields in an inline group then the column width for each column would be 2 rather than 3)
+
+More than columns that are only 1 unit wide are not advisable so it is recommended that 6 be the maximum number of fields in an inline group row.
+
+
+<form class="form-horizontal bh--form-example">
+  <div class="well">
+    <fieldset>
+      <legend>Inline Group</legend>
+
+      <div class="col-sm-3">
+        <div class="form-group">
+          <div class="col-sm-12">
+            <p>Date:</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="form-group">
+          <label for="inline1" class="col-sm-12 control-label">Text</label>
+          <div class="col-sm-12">
+            <input type="text" class="form-control bh--timepicker" id="inline1" placeholder="Start">
+            <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="form-group">
+          <div class="col-sm-12">
+            <p>to</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="form-group">
+          <div class="col-sm-12">
+            <input type="text" class="form-control bh--timepicker" id="inline2" placeholder="End">
+          </div>
+        </div>
+      </div>
+
+    </fieldset>
+  </div>
+</form>

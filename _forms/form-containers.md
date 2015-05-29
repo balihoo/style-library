@@ -1,5 +1,6 @@
 ---
 title: Form Containers
+order: 1
 ---
 
 Balihoo forms should be laid out with labels left aligned and fields left aligned in their own column. This creates pleasing vertical flow and allows labels to be easily scanned.
@@ -37,9 +38,10 @@ Balihoo forms should be laid out with labels left aligned and fields left aligne
 
 ### Code Sample
 
-{% highlight html %}
-<!-- The form tag is given a class of 'form-horizontal' for the left aligned layout. -->
+{% highlight html linenos %}
+
 <form class="form-horizontal">
+  <!-- The form tag is given a class of 'form-horizontal' for the left aligned layout. -->
   <!-- A field and all related tags and content are wrapped in a form group element. -->
   <div class="form-group">
     <!-- Labels and field are set using bootstrap grid classes such as col-sm-2.  -->
@@ -70,4 +72,5 @@ Balihoo forms should be laid out with labels left aligned and fields left aligne
     </div>
   </div>
 </form>
+
 {% endhighlight %}

@@ -1,5 +1,6 @@
 ---
 title: Textarea
+order: 4
 ---
 
 Textarea fields are multi-line text inputs.
@@ -20,7 +21,8 @@ Textarea fields are multi-line text inputs.
 
 ### Sample Code
 
-{% highlight html %}
+{% highlight html linenos %}
+
 <div class="form-group">
   <label for="textarea1" class="col-sm-2 control-label">Textarea</label>
   <div class="col-sm-8">
@@ -30,4 +32,5 @@ Textarea fields are multi-line text inputs.
     <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
   </div>
 </div>
+
 {% endhighlight %}

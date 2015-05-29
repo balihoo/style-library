@@ -1,5 +1,6 @@
 ---
 title: Select
+order: 6
 ---
 
 Select elements will display differently based on how they are configured.
@@ -34,7 +35,8 @@ Select elements will display differently based on how they are configured.
 
 ### Sample Code 1
 
-{% highlight html %}
+{% highlight html linenos %}
+
 <div class="form-group">
   <!-- Radios are offset since there is no label visible to the left of the field. -->
   <div class="col-sm-8 col-sm-offset-2">
@@ -58,6 +60,7 @@ Select elements will display differently based on how they are configured.
     <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
   </div>
 </div>
+
 {% endhighlight %}
 
 **********
@@ -85,7 +88,8 @@ If no default option is provided then the single select field will display as a 
 
 ### Sample Code 2
 
-{% highlight html %}
+{% highlight html linenos %}
+
 <div class="form-group">
   <label for="select1" class="col-sm-2">Single Select Dropdown</label>
   <div id="select1" class="col-sm-8">
@@ -101,4 +105,5 @@ If no default option is provided then the single select field will display as a 
     <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
   </div>
 </div>
+
 {% endhighlight %}

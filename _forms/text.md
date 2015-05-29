@@ -1,5 +1,6 @@
 ---
 title: Text
+order: 3
 ---
 
 Text fields are single line text inputs.
@@ -20,7 +21,8 @@ Text fields are single line text inputs.
 
 ### Sample Code
 
-{% highlight html %}
+{% highlight html linenos %}
+
 <div class="form-group">
   <label for="input1" class="col-sm-2 control-label">Text</label>
   <div class="col-sm-8">
@@ -30,4 +32,5 @@ Text fields are single line text inputs.
     <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
   </div>
 </div><!-- /.form-group -->
+
 {% endhighlight %}

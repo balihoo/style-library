@@ -1,5 +1,6 @@
 ---
-title: Form Containers
+title: Boolean
+order: 5
 ---
 
 Description
@@ -23,7 +24,8 @@ Description
 
 ### Sample Code
 
-{% highlight html %}
+{% highlight html linenos%}
+
 <div class="form-group">
   <!-- Checkboxes need an offset since the label is displayed to the right of the checkbox rather than to the left of the field. -->
   <div class="col-sm-8 col-sm-offset-2">
@@ -38,4 +40,5 @@ Description
     <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
   </div>
 </div>
+
 {% endhighlight %}
