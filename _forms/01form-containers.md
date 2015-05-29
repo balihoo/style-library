@@ -1,6 +1,5 @@
 ---
 title: Form Containers
-order: 1
 ---
 
 Balihoo forms should be laid out with labels left aligned and fields left aligned in their own column. This creates pleasing vertical flow and allows labels to be easily scanned.

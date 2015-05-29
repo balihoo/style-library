@@ -1,6 +1,5 @@
 ---
 title: Image
-order: 8
 ---
 
 Description coming soon.

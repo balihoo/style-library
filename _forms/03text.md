@@ -1,9 +1,8 @@
 ---
-title: Textarea
-order: 4
+title: Text
 ---
 
-Textarea fields are multi-line text inputs.
+Text fields are single line text inputs.
 
 **********
 
@@ -11,9 +10,9 @@ Textarea fields are multi-line text inputs.
   <!-- A field and all related tags and content are wrapped in a form group element -->
   <div class="form-group">
     <!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
-    <label for="textarea1" class="col-sm-2 control-label">Textarea</label>
+    <label for="input1" class="col-sm-2 control-label">Text</label>
     <div class="col-sm-8">
-      <textarea class="form-control" rows="3" id="textarea1" placeholder="Placeholder"></textarea>
+      <input type="text" class="form-control" id="input1" placeholder="Placeholder Text">
       <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
     </div>
   </div>
@@ -24,13 +23,13 @@ Textarea fields are multi-line text inputs.
 {% highlight html linenos %}
 
 <div class="form-group">
-  <label for="textarea1" class="col-sm-2 control-label">Textarea</label>
+  <label for="input1" class="col-sm-2 control-label">Text</label>
   <div class="col-sm-8">
-    <!-- Text fields use a basic html textarea with a from-control class. -->
-    <textarea class="form-control" rows="3" id="textarea1" placeholder="Placeholder"></textarea><!-- Placeholder text should be dynamic if supplied. -->
+    <!-- Text fields use a basic html text input with a from-control class. -->
+    <input type="text" class="form-control" id="input1" placeholder="Placeholder Text"><!-- Placeholder text should be dynamic if supplied -->
     <!-- You may include help text. -->
     <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
   </div>
-</div>
+</div><!-- /.form-group -->
 
 {% endhighlight %}

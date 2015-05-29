@@ -1,6 +1,5 @@
 ---
 title: Boolean
-order: 5
 ---
 
 Description

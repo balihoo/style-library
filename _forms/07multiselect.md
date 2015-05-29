@@ -1,6 +1,5 @@
 ---
 title: Multi-Select
-order: 7
 ---
 
 Multi-Select elements will display differently based on how they are configured.

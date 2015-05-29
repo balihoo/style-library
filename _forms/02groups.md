@@ -1,6 +1,5 @@
 ---
 title: Groups
-order: 2
 ---
 
 A group, in this case, refers to a form builder group which encapulates several form builder fields. (As opposed to a 'form-group' which is a css class used in bootstrap to group content related to a single field)

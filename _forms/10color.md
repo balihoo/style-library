@@ -1,19 +1,18 @@
 ---
-title: Text
-order: 3
+title: Color
 ---
 
-Text fields are single line text inputs.
+Description coming soon.
 
 **********
 
 <form class="form-horizontal bh--form-example">
   <!-- A field and all related tags and content are wrapped in a form group element -->
-  <div class="form-group">
+  <div class="form-group bh--form-color">
     <!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
-    <label for="input1" class="col-sm-2 control-label">Text</label>
+    <label for="color1" class="col-sm-2 control-label">Color Picker</label>
     <div class="col-sm-8">
-      <input type="text" class="form-control" id="input1" placeholder="Placeholder Text">
+      <input type="text" id="color1" class="form-control bh--colorpicker">
       <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
     </div>
   </div>
@@ -23,14 +22,13 @@ Text fields are single line text inputs.
 
 {% highlight html linenos %}
 
-<div class="form-group">
-  <label for="input1" class="col-sm-2 control-label">Text</label>
+<div class="form-group bh--form-color">
+  <label for="color1" class="col-sm-2 control-label">Color Picker</label>
   <div class="col-sm-8">
-    <!-- Text fields use a basic html text input with a from-control class. -->
-    <input type="text" class="form-control" id="input1" placeholder="Placeholder Text"><!-- Placeholder text should be dynamic if supplied -->
-    <!-- You may include help text. -->
+    <!-- The colorpicker uses a text field. bh--colorpicker class is required for the js to initialize -->
+    <input type="text" id="color1" class="form-control bh--colorpicker">
     <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
   </div>
-</div><!-- /.form-group -->
+</div>
 
 {% endhighlight %}

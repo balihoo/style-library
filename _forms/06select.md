@@ -1,6 +1,5 @@
 ---
 title: Select
-order: 6
 ---
 
 Select elements will display differently based on how they are configured.

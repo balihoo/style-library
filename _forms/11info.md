@@ -1,6 +1,5 @@
 ---
 title: Info
-order: 11
 ---
 
 A basic field for providing instructional and supplemental text in a form.
