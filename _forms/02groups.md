@@ -239,3 +239,51 @@ More than columns that are only 1 unit wide are not advisable so it is recommend
     </fieldset>
   </div>
 </form>
+
+### Sample Code
+
+{% highlight html linenos %}
+
+<div class="well">
+  <fieldset>
+    <legend>Inline Group</legend>
+    <!-- Each form-group will need to be wrapped in it's own grid container. The number of columns to span should be calculated based on the number of fields in the inline group. -->
+    <div class="col-sm-3">
+      <div class="form-group">
+        <div class="col-sm-12"><!-- grid containers in the form-group should all span 12 columns -->
+          <p>Date:</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-3">
+      <div class="form-group">
+        <!-- grid containers in the form-group should all span 12 columns, including labels -->
+        <label for="inline1" class="col-sm-12 control-label">Text</label>
+        <div class="col-sm-12">
+          <input type="text" class="form-control bh--timepicker" id="inline1" placeholder="Start">
+          <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-3">
+      <div class="form-group">
+        <div class="col-sm-12">
+          <p>to</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-3">
+      <div class="form-group">
+        <div class="col-sm-12">
+          <input type="text" class="form-control bh--timepicker" id="inline2" placeholder="End">
+        </div>
+      </div>
+    </div>
+
+  </fieldset>
+</div>
+
+{% endhighlight %}
