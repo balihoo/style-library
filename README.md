@@ -1,7 +1,21 @@
 Balihoo Style Library
 =============
 
-http://balihoo.github.io/style-library
+View the style library here: http://balihoo.github.io/style-library
+
+### Compiled Styles
+
+The compiled style sheets are available in the _build_ directory.
+
+You can build your own version by cloning the repo, installing npm modules, and then running the gulp build command.
+
+```
+git clone https://github.com/balihoo/style-library.git
+npm install
+gulp build
+```
+
+### Running the documentation site locally
 
 This site is build using [Jekyll](http://jekyllrb.com)
 
