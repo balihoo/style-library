@@ -201,11 +201,11 @@ Labels should still apprear to the left of the field at small break points and l
 
 <form class="form-horizontal bh--form-example">
   <div class="well">
-    <fieldset>
+    <fieldset class="bh--inline-group">
       <legend>Inline Group</legend>
 
       <div class="col-sm-3">
-        <div class="form-group">
+        <div class="form-group bh--info">
           <div class="col-sm-12">
             <p>Date:</p>
           </div>
@@ -223,7 +223,7 @@ Labels should still apprear to the left of the field at small break points and l
       </div>
 
       <div class="col-sm-3">
-        <div class="form-group">
+        <div class="form-group bh--info">
           <div class="col-sm-12">
             <p>to</p>
           </div>
@@ -247,11 +247,11 @@ Labels should still apprear to the left of the field at small break points and l
 {% highlight html linenos %}
 
 <div class="well">
-  <fieldset>
+  <fieldset class="bh--inline-group">
     <legend>Inline Group</legend>
     <!-- Each form-group will need to be wrapped in it's own grid container. The number of columns to span should be calculated based on the number of fields in the inline group. -->
     <div class="col-sm-3">
-      <div class="form-group">
+      <div class="form-group bh--info">
         <div class="col-sm-12"><!-- grid containers in the form-group should all span 12 columns -->
           <p>Date:</p>
         </div>
@@ -270,7 +270,7 @@ Labels should still apprear to the left of the field at small break points and l
     </div>
 
     <div class="col-sm-3">
-      <div class="form-group">
+      <div class="form-group bh--info">
         <div class="col-sm-12">
           <p>to</p>
         </div>
@@ -292,7 +292,7 @@ Labels should still apprear to the left of the field at small break points and l
 
 <form class="form-horizontal bh--form-example">
   <div class="well">
-    <fieldset>
+    <fieldset class="bh--inline-group">
       <legend>Another Inline Group</legend>
 
       <div class="col-sm-12">
@@ -488,7 +488,7 @@ Labels should still apprear to the left of the field at small break points and l
       </div>
 
       <div class="col-sm-4">
-        <div class="form-group">
+        <div class="form-group bh--info">
           <div class="col-sm-12">
             <p>Some other text.</p>
           </div>
@@ -510,7 +510,7 @@ Labels should still apprear to the left of the field at small break points and l
 {% highlight html linenos %}
 
 <div class="well">
-  <fieldset>
+  <fieldset class="bh--inline-group">
     <legend>Another Inline Group</legend>
 
     <!-- Compound or complex fields should always have their own row -->
@@ -708,7 +708,7 @@ Labels should still apprear to the left of the field at small break points and l
     </div>
 
     <div class="col-sm-4">
-      <div class="form-group">
+      <div class="form-group bh--info">
         <div class="col-sm-12">
           <p>Some other text.</p>
         </div>
