@@ -18,6 +18,53 @@ Charts
     <p>This is just an example of how charts are represented in our LPC app. This is not intended to be a technical implementation guide. You should use this as a visual style guide for implementing chart styles and a design reference.</p>
 
     <div class="row">
+      <div class="col-sm-12">
+        <div class="panel panel-default">
+          <div class="panel-heading clearfix">
+            <p>Chart Colors</p>
+          </div>
+          <div class="panel-body">
+            <p>Primary<br>
+            <span style="display:inline-block;width:100px;height:100px;background-color:#567574;"></span>
+            <span style="display:inline-block;width:100px;height:100px;background-color:#6f8f8e;"></span>
+            <span style="display:inline-block;width:100px;height:100px;background-color:#89aaa8;"></span>
+            <span style="display:inline-block;width:100px;height:100px;background-color:#a3c5c3;"></span>
+            <span style="display:inline-block;width:100px;height:100px;background-color:#bfe1df;"></span>
+            </p>
+            <p>Success<br>
+            <span style="display:inline-block;width:100px;height:100px;background-color:#608685;"></span>
+            <span style="display:inline-block;width:100px;height:100px;background-color:#78a09e;"></span>
+            <span style="display:inline-block;width:100px;height:100px;background-color:#93bbba;"></span>
+            <span style="display:inline-block;width:100px;height:100px;background-color:#aed7d6;"></span>
+            <span style="display:inline-block;width:100px;height:100px;background-color:#caf3f2;"></span>
+            </p>
+            <p>Info<br>
+            <span style="display:inline-block;width:100px;height:100px;background-color:#898241;"></span>
+            <span style="display:inline-block;width:100px;height:100px;background-color:#a49c59;"></span>
+            <span style="display:inline-block;width:100px;height:100px;background-color:#bfb672;"></span>
+            <span style="display:inline-block;width:100px;height:100px;background-color:#dcd38d;"></span>
+            <span style="display:inline-block;width:100px;height:100px;background-color:#f9efa7;"></span>
+            </p>
+            <p>Warning<br>
+            <span style="display:inline-block;width:100px;height:100px;background-color:#977701;"></span>
+            <span style="display:inline-block;width:100px;height:100px;background-color:#b49127;"></span>
+            <span style="display:inline-block;width:100px;height:100px;background-color:#d0ab42;"></span>
+            <span style="display:inline-block;width:100px;height:100px;background-color:#efc75e;"></span>
+            <span style="display:inline-block;width:100px;height:100px;background-color:#ffe277;"></span>
+            </p>
+            <p>Danger<br>
+            <span style="display:inline-block;width:100px;height:100px;background-color:#e2574c;"></span>
+            <span style="display:inline-block;width:100px;height:100px;background-color:#ff7164;"></span>
+            <span style="display:inline-block;width:100px;height:100px;background-color:#ff8d7d;"></span>
+            <span style="display:inline-block;width:100px;height:100px;background-color:#ffa997;"></span>
+            <span style="display:inline-block;width:100px;height:100px;background-color:#ffc6b1;"></span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
       <!-- Visits -->
       <div class="col-sm-6 col-xs-12">
         <div class="panel panel-default">
@@ -42,23 +89,23 @@ Charts
               <tbody>
                 <tr>
                   <td class="text-success">Organic</td>
-                  <td>{{websiteMetrics.visits.organic}}</td>
+                  <td>80</td>
                 </tr>
                 <tr>
                   <td class="text-warning">Direct</td>
-                  <td>{{websiteMetrics.visits.direct}}</td>
+                  <td>15</td>
                 </tr>
                 <tr>
                   <td class="text-danger">Referral</td>
-                  <td>{{websiteMetrics.visits.referral}}</td>
+                  <td>25</td>
                 </tr>
                 <tr>
                   <td class="text-info">Paid</td>
-                  <td>{{websiteMetrics.visits.paid}}</td>
+                  <td>20</td>
                 </tr>
                 <tr>
                   <td>Total</td>
-                  <td>{{websiteMetrics.visits.total}} ( {{websiteMetrics.visits.newVisitsPercent * 100 | number: 0}}% new )</td>
+                  <td>140 ( 62% new )</td>
                 </tr>
               </tbody>
             </table>
@@ -89,23 +136,23 @@ Charts
               <tbody>
                 <tr>
                   <td class="text-success">Web (Organic)</td>
-                  <td>{{websiteMetrics.leads.organicWeb}}</td>
+                  <td>107</td>
                 </tr>
                 <tr>
                   <td class="text-warning">Web (Paid)</td>
-                  <td>{{websiteMetrics.leads.paidWeb}}</td>
+                  <td>42</td>
                 </tr>
                 <tr>
                   <td class="text-danger">Phone (Organic)</td>
-                  <td>{{websiteMetrics.leads.organicPhone}}</td>
+                  <td>25</td>
                 </tr>
                 <tr>
                   <td class="text-info">Phone (Paid)</td>
-                  <td>{{websiteMetrics.leads.paidPhone}}</td>
+                  <td>20</td>
                 </tr>
                 <tr>
                   <td>Total</td>
-                  <td>{{websiteMetrics.leads.total}}</td>
+                  <td>194</td>
                 </tr>
               </tbody>
             </table>
@@ -126,6 +173,7 @@ Metrics
     <h3 class="panel-title">Metrics</h3>
   </div>
   <div class="panel-body">
+    <p>These metric blocks are used in the campaign tactics display.</p>
     <div class="row">
       <div class="col-md-2">
         <p class="bh--metric bh--metric-sent">58
@@ -153,3 +201,115 @@ Metrics
     </div>
   </div>
 </div>
+
+
+<script type="text/javascript">
+
+  $(function() {
+
+    // Visits Chart
+    var visitsChart = c3.generate({
+      bindto: '#visits-chart',
+      size: {
+        width: 230
+      },
+      data: {
+        columns: [
+          ['Organic', 80],
+          ['Direct', 15],
+          ['Referral', 25],
+          ['Paid', 20]
+        ],
+        colors: {
+          Organic: '#78a09e',
+          Direct: '#efc75e',
+          Referral: '#e2574c',
+          Paid: '#bfb672'
+        },
+        type : 'donut'
+      },
+      axis: {
+        x: {
+          type: 'category',
+          categories: ['Visits'],
+          show: false
+        }
+      },
+      donut: {
+        title: "Visits",
+        label: {
+          format: function (value, ratio, id) {
+            return value;
+          }
+        }
+      }
+    });
+
+    $('#visits-pie').click(function(e) {
+      swapChart(e, $(this));
+    });
+
+    $('#visits-bar').click(function(e) {
+      swapChart(e, $(this));
+    });
+
+    // Leads Chart
+    var leadsChart = c3.generate({
+      bindto: '#leads-chart',
+      size: {
+        width: 230
+      },
+      data: {
+        columns: [
+          ['Web (Organic)', 107],
+          ['Web (Paid)', 42],
+          ['Phone (Organic)', 25],
+          ['Phone (Paid)', 20]
+        ],
+        colors: {
+          'Web (Organic)': '#977701',
+          'Web (Paid)': '#d0ab42',
+          'Phone (Organic)': '#567574',
+          'Phone (Paid)': '#89aaa8'
+        },
+        type : 'donut'
+      },
+      axis: {
+        x: {
+          type: 'category',
+          categories: ['Leads'],
+          show: false
+        }
+      },
+      donut: {
+        title: "Leads",
+        label: {
+          format: function (value, ratio, id) {
+            return value;
+          }
+        }
+      }
+    });
+
+    $('#leads-pie').click(function(e) {
+      swapChart(e, $(this));
+    });
+
+    $('#leads-bar').click(function(e) {
+      swapChart(e, $(this));
+    });
+
+    // Exectute c3 transform methed.
+    // Requires a click event and dom object with target data and chartType data.
+    function swapChart(e, b) {
+      e.preventDefault();
+      if (!$(b).hasClass('active')) {
+        window[b.data('target')].transform(b.data('chartType'));
+        $(b.parent().children('button')).removeClass('active');
+        $(b).addClass('active');
+      }
+    }
+
+  });
+
+</script>
