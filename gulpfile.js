@@ -10,6 +10,7 @@ var paths = {
 
 gulp.task('sass-compressed', function () {
   return sass(paths.sass, {
+        container: 'sass-compressed',
         style: 'compressed',
         precision: 10
       })
@@ -24,6 +25,7 @@ gulp.task('sass-compressed', function () {
 
 gulp.task('sass-expanded', function () {
   return sass(paths.sass, {
+        container: 'sass-expanded',
         style: 'expanded',
         precision: 10
       })
