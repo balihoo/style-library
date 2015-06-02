@@ -6917,6 +6917,10 @@ hr {
   margin: 10px 0;
 }
 
+textarea {
+  resize: vertical;
+}
+
 .form-horizontal .control-label {
   text-align: left;
 }
@@ -7229,6 +7233,7 @@ hr {
   margin: 10px 0;
 }
 .bh--form-image .carousel-inner {
+  background: #ffffff;
   border: 1px solid gainsboro;
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -7272,6 +7277,10 @@ hr {
   object-clip: cover;
   color: #eee;
   background: #ccc;
+}
+
+.bh--inline-group .bh--info {
+  padding-top: 5px;
 }
 
 .no-space-after {
