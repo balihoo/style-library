@@ -7279,8 +7279,8 @@ textarea {
   background: #ccc;
 }
 
-.bh--inline-group .bh--info {
-  padding-top: 5px;
+.bh--form-group.bh--form-group-inline .bh--form-info {
+  padding-top: 7px;
 }
 
 .no-space-after {
