@@ -8,15 +8,15 @@ A group, in this case, refers to a form builder group which encapulates several 
 
 <form class="form-horizontal bh--form-example">
   <div class="well">
-    <fieldset>
+    <fieldset class="bh--form-group">
       <legend>User Login</legend>
-      <div class="form-group">
+      <div class="form-group bh--form-text">
         <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
         <div class="col-sm-8">
           <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
         </div>
       </div>
-      <div class="form-group">
+      <div class="form-group bh--form-text">
         <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
         <div class="col-sm-8">
           <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
@@ -25,9 +25,9 @@ A group, in this case, refers to a form builder group which encapulates several 
     </fieldset>
   </div>
   <div class="well">
-    <fieldset>
+    <fieldset class="bh--form-group">
       <legend>Another Group</legend>
-      <div class="form-group">
+      <div class="form-group bh--form-select bh--form-select-checkboxes">
         <div class="col-sm-8 col-sm-offset-2">
           <div class="checkbox">
             <label>
@@ -44,7 +44,7 @@ A group, in this case, refers to a form builder group which encapulates several 
         </div>
       </div>
 
-      <div class="form-group">
+      <div class="form-group bh--form-select bh--form-select-radios">
         <div class="col-sm-8 col-sm-offset-2">
           <div class="radio">
             <label>
@@ -68,13 +68,13 @@ A group, in this case, refers to a form builder group which encapulates several 
       </div>
     </fieldset>
   </div>
-  <div class="form-group">
+  <div class="form-group bh--form-textarea">
     <label for="howyoufindme" class="col-sm-2 control-label">How did you discover us? I am not a part of a group :-(</label>
     <div class="col-sm-8">
       <textarea id="howyoufindme" class="form-control" rows="3"></textarea>
     </div>
   </div>
-  <div class="form-group">
+  <div class="form-group bh--form-bool">
     <div class="col-sm-offset-2 col-sm-8">
       <div class="checkbox">
       <label>
@@ -83,7 +83,7 @@ A group, in this case, refers to a form builder group which encapulates several 
       </div>
     </div>
   </div>
-  <div class="form-group">
+  <div class="form-group bh--form-button bh--form-button-submit">
     <div class="col-sm-offset-2 col-sm-8">
       <button type="submit" class="btn btn-default">Sign in</button>
     </div>
@@ -97,16 +97,16 @@ A group, in this case, refers to a form builder group which encapulates several 
 <form class="form-horizontal">
   <!-- Groups use the fieldset tag and are wrapped in a bootstrap well element. -->
   <div class="well">
-    <fieldset>
+    <fieldset class="bh--form-group">
       <!-- Group titles use the legend tag -->
       <legend>User Login</legend>
-      <div class="form-group">
+      <div class="form-group bh--form-text">
         <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
         <div class="col-sm-8">
           <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
         </div>
       </div>
-      <div class="form-group">
+      <div class="form-group bh--form-text">
         <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
         <div class="col-sm-8">
           <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
@@ -117,9 +117,9 @@ A group, in this case, refers to a form builder group which encapulates several 
 
   <!-- A second group. -->
   <div class="well">
-    <fieldset>
+    <fieldset class="bh--form-group">
       <legend>Another Group</legend>
-      <div class="form-group">
+      <div class="form-group bh--form-select bh--form-select-checkboxes">
         <div class="col-sm-8 col-sm-offset-2">
           <div class="checkbox">
             <label>
@@ -136,7 +136,7 @@ A group, in this case, refers to a form builder group which encapulates several 
         </div>
       </div>
 
-      <div class="form-group">
+      <div class="form-groupn bh--form-select bh--form-select-radios">
         <div class="col-sm-8 col-sm-offset-2">
           <div class="radio">
             <label>
@@ -161,13 +161,13 @@ A group, in this case, refers to a form builder group which encapulates several 
     </fieldset>
   </div>
   <!-- This field is not in a group. -->
-  <div class="form-group">
+  <div class="form-group bh--form-textarea">
     <label for="howyoufindme" class="col-sm-2 control-label">How did you discover us? I am not a part of a group :-(</label>
     <div class="col-sm-8">
       <textarea id="howyoufindme" class="form-control" rows="3"></textarea>
     </div>
   </div>
-  <div class="form-group">
+  <div class="form-group bh--form-bool">
     <div class="col-sm-offset-2 col-sm-8">
       <div class="checkbox">
         <label>
@@ -176,7 +176,7 @@ A group, in this case, refers to a form builder group which encapulates several 
       </div>
     </div>
   </div>
-  <div class="form-group">
+  <div class="form-group bh--form-button bh--form-button-submit">
     <div class="col-sm-offset-2 col-sm-8">
       <button type="submit" class="btn btn-default">Sign in</button>
     </div>
@@ -201,12 +201,12 @@ Labels should still apprear to the left of the field at small break points and l
 
 <form class="form-horizontal bh--form-example">
   <div class="well">
-    <fieldset class="bh--inline-group">
+    <fieldset class="bh--form-group bh--form-group-inline">
       <legend>Inline Group</legend>
 
       <div class="row">
         <div class="col-sm-1">
-          <div class="form-group bh--info">
+          <div class="form-group bh--form-info">
             <div class="col-sm-12">
               <p>Date:</p>
             </div>
@@ -214,17 +214,17 @@ Labels should still apprear to the left of the field at small break points and l
         </div>
 
         <div class="col-sm-3">
-          <div class="form-group">
+          <div class="form-group bh--form-time">
             <label for="inline1" class="col-sm-3 control-label">Text</label>
             <div class="col-sm-9">
-              <input type="text" class="form-control bh--timepicker" id="inline1" placeholder="Start">
+              <input type="text" class="form-control bh--form-time-picker" id="inline1" placeholder="Start">
               <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
             </div>
           </div>
         </div>
 
         <div class="col-sm-1">
-          <div class="form-group bh--info">
+          <div class="form-group bh--form-info">
             <div class="col-sm-12">
               <p>to</p>
             </div>
@@ -232,9 +232,9 @@ Labels should still apprear to the left of the field at small break points and l
         </div>
 
         <div class="col-sm-3">
-          <div class="form-group">
+          <div class="form-group bh--form-timepicker">
             <div class="col-sm-12">
-              <input type="text" class="form-control bh--timepicker" id="inline2" placeholder="End">
+              <input type="text" class="form-control bh--form-time-picker" id="inline2" placeholder="End">
             </div>
           </div>
         </div>
@@ -249,7 +249,8 @@ Labels should still apprear to the left of the field at small break points and l
 {% highlight html linenos %}
 
 <div class="well">
-  <fieldset class="bh--inline-group">
+  <!-- Inline groups should have the submodule class of bh--form-group-inline in addition to bh--form-group -->
+  <fieldset class="bh--form-group bh--form-group-inline">
     <legend>Inline Group</legend>
 
     <!-- Inline groups need to contain rows of fields. Every 6 fields should be wrapped in a row div. -->
@@ -257,7 +258,7 @@ Labels should still apprear to the left of the field at small break points and l
       <!-- Each form-group will need to be wrapped in it's own grid container. The number of columns to span should be calculated based on the number of fields in the inline group. -->
       <div class="col-sm-1">
         <!-- Inline info fields should always have a column width of 1 unit -->
-        <div class="form-group bh--info">
+        <div class="form-group bh--form-info">
           <div class="col-sm-12"><!-- grid containers in the form-group should all span 12 columns -->
             <p>Date:</p>
           </div>
@@ -265,18 +266,18 @@ Labels should still apprear to the left of the field at small break points and l
       </div>
 
       <div class="col-sm-3">
-        <div class="form-group">
+        <div class="form-group bh--form-time">
           <!-- When a field includes a label, the label should be 3 columns wide and the form will be 9 columns. This is a nested grid inside the form-group. -->
           <label for="inline1" class="col-sm-3 control-label">Text</label>
           <div class="col-sm-9">
-            <input type="text" class="form-control bh--timepicker" id="inline1" placeholder="Start">
+            <input type="text" class="form-control bh--form-time-picker" id="inline1" placeholder="Start">
             <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
           </div>
         </div>
       </div>
 
       <div class="col-sm-1">
-        <div class="form-group bh--info">
+        <div class="form-group bh--form-info">
           <div class="col-sm-12">
             <p>to</p>
           </div>
@@ -284,9 +285,9 @@ Labels should still apprear to the left of the field at small break points and l
       </div>
 
       <div class="col-sm-3">
-        <div class="form-group">
+        <div class="form-group bh--form-time">
           <div class="col-sm-12">
-            <input type="text" class="form-control bh--timepicker" id="inline2" placeholder="End">
+            <input type="text" class="form-control bh--form-time-picker" id="inline2" placeholder="End">
           </div>
         </div>
       </div>
@@ -300,188 +301,184 @@ Labels should still apprear to the left of the field at small break points and l
 
 <form class="form-horizontal bh--form-example">
   <div class="well">
-    <fieldset class="bh--inline-group">
+    <fieldset class=" bh--form-group bh--form-group-inline">
       <legend>Another Inline Group</legend>
 
       <div class="row">
         <div class="col-sm-12">
-          <div class="form-group">
-            <div class="col-sm-12">
-              <div class="form-group bh--form-image">
-                <!-- A field and all related tags and content are wrapped in a form group element -->
-                <!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
-                <label for="image1" class="col-sm-2 control-label">Image (Multiple Options Provided)</label>
-                <div class="col-sm-10">
-                  <!-- Make sure to use both the carousel and slide classes. The ID should be unique. -->
-                  <div class="carousel slide" id="myCarousel">
+          <div class="form-group bh--form-image">
+            <!-- A field and all related tags and content are wrapped in a form group element -->
+            <!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
+            <label for="image1" class="col-sm-2 control-label">Image (Multiple Options Provided)</label>
+            <div class="col-sm-10">
+              <!-- Make sure to use both the carousel and slide classes. The ID should be unique. -->
+              <div class="carousel slide" id="myCarousel">
 
-                    <!-- The carousel indicators list should be built dynamically based on how many pages of images there are. -->
-                    <ol class="carousel-indicators">
-                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                      <li data-target="#myCarousel" data-slide-to="1"></li>
-                      <li data-target="#myCarousel" data-slide-to="2"></li>
-                    </ol>
+                <!-- The carousel indicators list should be built dynamically based on how many pages of images there are. -->
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
 
-                    <div class="carousel-inner">
+                <div class="carousel-inner">
 
-                      <!-- The carousel item is a container which includes multiple images. -->
-                      <div class="item active">
-                        <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2 col-sm-offset-1">
-                          <a href="#">
-                            <img src="http://lorempixel.com/200/200/sports" class="img-responsive">
-                            <div class="carousel-caption">
-                              one.jpg<br>
-                              <small>200x200</small>
-                            </div>
-                          </a>
+                  <!-- The carousel item is a container which includes multiple images. -->
+                  <div class="item active">
+                    <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2 col-sm-offset-1">
+                      <a href="#">
+                        <img src="http://lorempixel.com/200/200/sports" class="img-responsive">
+                        <div class="carousel-caption">
+                          one.jpg<br>
+                          <small>200x200</small>
                         </div>
-                        <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-                          <!-- The class selected indicates which image is the current selection in the form. -->
-                          <a href="#" class="selected">
-                            <img src="http://lorempixel.com/200/200/" class="img-responsive">
-                            <div class="carousel-caption">
-                              two.png<br>
-                              <small>200x100</small>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-                          <a href="#">
-                            <img src="http://lorempixel.com/200/200/sports" class="img-responsive">
-                            <div class="carousel-caption">
-                              3.jpg<br>
-                              <small>500x800</small>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-                          <a href="#">
-                            <img src="http://lorempixel.com/200/200/" class="img-responsive">
-                            <div class="carousel-caption">
-                              two.png<br>
-                              <small>200x100</small>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-                          <a href="#">
-                            <img src="http://lorempixel.com/200/200/sports" class="img-responsive">
-                            <div class="carousel-caption">
-                              3.jpg<br>
-                              <small>500x800</small>
-                            </div>
-                          </a>
-                        </div>
-                      </div>
-                      <!-- Another page of images. -->
-                      <div class="item">
-                        <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2 col-sm-offset-1">
-                          <a href="#">
-                            <img src="http://lorempixel.com/200/200/" class="img-responsive">
-                            <div class="carousel-caption">
-                              four.jpg<br>
-                              <small>300x150</small>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-                          <a href="#">
-                            <img src="http://lorempixel.com/200/200/sports" class="img-responsive">
-                            <div class="carousel-caption">
-                              5.gif<br>
-                              <small>900x900</small>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-                          <a href="#">
-                            <img src="http://lorempixel.com/200/200/" class="img-responsive">
-                            <div class="carousel-caption">
-                              6.png<br>
-                              <small>100x100</small>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-                          <a href="#">
-                            <img src="http://lorempixel.com/200/200/sports" class="img-responsive">
-                            <div class="carousel-caption">
-                              5.gif<br>
-                              <small>900x900</small>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-                          <a href="#">
-                            <img src="http://lorempixel.com/200/200/" class="img-responsive">
-                            <div class="carousel-caption">
-                              6.png<br>
-                              <small>100x100</small>
-                            </div>
-                          </a>
-                        </div>
-                      </div>
-                      <!-- Another page of images. -->
-                      <div class="item">
-                        <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2 col-sm-offset-1">
-                          <a href="#">
-                            <img src="http://lorempixel.com/200/200/sports" class="img-responsive">
-                            <div class="carousel-caption">
-                              seven.jpg<br>
-                              <small>250x50</small>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-                          <a href="#">
-                            <img src="http://lorempixel.com/200/200/" class="img-responsive">
-                            <div class="carousel-caption">
-                              eight.jpg<br>
-                              <small>50x400</small>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-                          <a href="#">
-                            <img src="http://lorempixel.com/200/200/" class="img-responsive">
-                            <div class="carousel-caption">
-                              eight.jpg<br>
-                              <small>50x400</small>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-                          <a href="#">
-                            <img src="http://lorempixel.com/200/200/" class="img-responsive">
-                            <div class="carousel-caption">
-                              eight.jpg<br>
-                              <small>50x400</small>
-                            </div>
-                          </a>
-                        </div>
-                      </div>
+                      </a>
                     </div>
-                    <!-- Controls -->
-                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><!-- Make sure the href matches the ID of the carousel you wish to advance. -->
-                      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                      <span class="sr-only">Next</span>
-                    </a>
-                  </div><!-- /.carousel -->
-                  <!-- Form fields and inputs. -->
-                  <div class="bh--form-image-controls">
-                    <!-- Necessary but hidden fields should be given the hidden class. -->
-                    <input type="file" id="image1" class="form-control hidden">
-                    <button type="button" class="btn btn-default">Upload Image</button>
-                    <button type="button" class="btn btn-link">Clear</button>
+                    <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
+                      <!-- The class selected indicates which image is the current selection in the form. -->
+                      <a href="#" class="selected">
+                        <img src="http://lorempixel.com/200/200/" class="img-responsive">
+                        <div class="carousel-caption">
+                          two.png<br>
+                          <small>200x100</small>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
+                      <a href="#">
+                        <img src="http://lorempixel.com/200/200/sports" class="img-responsive">
+                        <div class="carousel-caption">
+                          3.jpg<br>
+                          <small>500x800</small>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
+                      <a href="#">
+                        <img src="http://lorempixel.com/200/200/" class="img-responsive">
+                        <div class="carousel-caption">
+                          two.png<br>
+                          <small>200x100</small>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
+                      <a href="#">
+                        <img src="http://lorempixel.com/200/200/sports" class="img-responsive">
+                        <div class="carousel-caption">
+                          3.jpg<br>
+                          <small>500x800</small>
+                        </div>
+                      </a>
+                    </div>
                   </div>
-                  <!-- You may include help text. -->
-                  <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+                  <!-- Another page of images. -->
+                  <div class="item">
+                    <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2 col-sm-offset-1">
+                      <a href="#">
+                        <img src="http://lorempixel.com/200/200/" class="img-responsive">
+                        <div class="carousel-caption">
+                          four.jpg<br>
+                          <small>300x150</small>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
+                      <a href="#">
+                        <img src="http://lorempixel.com/200/200/sports" class="img-responsive">
+                        <div class="carousel-caption">
+                          5.gif<br>
+                          <small>900x900</small>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
+                      <a href="#">
+                        <img src="http://lorempixel.com/200/200/" class="img-responsive">
+                        <div class="carousel-caption">
+                          6.png<br>
+                          <small>100x100</small>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
+                      <a href="#">
+                        <img src="http://lorempixel.com/200/200/sports" class="img-responsive">
+                        <div class="carousel-caption">
+                          5.gif<br>
+                          <small>900x900</small>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
+                      <a href="#">
+                        <img src="http://lorempixel.com/200/200/" class="img-responsive">
+                        <div class="carousel-caption">
+                          6.png<br>
+                          <small>100x100</small>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- Another page of images. -->
+                  <div class="item">
+                    <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2 col-sm-offset-1">
+                      <a href="#">
+                        <img src="http://lorempixel.com/200/200/sports" class="img-responsive">
+                        <div class="carousel-caption">
+                          seven.jpg<br>
+                          <small>250x50</small>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
+                      <a href="#">
+                        <img src="http://lorempixel.com/200/200/" class="img-responsive">
+                        <div class="carousel-caption">
+                          eight.jpg<br>
+                          <small>50x400</small>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
+                      <a href="#">
+                        <img src="http://lorempixel.com/200/200/" class="img-responsive">
+                        <div class="carousel-caption">
+                          eight.jpg<br>
+                          <small>50x400</small>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
+                      <a href="#">
+                        <img src="http://lorempixel.com/200/200/" class="img-responsive">
+                        <div class="carousel-caption">
+                          eight.jpg<br>
+                          <small>50x400</small>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
                 </div>
+                <!-- Controls -->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><!-- Make sure the href matches the ID of the carousel you wish to advance. -->
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div><!-- /.carousel -->
+              <!-- Form fields and inputs. -->
+              <div class="bh--form-image-controls">
+                <!-- Necessary but hidden fields should be given the hidden class. -->
+                <input type="file" id="image1" class="form-control hidden">
+                <button type="button" class="btn btn-default">Upload Image</button>
+                <button type="button" class="btn btn-link">Clear</button>
               </div>
+              <!-- You may include help text. -->
+              <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
             </div>
           </div>
         </div>
@@ -489,7 +486,7 @@ Labels should still apprear to the left of the field at small break points and l
 
       <div class="row">
         <div class="col-sm-4">
-          <div class="form-group">
+          <div class="form-group bh--form-textarea">
             <label for="textarea1" class="col-sm-3 control-label">Textarea</label>
             <div class="col-sm-9">
               <textarea class="form-control" rows="3" id="textarea1" placeholder="Placeholder"></textarea>
@@ -499,7 +496,7 @@ Labels should still apprear to the left of the field at small break points and l
         </div>
 
         <div class="col-sm-1">
-          <div class="form-group bh--info">
+          <div class="form-group bh--form-info">
             <div class="col-sm-12">
               <p>Some other text.</p>
             </div>
@@ -507,9 +504,9 @@ Labels should still apprear to the left of the field at small break points and l
         </div>
 
         <div class="col-sm-4">
-          <div class="form-group">
+          <div class="form-group bh--form-time">
             <div class="col-sm-12">
-              <input type="text" class="form-control bh--timepicker" id="inline2" placeholder="End">
+              <input type="text" class="form-control bh--form-time-picker" id="inline2" placeholder="End">
             </div>
           </div>
         </div>
@@ -522,189 +519,185 @@ Labels should still apprear to the left of the field at small break points and l
 {% highlight html linenos %}
 
 <div class="well">
-  <fieldset class="bh--inline-group">
+  <fieldset class="bh--form-group bh--form-group-inline">
     <legend>Another Inline Group</legend>
 
     <div class="row">
       <!-- Compound or complex fields should always have their own row -->
       <div class="col-sm-12">
-        <div class="form-group">
-          <div class="col-sm-12">
-            <div class="form-group bh--form-image">
-              <!-- A field and all related tags and content are wrapped in a form group element -->
-              <!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
-              <label for="image1" class="col-sm-2 control-label">Image (Multiple Options Provided)</label>
-              <div class="col-sm-10">
-                <!-- Make sure to use both the carousel and slide classes. The ID should be unique. -->
-                <div class="carousel slide" id="myCarousel">
+        <div class="form-group bh--form-image">
+          <!-- A field and all related tags and content are wrapped in a form group element -->
+          <!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
+          <label for="image1" class="col-sm-2 control-label">Image (Multiple Options Provided)</label>
+          <div class="col-sm-10">
+            <!-- Make sure to use both the carousel and slide classes. The ID should be unique. -->
+            <div class="carousel slide" id="myCarousel">
 
-                  <!-- The carousel indicators list should be built dynamically based on how many pages of images there are. -->
-                  <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                  </ol>
+              <!-- The carousel indicators list should be built dynamically based on how many pages of images there are. -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+              </ol>
 
-                  <div class="carousel-inner">
+              <div class="carousel-inner">
 
-                    <!-- The carousel item is a container which includes multiple images. -->
-                    <div class="item active">
-                      <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2 col-sm-offset-1">
-                        <a href="#">
-                          <img src="http://lorempixel.com/200/200/sports" class="img-responsive">
-                          <div class="carousel-caption">
-                            one.jpg<br>
-                            <small>200x200</small>
-                          </div>
-                        </a>
+                <!-- The carousel item is a container which includes multiple images. -->
+                <div class="item active">
+                  <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2 col-sm-offset-1">
+                    <a href="#">
+                      <img src="http://lorempixel.com/200/200/sports" class="img-responsive">
+                      <div class="carousel-caption">
+                        one.jpg<br>
+                        <small>200x200</small>
                       </div>
-                      <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-                        <!-- The class selected indicates which image is the current selection in the form. -->
-                        <a href="#" class="selected">
-                          <img src="http://lorempixel.com/200/200/" class="img-responsive">
-                          <div class="carousel-caption">
-                            two.png<br>
-                            <small>200x100</small>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-                        <a href="#">
-                          <img src="http://lorempixel.com/200/200/sports" class="img-responsive">
-                          <div class="carousel-caption">
-                            3.jpg<br>
-                            <small>500x800</small>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-                        <a href="#">
-                          <img src="http://lorempixel.com/200/200/" class="img-responsive">
-                          <div class="carousel-caption">
-                            two.png<br>
-                            <small>200x100</small>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-                        <a href="#">
-                          <img src="http://lorempixel.com/200/200/sports" class="img-responsive">
-                          <div class="carousel-caption">
-                            3.jpg<br>
-                            <small>500x800</small>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                    <!-- Another page of images. -->
-                    <div class="item">
-                      <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2 col-sm-offset-1">
-                        <a href="#">
-                          <img src="http://lorempixel.com/200/200/" class="img-responsive">
-                          <div class="carousel-caption">
-                            four.jpg<br>
-                            <small>300x150</small>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-                        <a href="#">
-                          <img src="http://lorempixel.com/200/200/sports" class="img-responsive">
-                          <div class="carousel-caption">
-                            5.gif<br>
-                            <small>900x900</small>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-                        <a href="#">
-                          <img src="http://lorempixel.com/200/200/" class="img-responsive">
-                          <div class="carousel-caption">
-                            6.png<br>
-                            <small>100x100</small>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-                        <a href="#">
-                          <img src="http://lorempixel.com/200/200/sports" class="img-responsive">
-                          <div class="carousel-caption">
-                            5.gif<br>
-                            <small>900x900</small>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-                        <a href="#">
-                          <img src="http://lorempixel.com/200/200/" class="img-responsive">
-                          <div class="carousel-caption">
-                            6.png<br>
-                            <small>100x100</small>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                    <!-- Another page of images. -->
-                    <div class="item">
-                      <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2 col-sm-offset-1">
-                        <a href="#">
-                          <img src="http://lorempixel.com/200/200/sports" class="img-responsive">
-                          <div class="carousel-caption">
-                            seven.jpg<br>
-                            <small>250x50</small>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-                        <a href="#">
-                          <img src="http://lorempixel.com/200/200/" class="img-responsive">
-                          <div class="carousel-caption">
-                            eight.jpg<br>
-                            <small>50x400</small>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-                        <a href="#">
-                          <img src="http://lorempixel.com/200/200/" class="img-responsive">
-                          <div class="carousel-caption">
-                            eight.jpg<br>
-                            <small>50x400</small>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-                        <a href="#">
-                          <img src="http://lorempixel.com/200/200/" class="img-responsive">
-                          <div class="carousel-caption">
-                            eight.jpg<br>
-                            <small>50x400</small>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
+                    </a>
                   </div>
-                  <!-- Controls -->
-                  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><!-- Make sure the href matches the ID of the carousel you wish to advance. -->
-                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                  </a>
-                </div><!-- /.carousel -->
-                <!-- Form fields and inputs. -->
-                <div class="bh--form-image-controls">
-                  <!-- Necessary but hidden fields should be given the hidden class. -->
-                  <input type="file" id="image1" class="form-control hidden">
-                  <button type="button" class="btn btn-default">Upload Image</button>
-                  <button type="button" class="btn btn-link">Clear</button>
+                  <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
+                    <!-- The class selected indicates which image is the current selection in the form. -->
+                    <a href="#" class="selected">
+                      <img src="http://lorempixel.com/200/200/" class="img-responsive">
+                      <div class="carousel-caption">
+                        two.png<br>
+                        <small>200x100</small>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
+                    <a href="#">
+                      <img src="http://lorempixel.com/200/200/sports" class="img-responsive">
+                      <div class="carousel-caption">
+                        3.jpg<br>
+                        <small>500x800</small>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
+                    <a href="#">
+                      <img src="http://lorempixel.com/200/200/" class="img-responsive">
+                      <div class="carousel-caption">
+                        two.png<br>
+                        <small>200x100</small>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
+                    <a href="#">
+                      <img src="http://lorempixel.com/200/200/sports" class="img-responsive">
+                      <div class="carousel-caption">
+                        3.jpg<br>
+                        <small>500x800</small>
+                      </div>
+                    </a>
+                  </div>
                 </div>
-                <!-- You may include help text. -->
-                <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+                <!-- Another page of images. -->
+                <div class="item">
+                  <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2 col-sm-offset-1">
+                    <a href="#">
+                      <img src="http://lorempixel.com/200/200/" class="img-responsive">
+                      <div class="carousel-caption">
+                        four.jpg<br>
+                        <small>300x150</small>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
+                    <a href="#">
+                      <img src="http://lorempixel.com/200/200/sports" class="img-responsive">
+                      <div class="carousel-caption">
+                        5.gif<br>
+                        <small>900x900</small>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
+                    <a href="#">
+                      <img src="http://lorempixel.com/200/200/" class="img-responsive">
+                      <div class="carousel-caption">
+                        6.png<br>
+                        <small>100x100</small>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
+                    <a href="#">
+                      <img src="http://lorempixel.com/200/200/sports" class="img-responsive">
+                      <div class="carousel-caption">
+                        5.gif<br>
+                        <small>900x900</small>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
+                    <a href="#">
+                      <img src="http://lorempixel.com/200/200/" class="img-responsive">
+                      <div class="carousel-caption">
+                        6.png<br>
+                        <small>100x100</small>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <!-- Another page of images. -->
+                <div class="item">
+                  <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2 col-sm-offset-1">
+                    <a href="#">
+                      <img src="http://lorempixel.com/200/200/sports" class="img-responsive">
+                      <div class="carousel-caption">
+                        seven.jpg<br>
+                        <small>250x50</small>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
+                    <a href="#">
+                      <img src="http://lorempixel.com/200/200/" class="img-responsive">
+                      <div class="carousel-caption">
+                        eight.jpg<br>
+                        <small>50x400</small>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
+                    <a href="#">
+                      <img src="http://lorempixel.com/200/200/" class="img-responsive">
+                      <div class="carousel-caption">
+                        eight.jpg<br>
+                        <small>50x400</small>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
+                    <a href="#">
+                      <img src="http://lorempixel.com/200/200/" class="img-responsive">
+                      <div class="carousel-caption">
+                        eight.jpg<br>
+                        <small>50x400</small>
+                      </div>
+                    </a>
+                  </div>
+                </div>
               </div>
+              <!-- Controls -->
+              <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><!-- Make sure the href matches the ID of the carousel you wish to advance. -->
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div><!-- /.carousel -->
+            <!-- Form fields and inputs. -->
+            <div class="bh--form-image-controls">
+              <!-- Necessary but hidden fields should be given the hidden class. -->
+              <input type="file" id="image1" class="form-control hidden">
+              <button type="button" class="btn btn-default">Upload Image</button>
+              <button type="button" class="btn btn-link">Clear</button>
             </div>
+            <!-- You may include help text. -->
+            <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
           </div>
         </div>
       </div>
@@ -713,7 +706,7 @@ Labels should still apprear to the left of the field at small break points and l
     <div class="row">
       <!-- Textarea fields should be in columns -->
       <div class="col-sm-4">
-        <div class="form-group">
+        <div class="form-group bh--form-textarea">
           <label for="textarea1" class="col-sm-3 control-label">Textarea</label>
           <div class="col-sm-9">
             <textarea class="form-control" rows="3" id="textarea1" placeholder="Placeholder"></textarea>
@@ -723,7 +716,7 @@ Labels should still apprear to the left of the field at small break points and l
       </div>
 
       <div class="col-sm-1">
-        <div class="form-group bh--info">
+        <div class="form-group bh--form-info">
           <div class="col-sm-12">
             <p>Some other text.</p>
           </div>
@@ -731,9 +724,9 @@ Labels should still apprear to the left of the field at small break points and l
       </div>
 
       <div class="col-sm-4">
-        <div class="form-group">
+        <div class="form-group bh--form-time">
           <div class="col-sm-12">
-            <input type="text" class="form-control bh--timepicker" id="inline2" placeholder="End">
+            <input type="text" class="form-control bh--form-time-picker" id="inline2" placeholder="End">
           </div>
         </div>
       </div>

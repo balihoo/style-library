@@ -8,11 +8,11 @@ $(function() { // Document Ready
 
 	///////////////////
 	/// Timepicker Field
-	$('.bh--timepicker').timepicker();
+	$('.bh--form-time-picker').timepicker();
 
 	///////////////////
 	/// Colorpicker Field
-	$('.bh--colorpicker').spectrum({
+	$('.bh--form-color-picker').spectrum({
 		preferredFormat: "hex",
 		showInput: true,
 		allowEmpty: true
