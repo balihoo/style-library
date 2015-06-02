@@ -8,7 +8,7 @@ Textarea fields are multi-line text inputs.
 
 <form class="form-horizontal bh--form-example">
   <!-- A field and all related tags and content are wrapped in a form group element -->
-  <div class="form-group">
+  <div class="form-group bh--form-textarea">
     <!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
     <label for="textarea1" class="col-sm-2 control-label">Textarea</label>
     <div class="col-sm-8">
@@ -22,7 +22,7 @@ Textarea fields are multi-line text inputs.
 
 {% highlight html linenos %}
 
-<div class="form-group">
+<div class="form-group bh--form-textarea">
   <label for="textarea1" class="col-sm-2 control-label">Textarea</label>
   <div class="col-sm-8">
     <!-- Text fields use a basic html textarea with a from-control class. -->

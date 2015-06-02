@@ -8,7 +8,7 @@ Select elements will display differently based on how they are configured.
 
 <form class="form-horizontal bh--form-example">
   <!-- A field and all related tags and content are wrapped in a form group element. -->
-  <div class="form-group">
+  <div class="form-group bh--form-select bh--form-select-radios">
     <!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens. -->
     <div class="col-sm-8 col-sm-offset-2">
       <div class="radio">
@@ -36,7 +36,7 @@ Select elements will display differently based on how they are configured.
 
 {% highlight html linenos %}
 
-<div class="form-group">
+<div class="form-group bh--form-select bh--form-select-radios">
   <!-- Radios are offset since there is no label visible to the left of the field. -->
   <div class="col-sm-8 col-sm-offset-2">
     <div class="radio">
@@ -68,7 +68,7 @@ If no default option is provided then the single select field will display as a 
 
 <form class="form-horizontal bh--form-example">
   <!-- A field and all related tags and content are wrapped in a form group element. -->
-  <div class="form-group">
+  <div class="form-group bh--form-select bh--form-select-dropdown">
     <!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens.  -->
     <label for="select1" class="col-sm-2">Single Select Dropdown</label>
     <div id="select1" class="col-sm-8">
@@ -89,7 +89,7 @@ If no default option is provided then the single select field will display as a 
 
 {% highlight html linenos %}
 
-<div class="form-group">
+<div class="form-group bh--form-select bh--form-select-dropdown">
   <label for="select1" class="col-sm-2">Single Select Dropdown</label>
   <div id="select1" class="col-sm-8">
     <!-- A form dropdown is marked up using a select tag. Options are provided as a part of the select tag markup. -->

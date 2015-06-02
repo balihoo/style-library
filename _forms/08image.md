@@ -8,7 +8,7 @@ Description coming soon.
 
 <form class="form-horizontal bh--form-example">
   <!-- A field and all related tags and content are wrapped in a form group element -->
-  <div class="form-group bh--form-image">
+  <div class="form-group bh--form-image bh--form-image-carousel">
     <!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
     <label for="image1" class="col-sm-2 control-label">Image (Multiple Options Provided)</label>
     <div class="col-sm-10">
@@ -182,7 +182,7 @@ Description coming soon.
 
 {% highlight html linenos %}
 
-<div class="form-group bh--form-image">
+<div class="form-group bh--form-image bh--form-image-carousel">
   <!-- A field and all related tags and content are wrapped in a form group element -->
   <!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
   <label for="image1" class="col-sm-2 control-label">Image (Multiple Options Provided)</label>
@@ -362,7 +362,7 @@ Description coming soon.
 
 <form class="form-horizontal bh--form-example">
   <!-- A field and all related tags and content are wrapped in a form group element -->
-  <div class="form-group bh--form-image">
+  <div class="form-group bh--form-image bh--form-image-single">
     <!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
     <label for="image1" class="col-sm-2 control-label">Image (No Options)</label>
     <div class="col-sm-10">
@@ -382,7 +382,7 @@ Description coming soon.
 
 {% highlight html linenos %}
 
-<div class="form-group bh--form-image">
+<div class="form-group bh--form-image bh--form-image-single">
   <!-- A field and all related tags and content are wrapped in a form group element -->
   <!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
   <label for="image1" class="col-sm-2 control-label">Image (No Options)</label>

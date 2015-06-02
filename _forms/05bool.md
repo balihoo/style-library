@@ -8,7 +8,7 @@ Description
 
 <form class="form-horizontal bh--form-example">
   <!-- A field and all related tags and content are wrapped in a form group element. -->
-  <div class="form-group">
+  <div class="form-group bh--form-bool">
     <!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens. -->
     <div class="col-sm-8 col-sm-offset-2">
       <div class="checkbox">
@@ -25,7 +25,7 @@ Description
 
 {% highlight html linenos%}
 
-<div class="form-group">
+<div class="form-group bh--form-bool">
   <!-- Checkboxes need an offset since the label is displayed to the right of the checkbox rather than to the left of the field. -->
   <div class="col-sm-8 col-sm-offset-2">
     <!-- The bool field is wrapped in a div with the class checkbox. -->

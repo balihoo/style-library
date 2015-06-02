@@ -10,7 +10,7 @@ If there are 10 or fewer items then the multi-select field will display as check
 
 <form class="form-horizontal bh--form-example">
   <!-- A field and all related tags and content are wrapped in a form group element -->
-  <div class="form-group">
+  <div class="form-group bh--form-multiselect bh--form-multiselect-checkboxes">
     <!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
     <div class="col-sm-8 col-sm-offset-2">
       <div class="checkbox">
@@ -38,7 +38,7 @@ If there are 10 or fewer items then the multi-select field will display as check
 
 {% highlight html linenos %}
 
-<div class="form-group">
+<div class="form-group bh--form-multiselect bh--form-multiselect-checkboxes">
   <div class="col-sm-8 col-sm-offset-2">
     <!-- One checkbox element for each option -->
     <div class="checkbox">
@@ -69,7 +69,7 @@ If more than 10 options are provided then a multi-select will display as a listb
 
 <form class="form-horizontal bh--form-example">
   <!-- A field and all related tags and content are wrapped in a form group element -->
-  <div class="form-group">
+  <div class="form-group bh--form-multiselect bh--form-multiselect-dropdown">
     <!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
     <label for="select1" class="col-sm-2">MultiSelect Dropdown</label>
     <div id="select1" class="col-sm-8">
@@ -90,7 +90,7 @@ If more than 10 options are provided then a multi-select will display as a listb
 
 {% highlight html linenos %}
 
-<div class="form-group">
+<div class="form-group bh--form-multiselect bh--form-multiselect-dropdown">
   <label for="select1" class="col-sm-2">MultiSelect Dropdown</label>
   <div id="select1" class="col-sm-8">
     <!-- The select element should include the multiple attribute -->

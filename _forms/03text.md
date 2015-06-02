@@ -8,7 +8,7 @@ Text fields are single line text inputs.
 
 <form class="form-horizontal bh--form-example">
   <!-- A field and all related tags and content are wrapped in a form group element -->
-  <div class="form-group">
+  <div class="form-group bh--form-text">
     <!-- Labels and fields are still column classes so that they are left aligned and reflow on smaller screens  -->
     <label for="input1" class="col-sm-2 control-label">Text</label>
     <div class="col-sm-8">
@@ -22,7 +22,7 @@ Text fields are single line text inputs.
 
 {% highlight html linenos %}
 
-<div class="form-group">
+<div class="form-group bh--form-text">
   <label for="input1" class="col-sm-2 control-label">Text</label>
   <div class="col-sm-8">
     <!-- Text fields use a basic html text input with a from-control class. -->

@@ -7,23 +7,33 @@ layout: default
 </div>
 
 <div class="row">
-  <div class="well col-sm-12">
-    <h3>Requirements</h3>
-    <ul>
-      <li>Balihoo Bootstrap</li>
-      <li>Bootstrap JS
-      <p>If you are including individual bootstrap js modules, you will need the following...</p>
-        <ul>
-          <li>Transition</li>
-          <li>Collapse</li>
-          <li>Dropdown</li>
-          <li>Modal</li>
-          <li>Carousel</li>
-        </ul>
-      </li>
-      <li>Spectrum Color Picker (<a href="https://github.com/bgrins/spectrum">https://github.com/bgrins/spectrum</a>)</li>
-      <li>Time Picker (<a href="https://github.com/acpmasquerade/bootstrap3-timepicker2">https://github.com/acpmasquerade/bootstrap3-timepicker2</a>)</li>
-    </ul>
+  <div class="col-sm-12">
+    <div class="well">
+      <h3>Form Components</h3>
+
+      <p>This page documents the recommended markup structure to build the Balihoo form builder forms and fields. Field types, as defined by the form builder model, will each have their own css component to make maintaining and updating styles easy. Components will be defined using css classes. In some cases components will need subcomponent classes to denote alterations to the base component. An example of this is with the select and multiselect elements which may change from radios to checkboxes or dropdowns based on how the field is configured. subcomponent classes will need to be applied in addition to the component classes.</p>
+
+      <p>Component classes are built starting with our universal balihoo namespace <em>bh--</em>, which is follow by <em>form-</em> and then the component name. For example <em>bh--form-text</em> or <em>bh--form-color</em>. Subcomponent classes extend their main component name. For example a subcomponent of the select component is <em>bh--form-select-radios</em>.</p>
+
+
+
+      <h3>Requirements</h3>
+      <ul>
+        <li>Balihoo Bootstrap</li>
+        <li>Bootstrap JS
+        <p>If you are including individual bootstrap js modules, you will need the following...</p>
+          <ul>
+            <li>Transition</li>
+            <li>Collapse</li>
+            <li>Dropdown</li>
+            <li>Modal</li>
+            <li>Carousel</li>
+          </ul>
+        </li>
+        <li>Spectrum Color Picker (<a href="https://github.com/bgrins/spectrum">https://github.com/bgrins/spectrum</a>)</li>
+        <li>Time Picker (<a href="https://github.com/acpmasquerade/bootstrap3-timepicker2">https://github.com/acpmasquerade/bootstrap3-timepicker2</a>)</li>
+      </ul>
+    </div>
   </div>
 </div>
 

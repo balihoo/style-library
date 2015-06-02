@@ -27,7 +27,7 @@ A group, in this case, refers to a form builder group which encapulates several 
   <div class="well">
     <fieldset class="bh--form-group">
       <legend>Another Group</legend>
-      <div class="form-group bh--form-select bh--form-select-checkboxes">
+      <div class="form-group bh--form-multiselect bh--form-multiselect-checkboxes">
         <div class="col-sm-8 col-sm-offset-2">
           <div class="checkbox">
             <label>
@@ -119,7 +119,7 @@ A group, in this case, refers to a form builder group which encapulates several 
   <div class="well">
     <fieldset class="bh--form-group">
       <legend>Another Group</legend>
-      <div class="form-group bh--form-select bh--form-select-checkboxes">
+      <div class="form-group bh--form-multiselect bh--form-multiselect-checkboxes">
         <div class="col-sm-8 col-sm-offset-2">
           <div class="checkbox">
             <label>
