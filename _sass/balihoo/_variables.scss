@@ -7,11 +7,17 @@
 //
 //## Gray and brand colors for use across Bootstrap.
 
-$brand-primary:         #567574;
-$brand-success:         #78a09e;
-$brand-info:            #bfb672;
-$brand-warning:         #efc75e;
-$brand-danger:          #e2574c;
+// $brand-primary:         #567574;
+// $brand-success:         #78a09e;
+// $brand-info:            #bfb672;
+// $brand-warning:         #efc75e;
+// $brand-danger:          #e2574c;
+
+$brand-primary:         #005295;
+$brand-success:         #b0bc22;
+$brand-info:            #4f8abe;
+$brand-warning:         #ffc222;
+$brand-danger:          #bf311a;
 
 $bhoo-lighter-gray:       #f5f5f5;
 $bhoo-light-gray:       darken($bhoo-lighter-gray, 10%);
@@ -140,20 +146,20 @@ $jumbotron-bg: $bhoo-lighter-gray;
 //
 //## Define colors for form feedback states and, by default, alerts.
 
-$state-success-text:             #567574;
-$state-success-bg:               #e9f4f2;
+$state-success-text:             darken($brand-success, 20%);
+$state-success-bg:               lighten($brand-success, 30%);
 $state-success-border:           darken(adjust-hue($state-success-bg, -10), 10%);
 
-$state-info-text:                #a59b63;
-$state-info-bg:                  #f4f0dc;
+$state-info-text:                darken($brand-info, 20%);
+$state-info-bg:                  lighten($brand-info, 30%);
 $state-info-border:              darken(adjust-hue($state-info-bg, -10), 7%);
 
-$state-warning-text:             #ca9f30;
-$state-warning-bg:               #f9f0de;
+$state-warning-text:             darken($brand-warning, 20%);
+$state-warning-bg:               lighten($brand-warning, 30%);
 $state-warning-border:           darken(adjust-hue($state-warning-bg, -10), 5%);
 
-$state-danger-text:              #cb4e44;
-$state-danger-bg:                #f7d7d7;
+$state-danger-text:              darken($brand-danger, 20%);
+$state-danger-bg:                lighten($brand-danger, 30%);
 $state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%);
 
 
